@@ -12,3 +12,6 @@ scipy  ==1.7.3
 wordcloud 
 statsmodels
 xgboost
+squarify
+mlxtend
+streamlit-pandas-profiling
