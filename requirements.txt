@@ -16,3 +16,4 @@ squarify
 mlxtend
 streamlit-pandas-profiling
 keras==2.8.0
+tensorflow ==2.8.0
