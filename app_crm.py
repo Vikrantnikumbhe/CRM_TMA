@@ -26,7 +26,7 @@ from sklearn.impute import IterativeImputer
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression 
 from sklearn.naive_bayes import GaussianNB
-from xgboost import XGBClassifier
+# from xgboost import XGBClassifier
 from scipy.stats import anderson
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
