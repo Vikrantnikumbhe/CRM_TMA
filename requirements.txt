@@ -15,3 +15,4 @@ xgboost
 squarify
 mlxtend
 streamlit-pandas-profiling
+keras==2.8.0
