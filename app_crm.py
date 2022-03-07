@@ -192,7 +192,7 @@ class EDA_Analysis():
     st.write('**SweetVIZ Data Analysis Report: **')
     analysis = sv.analyze([x,'EDA'])
     #analysis.show_html()
-    analysis.show_html(filepath='/content/SWEETVIZ_REPORT.html', open_browser=False, layout='vertical',scale=1.0)
+#     analysis.show_html(filepath='/content/SWEETVIZ_REPORT.html', open_browser=False, layout='vertical',scale=1.0)
     # components.iframe(src='http://localhost:8501/EDA.html', width=1100, height=1200, scrolling=True)
 
 
