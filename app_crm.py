@@ -19,7 +19,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn import preprocessing
 from scipy.stats import chi2_contingency,chi2
-import statsmodels.api as sm 
+# import statsmodels.api as sm 
 from scipy.stats import spearmanr
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
