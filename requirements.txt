@@ -9,7 +9,7 @@ mlxtend
 plotly   
 seaborn  
 scipy  ==1.7.3
- 
+ wordcloud
 statsmodels == 0.10.2
 
 squarify 
