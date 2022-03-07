@@ -13,7 +13,7 @@ import plotly.express as px
 import matplotlib
 import seaborn as sns
 from sklearn.pipeline import Pipeline
-# from wordcloud import WordCloud
+from wordcloud import WordCloud
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
