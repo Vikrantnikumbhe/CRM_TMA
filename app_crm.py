@@ -137,7 +137,7 @@ st.sidebar.markdown('Let’s start with Customer Relationship Management!!')
 global mm
 global RFM_table
 
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 with col1:
   data_file = st.file_uploader("Upload Main CSV",type=["csv"],  key = '89')
   if data_file is not None:
