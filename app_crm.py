@@ -87,7 +87,7 @@ from mlxtend.frequent_patterns import association_rules
 from sklearn.neighbors import KNeighborsClassifier
 #############
 import keras
-import tensorflow as tf
+# import tensorflow as tf
 from keras.preprocessing.sequence import TimeseriesGenerator
 from sklearn.metrics import mean_absolute_error as mae
 from sklearn.metrics import mean_squared_error as mse
