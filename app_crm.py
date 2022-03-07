@@ -44,7 +44,7 @@ from sklearn import neighbors, linear_model, svm, tree, ensemble
 # from wordcloud import WordCloud, STOPWORDS
 from sklearn.ensemble import AdaBoostClassifier
 # from sklearn.decomposition import PCA
-from IPython.display import display, HTML
+# from IPython.display import display, HTML
 import plotly.graph_objs as go
 # from plotly.offline import init_notebook_mode,iplot
 
