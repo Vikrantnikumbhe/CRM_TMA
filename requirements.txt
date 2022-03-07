@@ -7,7 +7,7 @@ sweetviz
 Lifetimes  ==0.11.3
 mlxtend  
 plotly   
-seaborn   == 0.9.1
+seaborn  
 scipy  ==1.7.3
  
 tensorflow-cpu
