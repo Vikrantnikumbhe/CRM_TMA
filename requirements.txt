@@ -11,7 +11,7 @@ seaborn
 scipy  ==1.7.3
  
 statsmodels == 0.10.2
-tensorflow-cpu
+
 squarify 
 mlxtend == 0.14.0
 streamlit-pandas-profiling 
