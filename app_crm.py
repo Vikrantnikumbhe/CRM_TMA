@@ -165,6 +165,12 @@ with col2:
     if st.sidebar.checkbox('Display Data of for prediction',False, key = '200'):
       st.subheader('Show Input dataset for prediction' )
       st.write(dff1.head(5))
+          
+ class ghar():
+  def intro(self):
+    Vid1= open("/content/Add1.mp4", 'rb')
+    Vid1_bytes = Vid1.read()
+    st.video(Vid1_bytes)
 
 
 class DataFrame_Loader():
@@ -1046,6 +1052,7 @@ def main():
 
   if choice == 'HOME':
     st.subheader('**Welcome to the application!!! Visualize CRM tasks in one click.**')
+    g.intro()
   if choice == 'EDA_Analysis':
     st.sidebar.subheader('Exploratory Data Analysis')
     if st.sidebar.checkbox('SweetViz Analysis', key = '10'):
