@@ -105,13 +105,13 @@ st.set_page_config(
      layout="wide", 
      initial_sidebar_state="expanded")
 st.title('Development and deployment of next generation customer relationship management tool in product based supply chain.')
-img = Image.open("./WCE-Sangli-Logo.png")
-st.image(img,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
+# img = Image.open("./WCE-Sangli-Logo.png")
+# st.image(img,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
 import streamlit.components.v1 as components
 
 col3, col4 = st.beta_columns(2)
 with col3:
-  img = Image.open("/content/WCE-Sangli-Logo.png")
+  img = Image.open("./WCE-Sangli-Logo.png")
   st.image(img,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
 with col4:
   j = '''**Businesses like online retails are usually worried of the following 
