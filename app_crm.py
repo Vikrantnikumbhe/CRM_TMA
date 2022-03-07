@@ -109,7 +109,7 @@ st.title('Development and deployment of next generation customer relationship ma
 # st.image(img,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
 import streamlit.components.v1 as components
 
-col3, col4 = st.beta_columns(2)
+col3, col4 = st.columns(2)
 with col3:
   img = Image.open("./WCE-Sangli-Logo.png")
   st.image(img,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
