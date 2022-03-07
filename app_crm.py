@@ -919,7 +919,7 @@ class Churn_Analysis():
     totalamount_df = dff.groupby(['BillYearMonth'])['TotalAmount'].sum().reset_index()
     #Required code to run plotly in the cell
     # configure_plotly_browser_state()
-    init_notebook_mode(connected=False)
+#     init_notebook_mode(connected=False)
     #X and Y axis inputs for Plotly graph. We use Scatter for line graphs
     plot_data = [
     go.Scatter(x=totalamount_df['BillYearMonth'],y=totalamount_df['TotalAmount'],)]
