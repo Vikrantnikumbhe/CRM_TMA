@@ -3,7 +3,7 @@ numpy
 pandas==1.2.5
 streamlit==0.84.2
 sklearn ==0.0
-sweetviz == 2.0.1
+sweetviz == 2.0
 Lifetimes  ==0.11.3
 mlxtend  
 plotly   
