@@ -14,7 +14,7 @@ import matplotlib
 import seaborn as sns
 from sklearn.pipeline import Pipeline
 # from wordcloud import WordCloud
-from sklearn.decomposition import PCA
+# from sklearn.decomposition import PCA
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn import preprocessing
@@ -52,7 +52,7 @@ from pandas_profiling import ProfileReport
 import streamlit.components.v1 as components
 from streamlit_pandas_profiling import st_profile_report
 matplotlib.use("Agg")
-# import pickle
+
 import sklearn.metrics as metrics
 import seaborn as sns
 # import altair as alt
