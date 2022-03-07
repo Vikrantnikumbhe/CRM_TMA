@@ -46,7 +46,7 @@ from sklearn.ensemble import AdaBoostClassifier
 # from sklearn.decomposition import PCA
 from IPython.display import display, HTML
 import plotly.graph_objs as go
-from plotly.offline import init_notebook_mode,iplot
+# from plotly.offline import init_notebook_mode,iplot
 
 from pandas_profiling import ProfileReport 
 import streamlit.components.v1 as components
