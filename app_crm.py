@@ -56,7 +56,7 @@ matplotlib.use("Agg")
 import sklearn.metrics as metrics
 import seaborn as sns
 # import altair as alt
-import pydeck as pdk
+# import pydeck as pdk
 import base64
 from matplotlib.pyplot import figure
 import squarify
