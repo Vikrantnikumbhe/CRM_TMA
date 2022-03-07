@@ -166,11 +166,11 @@ with col2:
       st.subheader('Show Input dataset for prediction' )
       st.write(dff1.head(5))
           
- class ghar():
-  def intro(self):
-    Vid1= open("/content/Add1.mp4", 'rb')
-    Vid1_bytes = Vid1.read()
-    st.video(Vid1_bytes)
+class ghar():
+     def intro(self):
+          Vid1= open("/content/Add1.mp4", 'rb')
+          Vid1_bytes = Vid1.read()
+          st.video(Vid1_bytes)
 
 
 class DataFrame_Loader():
