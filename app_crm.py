@@ -1054,7 +1054,7 @@ def main():
       st.write('**Pandas Profiling Data Analysis Report: **')
       profile = ProfileReport(dff)
       st_profile_report(profile)
-      profile.to_notebook_iframe()
+#       profile.to_notebook_iframe()
 
     if st.sidebar.checkbox('Demographics of Customer'):
       dataframe.Map()
