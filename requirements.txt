@@ -8,7 +8,7 @@ Lifetimes  ==0.11.3
 mlxtend  
 plotly   
 seaborn  
-scipy  ==1.3.0
+scipy  ==1.7.0
  
 tensorflow-cpu
 
