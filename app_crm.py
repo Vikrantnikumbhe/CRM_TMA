@@ -168,7 +168,7 @@ with col2:
           
 class ghar():
      def intro(self):
-          Vid1= open("/content/Add1.mp4", 'rb')
+          Vid1= open("./Add1.mp4", 'rb')
           Vid1_bytes = Vid1.read()
           st.video(Vid1_bytes)
 
