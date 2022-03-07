@@ -1166,4 +1166,5 @@ if __name__=='__main__':
   cc = cltv()
   sf = Sales_Forecasting()
   chu = Churn_Analysis()
+  g = ghar()
   main()   
