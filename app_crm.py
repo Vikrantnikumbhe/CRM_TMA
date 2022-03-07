@@ -13,7 +13,7 @@ import plotly.express as px
 import matplotlib
 import seaborn as sns
 from sklearn.pipeline import Pipeline
-from wordcloud import WordCloud
+# from wordcloud import WordCloud
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
@@ -41,7 +41,7 @@ from sklearn.model_selection import GridSearchCV, learning_curve
 from sklearn.svm import SVC
 from sklearn.metrics import confusion_matrix
 from sklearn import neighbors, linear_model, svm, tree, ensemble
-from wordcloud import WordCloud, STOPWORDS
+# from wordcloud import WordCloud, STOPWORDS
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.decomposition import PCA
 from IPython.display import display, HTML
