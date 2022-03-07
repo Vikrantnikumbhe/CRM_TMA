@@ -1,5 +1,5 @@
 matplotlib==3.2.2
-numpy == 1.19.1
+numpy 
 pandas==1.2.5
 streamlit==0.84.2
 sklearn ==0.0
