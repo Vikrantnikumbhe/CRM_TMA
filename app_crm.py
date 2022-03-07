@@ -105,7 +105,7 @@ st.set_page_config(
      layout="wide", 
      initial_sidebar_state="expanded")
 st.title('Development and deployment of next generation customer relationship management tool in product based supply chain.')
-img = Image.open("/content/WCE-Sangli-Logo.png")
+img = Image.open("./WCE-Sangli-Logo.png")
 st.image(img,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
 import streamlit.components.v1 as components
 
