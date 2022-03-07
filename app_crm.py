@@ -31,7 +31,7 @@ from scipy.stats import anderson
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
-from sklearn.metrics import confusion_matrix 
+# from sklearn.metrics import confusion_matrix 
 from PIL import Image
 import sweetviz as sv
 import codecs
@@ -39,11 +39,11 @@ import codecs
 from sklearn import preprocessing, model_selection, metrics, feature_selection
 from sklearn.model_selection import GridSearchCV, learning_curve
 from sklearn.svm import SVC
-from sklearn.metrics import confusion_matrix
+# from sklearn.metrics import confusion_matrix
 from sklearn import neighbors, linear_model, svm, tree, ensemble
 # from wordcloud import WordCloud, STOPWORDS
 from sklearn.ensemble import AdaBoostClassifier
-from sklearn.decomposition import PCA
+# from sklearn.decomposition import PCA
 from IPython.display import display, HTML
 import plotly.graph_objs as go
 from plotly.offline import init_notebook_mode,iplot
@@ -52,10 +52,10 @@ from pandas_profiling import ProfileReport
 import streamlit.components.v1 as components
 from streamlit_pandas_profiling import st_profile_report
 matplotlib.use("Agg")
-import pickle
+# import pickle
 import sklearn.metrics as metrics
 import seaborn as sns
-import altair as alt
+# import altair as alt
 import pydeck as pdk
 import base64
 from matplotlib.pyplot import figure
@@ -96,11 +96,7 @@ from math import sqrt
 import os
 
 import datetime
-#############
 from datetime import datetime
-
-
-
 
 
 st.set_page_config(
