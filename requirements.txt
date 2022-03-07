@@ -11,7 +11,7 @@ seaborn
 scipy  ==1.7.0
  
 tensorflow-cpu
-pandas_profiling==3.1.1
+pandas_profiling==3.1.0
 squarify 
 mlxtend == 0.14.0
 streamlit-pandas-profiling == 0.1.3
