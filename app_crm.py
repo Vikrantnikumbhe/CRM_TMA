@@ -1161,25 +1161,35 @@ def main():
     if st.sidebar.checkbox('Cohort Analysis'):
       st.sidebar.text('**Choose among the below activities:**')
       if st.sidebar.checkbox('Monthly Revenue Plot'):
+        st.subheader('Monthly Revenue Plot')
         chu.coh()
       if st.sidebar.checkbox('Montly Growth rate Plot'):
+        st.subheader('Montly Growth rate Plot')
         chu.coh2()
       if st.sidebar.checkbox('Montly Active Customers'):
+        st.subheader('Montly Active Customers')
         st.write(chu.coh9())
-        if st.sidebar.checkbox('Montly Active Customers Plot'):
-          chu.coh3()
+      if st.sidebar.checkbox('Montly Active Customers Plot'):
+        st.subheader('Montly Active Customers Plot')
+        chu.coh3()
       if st.sidebar.checkbox('Montly Total # of Orders'):
+        st.subheader('Montly Total # of Orders')
         chu.coh4()
       if st.sidebar.checkbox('Monthly Order Average'):
+        st.subhaeder('Monthly Order Average')
         chu.coh5()
       if st.sidebar.checkbox('New Usertype Vs Existing Usertype'):
+        st.subheader('New Usertype Vs Existing Usertype')
         chu.coh6()
       if st.sidebar.checkbox('New Customer ratio'):
+        st.subheader('New Customer ratio')
         chu.coh7()
       if st.sidebar.checkbox('Montly Customer Retention '):
+        st.subheader('Montly Customer Retention')
         st.write(chu.coh8())
-        if st.checkbox('Monthly retention Plot'):
-          chu.coh_ret()
+      if st.checkbox('Monthly retention Plot'):
+        st.subheader('Monthly retention Plot')
+        chu.coh_ret()
   if choice == 'About':
     st.sidebar.title('User Guide')
     
