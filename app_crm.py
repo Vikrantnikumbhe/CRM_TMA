@@ -1189,7 +1189,7 @@ def main():
         st.subheader('Montly Total # of Orders')
         chu.coh4()
       if st.sidebar.checkbox('Monthly Order Average'):
-        st.subhaeder('Monthly Order Average')
+        st.subheader('Monthly Order Average')
         chu.coh5()
       if st.sidebar.checkbox('New Usertype Vs Existing Usertype'):
         st.subheader('New Usertype Vs Existing Usertype')
