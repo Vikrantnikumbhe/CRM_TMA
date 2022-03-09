@@ -1123,7 +1123,7 @@ def main():
     if st.sidebar.checkbox('Choose Classifier for Prediction', key = '28'):
      st.sidebar.text('Choose Classifier for Prediction')
      ll.inp_classifier()
-      if st.sidebar.button('Support Vector Machine', key = '33'):
+     if st.sidebar.button('Support Vector Machine', key = '33'):
         st.subheader('Prediction using Support Vector Machine')
         st.write(ll.support())
       if st.sidebar.button('LogisticRegression', key = '30'):
