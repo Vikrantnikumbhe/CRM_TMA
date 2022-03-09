@@ -745,6 +745,16 @@ from sklearn.preprocessing import MinMaxScaler
 
 
 class cltv():
+  def Access_cltv(self):
+    Num= st.number_input('Enter a Customer ID',0, 300000, 0, 1, key = '3063')
+    for i in range(len(cc.C_L_T_V())):
+      if cc.C_L_T_V().CustomerID[i]== Num:
+        st.write('Segment :', cc.C_L_T_V().Segment[i])
+        st.write('Expected Purchase of 1 week :',cc.C_L_T_V().expected_purchase_1_week[i])
+        st.write('Expected Purchase of 1 Month :',cc.C_L_T_V().expected_purchase_1_month[i])
+        st.write('Expected Average Profit :',cc.C_L_T_V().expected_average_profit[i])
+        st.write('Customer CLV Value:',cc.C_L_T_V().clv[i])
+        break
 
 
   def C_L_T_V(self):
@@ -774,10 +784,10 @@ class cltv():
 
     bgf.fit(cltv_data['frequency'], cltv_data['recency'], cltv_data['T'])
     #------------------------------------------------------------
-    zz  =plt.figure(figsize = (15,15))
-    plot_period_transactions(bgf) 
+#     zz  =plt.figure(figsize = (15,15))
+#     plot_period_transactions(bgf) 
     
-    st.pyplot(zz)
+#     st.pyplot(zz)
 
     #-------------------------------------
     cltv_data["expected_purchase_1_week"] = bgf.predict(1,cltv_data['frequency'],cltv_data['recency'],cltv_data['T'])
@@ -812,7 +822,8 @@ class cltv():
     cltv_final["Segment"] = pd.qcut(cltv_final["scaled_clv"], 4, labels=["D", "C", "B", "A"])
 
     # return cltv_final.astype('object')
-    st.write(cltv_final.astype('object'))
+    return cltv_final.astype('object')
+     
 ###################################################################################################
 
 class Product_Recommendation():
@@ -1161,6 +1172,9 @@ def main():
     st.sidebar.subheader('Here we will Explore Customer Lifetime Value')
     if st.sidebar.checkbox('CLTV Dataframe', key = '32'):   
       st.write(cc.C_L_T_V())
+    if st.sidebar.checkbox('Aceess Customer Info'):
+      cc.Access_cltv()
+     
   if choice == 'Sales Forecasting':
     st.sidebar.subheader('Welcome to the world of forecasting!')
     if st.sidebar.checkbox('30 Days Forecast'):
