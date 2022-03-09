@@ -234,6 +234,10 @@ class EDA_Analysis():
     source_code = HtmlFile.read() 
     print(source_code)
     components.html(source_code, height = 2000)
+  def Exp1(self):
+      with st.expander('See About SweetViz'):
+          st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+          Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
 
    
   def Map(self):
@@ -1106,6 +1110,7 @@ def main():
     st.sidebar.subheader('Exploratory Data Analysis')
     if st.sidebar.checkbox('SweetViz Analysis', key = '10'):
       st.write(dataframe.SweetV(dff))
+     dataframe.Exp1()
     if st.sidebar.checkbox('Pandas Profiling', key = '11'):
       st.write('**Pandas Profiling Data Analysis Report: **')
       profile = ProfileReport(dff)
