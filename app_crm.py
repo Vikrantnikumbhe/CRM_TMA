@@ -1107,7 +1107,7 @@ def main():
         st.subheader('Kmeans Segmentation Dataframe')
         st.write(h_rfm.KM())
         if st.sidebar.checkbox('BOX PLOTS OF CLUSTERS', key = '24'):
-        st.subheader('Box Plot of Clusters')
+          st.subheader('Box Plot of Clusters')
           h_rfm.BOX()
         if st.sidebar.checkbox('SCATTER PLOTS OF CLUSTERS' , key = '25'):
           st.subheader('Scatter Plot of Clusters')
