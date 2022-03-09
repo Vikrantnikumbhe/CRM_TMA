@@ -1064,20 +1064,26 @@ def main():
 #       profile.to_notebook_iframe()
 
     if st.sidebar.checkbox('Demographics of Customer'):
+      st.subheader('Demographics of Customers')
       dataframe.Map()
   if choice == 'Product_Recommendation':
     rules.Association_rules()
   if choice == 'Customer Segmentation':
     st.sidebar.subheader('Choose Method for Customer Segmentation')
     if st.sidebar.checkbox('RFM_SEGMENTATION', key = '12'):
+      st.subheader('RFM Segmentation Dataframe')
       st.write(rfm.RFMvalues().astype('object'))
       if st.sidebar.checkbox('Scatter Plot', key = '13'):
+        st.subheader('Scatter Plot')
         rfm.Scatter()
       if st.sidebar.checkbox('Bar Plot', key = '14'):
+        st.subheader('Bar Plot')
         rfm.bar_plot()
       if st.sidebar.checkbox('Treemap Plot', key = '15'):
+        st.subheader('Treemap Plot')
         rfm.Tree_map()
       if st.sidebar.checkbox('Access Customer Info ', key = '16'):
+        st.subheader('Access Customer Information')
         rfm.Access_Cust()
 
     if st.sidebar.checkbox('HYBRID_SEGMENTATION', key = '17'):
