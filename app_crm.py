@@ -1089,26 +1089,36 @@ def main():
     if st.sidebar.checkbox('HYBRID_SEGMENTATION', key = '17'):
       st.sidebar.subheader('Choose Method for Cluster labelling')
       if st.sidebar.checkbox('SHOW DENDOGRAM', key = '18'):
+        st.subheader('Dendogram Plot')
         st.write(h_rfm.Pre_hybrid())
       if st.sidebar.checkbox('SHOW ELBOW CURVE', key = '19'):
+        st.subheader('Elbow Curve')
         st.write(h_rfm.elbow())
       if st.sidebar.checkbox('Check Skewness', key = '20'):
+        st.subheader('Skewness Information')
         st.write(h_rfm.skew_data())
       if  st.sidebar.checkbox('Visualize Transformed Data', key = '21'):
+        st.subheader('Visualizw Transformed Data for Hybrid Segmentation')
         h_rfm.Trans_data()
       if st.sidebar.checkbox('Transformed data', key = '22'):
+        st.subheader(' Transformed Data for Hybrid Segmentation')
         st.write(h_rfm.Transform().astype('object'))
       if st.sidebar.checkbox('KMEANS SEGMENTATION DataFrame', key = '23'):
+        st.subheader('Kmeans Segmentation Dataframe')
         st.write(h_rfm.KM())
         if st.sidebar.checkbox('BOX PLOTS OF CLUSTERS', key = '24'):
+        st.subheader('Box Plot of Clusters')
           h_rfm.BOX()
         if st.sidebar.checkbox('SCATTER PLOTS OF CLUSTERS' , key = '25'):
+          st.subheader('Scatter Plot of Clusters')
           h_rfm.scatter_Cluster()
         if st.sidebar.checkbox('Best Possible Number of Cluster', key = '26'):
+          st.subheader('Best Possible number of Clusters ')
           st.write(h_rfm.Best_K())
   if choice  == 'Customer Classification':
     if st.sidebar.checkbox('Display Accuracy of all Classification models', key = '27'):
-      ll.accuracy_ML()
+     st.subheader('Accuracy of all Classification models')
+     ll.accuracy_ML()
 
     if st.sidebar.checkbox('Choose Classifier for Prediction', key = '28'):
       ll.inp_classifier()
