@@ -48,9 +48,9 @@ from sklearn.ensemble import AdaBoostClassifier
 import plotly.graph_objs as go
 # from plotly.offline import init_notebook_mode,iplot
 
-from pandas_profiling import ProfileReport 
+# from pandas_profiling import ProfileReport 
 import streamlit.components.v1 as components
-from streamlit_pandas_profiling import st_profile_report
+# from streamlit_pandas_profiling import st_profile_report
 matplotlib.use("Agg")
 
 import sklearn.metrics as metrics
