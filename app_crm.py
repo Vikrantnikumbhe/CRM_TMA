@@ -1126,22 +1126,22 @@ def main():
      if st.sidebar.button('Support Vector Machine', key = '33'):
         st.subheader('Prediction using Support Vector Machine')
         st.write(ll.support())
-      if st.sidebar.button('LogisticRegression', key = '30'):
+     if st.sidebar.button('LogisticRegression', key = '30'):
         st.subheader('Prediction using Logistic Regression')
         st.write(ll.Logistic_reg())
-      if st.sidebar.button('k-Nearest Neighbors Algorithm', key = '31'):
+     if st.sidebar.button('k-Nearest Neighbors Algorithm', key = '31'):
         st.subheader('Prediction using k-Nearest Neighbors Algorithm')
         st.write(ll.KNN())
-      if st.sidebar.button('Decision Tree', key = '69'):
+     if st.sidebar.button('Decision Tree', key = '69'):
         st.subheader('Prediction using Decision Tree')
         st.write(ll.Dec_Tree())
-      if st.sidebar.button('Random Forest Model: ', key = '70'):
+     if st.sidebar.button('Random Forest Model: ', key = '70'):
         st.subheader('Prediction using Random Forest Model')
         st.write(ll.Random_F())
-      if st.sidebar.button('Ababoost Classifier Model: ', key = '71'):
+     if st.sidebar.button('Ababoost Classifier Model: ', key = '71'):
         st.subheader('Prediction using Ababoost Classifier Model')
         st.write(ll.Adaboost())
-      if st.sidebar.button('Gradient Boosting Classifier Model: ', key = '72'):
+     if st.sidebar.button('Gradient Boosting Classifier Model: ', key = '72'):
         st.subheader('Prediction using Gradient Boosting Classifier Model')
         st.write(ll.Graddient())
   if choice == 'CLTV':
