@@ -1117,17 +1117,17 @@ def main():
         st.subheader('Kmeans Segmentation Dataframe')
         st.write(h_rfm.KM())
       if st.sidebar.checkbox('Access Customer Info ', key = '168'):
-          st.subheader('Access Customer Information')
-          h_rfm.Access_hybrid()
-        if st.sidebar.checkbox('BOX PLOTS OF CLUSTERS', key = '24'):
-          st.subheader('Box Plot of Clusters')
-          h_rfm.BOX()
-        if st.sidebar.checkbox('SCATTER PLOTS OF CLUSTERS' , key = '25'):
-          st.subheader('Scatter Plot of Clusters')
-          h_rfm.scatter_Cluster()
-        if st.sidebar.checkbox('Best Possible Number of Cluster', key = '26'):
-          st.subheader('Best Possible number of Clusters ')
-          st.write(h_rfm.Best_K())
+        st.subheader('Access Customer Information')
+        h_rfm.Access_hybrid()
+      if st.sidebar.checkbox('BOX PLOTS OF CLUSTERS', key = '24'):
+        st.subheader('Box Plot of Clusters')
+        h_rfm.BOX()
+      if st.sidebar.checkbox('SCATTER PLOTS OF CLUSTERS' , key = '25'):
+        st.subheader('Scatter Plot of Clusters')
+        h_rfm.scatter_Cluster()
+      if st.sidebar.checkbox('Best Possible Number of Cluster', key = '26'):
+        st.subheader('Best Possible number of Clusters ')
+        st.write(h_rfm.Best_K())
   if choice  == 'Customer Classification':
     if st.sidebar.checkbox('Display Accuracy of all Classification models', key = '27'):
      st.subheader('Accuracy of all Classification models')
