@@ -151,6 +151,19 @@ with col1:
     if st.sidebar.checkbox('Display Main Data',False, key = '29'):
       st.subheader('Show Main Input dataset')
       st.write(dff)
+    count = 1
+    if st.sidebar.checkbox('Access Input Main Data ', key = '4254354'):
+      CI1= st.number_input('Enter a Customer ID',0, 9000000, 0, 1, key = '1878')
+      for i in range(len(dff)):
+          st.subheader('Transaction No. {}'.format(count))
+          st.write('Bil :', dff.Bill[i])
+          st.write('country :',dff.Country[i])
+          st.write('Merchandise ID', dff.MerchandiseID[i])
+          st.write('Product :', dff.Product[i])
+          st.write('Quota: ', dff.Quota[i])
+          st.write('Amount: ', dff.Amount[i])
+          st.write('Total Amount', dff.TotalAmount[i])
+          count = 1 + count
 
 with col2:
   mm = st.file_uploader("Upload CSV for Prediction",type=["csv"], key = '8998')
@@ -165,7 +178,21 @@ with col2:
     if st.sidebar.checkbox('Display Data of for prediction',False, key = '200'):
       st.subheader('Show Input dataset for prediction' )
       st.write(dff1)
-          
+    count1 = 1
+    if st.sidebar.checkbox('Access Input Pred Data ',key = '698955312'):
+      CI2= st.number_input('Enter a Customer ID',0, 9000000, 0, 1, key = '1875ss58')
+      for i in range(len(dff1)):
+          if dff1.CustomerID[i] == CI2:
+               st.subheader('Transaction No.'.format(count1))
+               st.subheader('Transaction No.', count)
+               st.write('Bil :', dff1.Bill[i])
+               st.write('country :',dff1.Country[i])
+               st.write('Merchandise ID', dff1.MerchandiseID[i])
+               st.write('Product :', dff1.Product[i])
+               st.write('Quota: ', dff1.Quota[i])
+               st.write('Amount: ', dff1.Amount[i])
+               st.write('Total Amount', dff1.TotalAmount[i])
+               count1 = count1 + 1
 class ghar():
      def intro(self):
           Vid1= open("./Add1.mp4", 'rb')
