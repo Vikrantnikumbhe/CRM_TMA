@@ -1187,7 +1187,7 @@ def main():
       if st.sidebar.checkbox('Montly Customer Retention '):
         st.subheader('Montly Customer Retention')
         st.write(chu.coh8())
-      if st.checkbox('Monthly retention Plot'):
+      if st.sidebar.checkbox('Monthly retention Plot'):
         st.subheader('Monthly retention Plot')
         chu.coh_ret()
   if choice == 'About':
