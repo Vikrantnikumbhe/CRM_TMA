@@ -1121,20 +1121,28 @@ def main():
      ll.accuracy_ML()
 
     if st.sidebar.checkbox('Choose Classifier for Prediction', key = '28'):
-      ll.inp_classifier()
+     st.sidebar.text('Choose Classifier for Prediction')
+     ll.inp_classifier()
       if st.sidebar.button('Support Vector Machine', key = '33'):
+        st.subheader('Prediction using Support Vector Machine')
         st.write(ll.support())
       if st.sidebar.button('LogisticRegression', key = '30'):
+        st.subheader('Prediction using Logistic Regression')
         st.write(ll.Logistic_reg())
-      if st.sidebar.button('KNN', key = '31'):
+      if st.sidebar.button('k-Nearest Neighbors Algorithm', key = '31'):
+        st.subheader('Prediction using k-Nearest Neighbors Algorithm')
         st.write(ll.KNN())
       if st.sidebar.button('Decision Tree', key = '69'):
+        st.subheader('Prediction using Decision Tree')
         st.write(ll.Dec_Tree())
       if st.sidebar.button('Random Forest Model: ', key = '70'):
+        st.subheader('Prediction using Random Forest Model')
         st.write(ll.Random_F())
       if st.sidebar.button('Ababoost Classifier Model: ', key = '71'):
+        st.subheader('Prediction using Ababoost Classifier Model')
         st.write(ll.Adaboost())
       if st.sidebar.button('Gradient Boosting Classifier Model: ', key = '72'):
+        st.subheader('Prediction using Gradient Boosting Classifier Model')
         st.write(ll.Graddient())
   if choice == 'CLTV':
     st.sidebar.subheader('Here we will Explore Customer Lifetime Value')
@@ -1143,9 +1151,11 @@ def main():
   if choice == 'Sales Forecasting':
     st.sidebar.subheader('Welcome to the world of forecasting!')
     if st.sidebar.checkbox('30 Days Forecast'):
+      st.subheader('30 Days Forecast')
       st.write(sf.LSTM_Model())
     if st.sidebar.checkbox('Date Filter', key = '31'):
-      sf.Access_Forecast()
+     st.subheader('Access Forecasted information')
+     sf.Access_Forecast()
   if choice == 'Churn Rate Analysis':
     
     if st.sidebar.checkbox('Cohort Analysis'):
