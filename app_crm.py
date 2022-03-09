@@ -1110,7 +1110,7 @@ def main():
     st.sidebar.subheader('Exploratory Data Analysis')
     if st.sidebar.checkbox('SweetViz Analysis', key = '10'):
       st.write(dataframe.SweetV(dff))
-     dataframe.Exp1()
+      dataframe.Exp1()
     if st.sidebar.checkbox('Pandas Profiling', key = '11'):
       st.write('**Pandas Profiling Data Analysis Report: **')
       profile = ProfileReport(dff)
