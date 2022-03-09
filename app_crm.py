@@ -155,15 +155,16 @@ with col1:
     if st.sidebar.checkbox('Access Input Main Data ', key = '4254354'):
       CI1= st.number_input('Enter a Customer ID',0, 9000000, 0, 1, key = '1878')
       for i in range(len(dff)):
-          st.subheader('Transaction No. {}'.format(count))
-          st.write('Bil :', dff.Bill[i])
-          st.write('country :',dff.Country[i])
-          st.write('Merchandise ID', dff.MerchandiseID[i])
-          st.write('Product :', dff.Product[i])
-          st.write('Quota: ', dff.Quota[i])
-          st.write('Amount: ', dff.Amount[i])
-          st.write('Total Amount', dff.TotalAmount[i])
-          count = 1 + count
+          if dff.CustomerID[i] == CI1:
+               st.subheader('Transaction No. {}'.format(count))
+               st.write('Bil :', dff.Bill[i])
+               st.write('country :',dff.Country[i])
+               st.write('Merchandise ID', dff.MerchandiseID[i])
+               st.write('Product :', dff.Product[i])
+               st.write('Quota: ', dff.Quota[i])
+               st.write('Amount: ', dff.Amount[i])
+               st.write('Total Amount', dff.TotalAmount[i])
+               count = 1 + count
 
 with col2:
   mm = st.file_uploader("Upload CSV for Prediction",type=["csv"], key = '8998')
