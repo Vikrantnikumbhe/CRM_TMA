@@ -446,6 +446,16 @@ class Hybrid_Analysis():
     plt.xlabel('Frequency', Fontsize = 15)
     plt.ylabel('Recency', Fontsize = 15)
     st.pyplot(c)
+  def Access_hybrid(self):
+    CI= st.number_input('Enter a Customer ID',0, 9000000, 0, 1, key = '100')
+    for i in range(len( Hybrid_Analysis().KM())):
+          if h_rfm.KM().CustomerID[i] == CI:
+                st.write('Clusters   :', h_rfm.KM().Clusters[i])
+                st.write('Recency :',h_rfm.KM().Recency[i])
+                st.write('Frequency:',h_rfm.KM().Frequency[i])
+                st.write('Monetary:',h_rfm.KM().Monetary[i])
+          
+
 #CLASSIFIER:#####################################################################
 from sklearn import svm, datasets
 from sklearn.model_selection import GridSearchCV
@@ -1106,6 +1116,9 @@ def main():
       if st.sidebar.checkbox('KMEANS SEGMENTATION DataFrame', key = '23'):
         st.subheader('Kmeans Segmentation Dataframe')
         st.write(h_rfm.KM())
+      if st.sidebar.checkbox('Access Customer Info ', key = '168'):
+          st.subheader('Access Customer Information')
+          h_rfm.Access_hybrid()
         if st.sidebar.checkbox('BOX PLOTS OF CLUSTERS', key = '24'):
           st.subheader('Box Plot of Clusters')
           h_rfm.BOX()
