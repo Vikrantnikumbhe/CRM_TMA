@@ -150,7 +150,7 @@ with col1:
     dff.dropna(axis = 0, subset = ['Product', 'CustomerID'], inplace = True)
     if st.sidebar.checkbox('Display Main Data',False, key = '29'):
       st.subheader('Show Main Input dataset')
-      st.write(dff.head(5))
+      st.write(dff)
 
 with col2:
   mm = st.file_uploader("Upload CSV for Prediction",type=["csv"], key = '8998')
@@ -164,7 +164,7 @@ with col2:
     dff1.dropna(axis = 0, subset = ['Product', 'CustomerID'], inplace = True)
     if st.sidebar.checkbox('Display Data of for prediction',False, key = '200'):
       st.subheader('Show Input dataset for prediction' )
-      st.write(dff1.head(5))
+      st.write(dff1)
           
 class ghar():
      def intro(self):
