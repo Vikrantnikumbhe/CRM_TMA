@@ -104,7 +104,7 @@ st.set_page_config(
      page_icon="🧊",
      layout="wide", 
      initial_sidebar_state="expanded")
-colT1,colT2, colT3 = st.columns([6,8,6])
+colT1,colT2, colT3 = st.columns([3])
 with colT2:
      st.title('CRM-TMA')
 # img = Image.open("./WCE-Sangli-Logo.png")
