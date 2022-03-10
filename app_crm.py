@@ -233,7 +233,7 @@ customers.''')
                st.image(img6,caption = 'Sales Forecasting',use_column_width= None )
                st.text('''Forecast your company’s future sales to 
 get deeper insights for your next
-plans of action.'''
+plans of action.''')
           with col11:
                img7 =Image.open("./images/Product Recommendation.jpg")
                st.subheader('5. Product Recommendation')
