@@ -198,6 +198,17 @@ with col2:
                count1 = count1 + 1
 class ghar():
      def intro(self):
+          col7, col8 ,col9 = st.columns(3)
+          with col7:
+               img3 = Image.open("/images/keepimages/Descriptive Analysis.jpg")
+               st.subheader('1. Descriptive Analysis')
+               st.image(img3,caption = 'Descriptive Analysis',use_column_width= None )
+               st.text('''Get a perspective of your data. Help 
+understand hidden patterns with 
+the sweetviz analysis, pandas
+profiling and get a picture
+on the demographics of your 
+customers''')
           Vid1= open("./Add1.mp4", 'rb')
           Vid1_bytes = Vid1.read()
           st.video(Vid1_bytes)
