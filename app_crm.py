@@ -226,6 +226,40 @@ customer with a click.''')
 by choosing the right classifier 
 for the prediction of your 
 customers.''')
+          col10, col11 ,col12 = st.columns(3)
+          with col10:
+               img6 = Image.open("./images/Sales Forecasting.jpg")
+               st.subheader('4. Sales Forecasting')
+               st.image(img6,caption = 'Sales Forecasting',use_column_width= None )
+               st.text('''Forecast your company’s future sales to 
+get deeper insights for your next
+plans of action.'''
+          with col11:
+               img7 =Image.open("./images/Product Recommendation.jpg")
+               st.subheader('5. Product Recommendation')
+               st.image(img7,caption = 'Product Recommendation',use_column_width= None )
+               st.text('''Create real-time association rules for 
+product recommendation using 
+market-basket analysis''')                
+          with col12:
+               img8 =Image.open("./images/Forensic Analysis.jpg")
+               st.subheader('6. Forensic Analysis')
+               st.image(img8,caption = 'Forensic Analysis',use_column_width= None )
+               st.text('''Perform churn rate, cohort, and 
+retention analysis. Get deeper insights
+on monthly revenue, growth rate, active 
+customers, total order, customer ratio 
+and customer retention.''')                        
+          col13, col14 ,col15 = st.columns(3)
+          with col14:
+               img9 =Image.open("./images/Customer Lifetime Value.jpg")
+               st.subheader('9. Customer Lifetime Value')
+               st.image(img9,caption = 'Customer Lifetime Value',use_column_width= None )
+               st.text('''Predict the expected future transactions
+of your customer. Gauge your company's net
+profit contribution to an overall future 
+relationship with customers.''')                       
+                       
                
              
                
