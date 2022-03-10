@@ -208,6 +208,27 @@ understand hidden patterns with the
 sweetviz analysis, pandasprofiling 
 and get a picture on the demographics
 of your customers''')
+          
+          with col8:
+               img4 = Image.open("./images/Customer Segmentation.jpg")
+               st.subheader('2. Customer Segmentation')
+               st.image(img3,caption = 'Customer Segmentation',use_column_width= None )
+               st.text('''Do smart segmentation to understand
+your customers with our RFM and 
+Hybrid segmentation techniques. Get 
+real-time plots and access your 
+customer with a click.''')
+          with col9:
+               img4 = Image.open("./images/Customer Classification.jpg")
+               st.subheader('3. Customer Classification')
+               st.image(img3,caption = 'Customer Classification',use_column_width= None )
+               st.text('''Helps you in making judicious decisions
+by choosing the right classifier 
+for the prediction of your 
+customers.''')
+               
+             
+               
           Vid1= open("./Add1.mp4", 'rb')
           Vid1_bytes = Vid1.read()
           st.video(Vid1_bytes)
