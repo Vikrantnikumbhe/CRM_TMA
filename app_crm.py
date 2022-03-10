@@ -1185,24 +1185,31 @@ def main():
      ll.inp_classifier()
      if st.sidebar.button('Support Vector Machine', key = '33'):
         st.subheader('Prediction using Support Vector Machine')
+        st.download_button(label=" Download SVM Predictions as csv",data=ll.support().to_csv().encode('utf-8'),file_name='SVM_Prediction.csv',mime='text/csv',)
         st.write(ll.support())
      if st.sidebar.button('LogisticRegression', key = '30'):
         st.subheader('Prediction using Logistic Regression')
+        st.download_button(label=" Download Logistic Regression as csv",data=ll.Logistic_reg().to_csv().encode('utf-8'),file_name='LogisticRegression_Prediction.csv',mime='text/csv',)
         st.write(ll.Logistic_reg())
      if st.sidebar.button('k-Nearest Neighbors Algorithm', key = '31'):
         st.subheader('Prediction using k-Nearest Neighbors Algorithm')
+        st.download_button(label=" Download  k-Nearest Neighbors prediction as csv",data=ll.KNN().to_csv().encode('utf-8'),file_name='k-Nearest Neighbors_Prediction.csv',mime='text/csv',)
         st.write(ll.KNN())
      if st.sidebar.button('Decision Tree', key = '69'):
         st.subheader('Prediction using Decision Tree')
+        st.download_button(label=" Download Decision Tree prediction as csv",data=ll.Dec_Tree().to_csv().encode('utf-8'),file_name=' Decision Tree_Prediction.csv',mime='text/csv',)
         st.write(ll.Dec_Tree())
      if st.sidebar.button('Random Forest Model: ', key = '70'):
         st.subheader('Prediction using Random Forest Model')
+        st.download_button(label=" Download Random Forest Model prediction as csv",data=ll.Random_F().to_csv().encode('utf-8'),file_name=' Random Forest Model_Prediction.csv',mime='text/csv',)
         st.write(ll.Random_F())
      if st.sidebar.button('Ababoost Classifier Model: ', key = '71'):
         st.subheader('Prediction using Ababoost Classifier Model')
+        st.download_button(label=" Download Ababoost Classifier Model prediction as csv",data=ll.Adaboost().to_csv().encode('utf-8'),file_name=' Ababoost Classifier Model_Prediction.csv',mime='text/csv',)
         st.write(ll.Adaboost())
      if st.sidebar.button('Gradient Boosting Classifier Model: ', key = '72'):
         st.subheader('Prediction using Gradient Boosting Classifier Model')
+        st.download_button(label=" Download Gradient Boosting Classifier Model prediction as csv",data=ll.Graddient().to_csv().encode('utf-8'),file_name=' Gradient Boosting Classifier_Prediction.csv',mime='text/csv',)
         st.write(ll.Graddient())
   if choice == 'CLTV':
     st.sidebar.subheader('Here we will Explore Customer Lifetime Value')
