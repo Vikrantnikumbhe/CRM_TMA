@@ -97,12 +97,12 @@ import os
 
 import datetime
 from datetime import datetime
-# st.set_page_config(
-#      page_title="CRM-TMA",
-#      page_icon="🧊",
-#      layout="wide", 
-#      initial_sidebar_state="expanded")
-new_title = '<p style="font-family:sans-serif; color:Green; font-weight: 1700,font-size: 60px;">CRM-TMA</p>'
+st.set_page_config(
+     page_title="CRM-TMA",
+     page_icon="🧊",
+     layout="wide", 
+     initial_sidebar_state="expanded")
+new_title = '<p style="font-family:sans-serif; color:Green;font-size: 60px;">CRM-TMA</p>'
 # st.markdown(new_title, unsafe_allow_html=True)
 
 colT1,colT2, colT3 = st.columns(3)
