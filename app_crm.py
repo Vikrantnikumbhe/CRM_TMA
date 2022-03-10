@@ -204,11 +204,10 @@ class ghar():
                st.subheader('1. Descriptive Analysis')
                st.image(img3,caption = 'Descriptive Analysis',use_column_width= None )
                st.text('''Get a perspective of your data. Help 
-understand hidden patterns with 
-the sweetviz analysis, pandas
-profiling and get a picture
-on the demographics of your 
-customers''')
+understand hidden patterns with the
+sweetviz analysis, pandasprofiling 
+and get a picture on the demographics
+of your customers''')
           Vid1= open("./Add1.mp4", 'rb')
           Vid1_bytes = Vid1.read()
           st.video(Vid1_bytes)
