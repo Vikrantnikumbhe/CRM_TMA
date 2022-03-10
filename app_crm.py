@@ -200,7 +200,7 @@ class ghar():
      def intro(self):
           col7, col8 ,col9 = st.columns(3)
           with col7:
-               img3 = Image.open("/images/keepimages/Descriptive Analysis.jpg")
+               img3 = Image.open("./images/Descriptive Analysis.jpg")
                st.subheader('1. Descriptive Analysis')
                st.image(img3,caption = 'Descriptive Analysis',use_column_width= None )
                st.text('''Get a perspective of your data. Help 
