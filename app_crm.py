@@ -1126,6 +1126,7 @@ def main():
     st.sidebar.subheader('Choose Method for Customer Segmentation')
     if st.sidebar.checkbox('RFM_SEGMENTATION', key = '12'):
       st.subheader('RFM Segmentation Dataframe')
+      st.download_button(label="Download data as CSV",data=rfm.RFMvalues().to_csv().encode('utf-8'),file_name='RFM_values.csv',mime='text/csv',)
       st.write(rfm.RFMvalues().astype('object'))
       if st.sidebar.checkbox('Scatter Plot', key = '13'):
         st.subheader('Scatter Plot')
