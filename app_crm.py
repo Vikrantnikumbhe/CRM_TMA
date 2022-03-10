@@ -1160,7 +1160,9 @@ def main():
         st.write(h_rfm.Transform().astype('object'))
       if st.sidebar.checkbox('KMEANS SEGMENTATION DataFrame', key = '23'):
         st.subheader('Kmeans Segmentation Dataframe')
+        st.download_button(label="Download Kmeans Segmentation as CSV",data=h_rfm.KM().to_csv().encode('utf-8'),file_name='K-Means_Segmentation.csv',mime='text/csv',)
         st.write(h_rfm.KM())
+     
       if st.sidebar.checkbox('Access Customer Info ', key = '168'):
         st.subheader('Access Customer Information')
         h_rfm.Access_hybrid()
