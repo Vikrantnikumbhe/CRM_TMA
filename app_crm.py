@@ -100,7 +100,7 @@ from datetime import datetime
 
 
 st.set_page_config(
-     page_title="Development and deployment of next generation customer relationship management tool in product based supply chain.",
+     page_title="CRM-TMA",
      page_icon="🧊",
      layout="wide", 
      initial_sidebar_state="expanded")
