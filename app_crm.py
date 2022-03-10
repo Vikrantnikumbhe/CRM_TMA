@@ -99,11 +99,11 @@ import datetime
 from datetime import datetime
 
 
-st.set_page_config(
-     page_title="CRM-TMA",
-     page_icon="🧊",
-     layout="wide", 
-     initial_sidebar_state="expanded")
+# st.set_page_config(
+#      page_title="CRM-TMA",
+#      page_icon="🧊",
+#      layout="wide", 
+#      initial_sidebar_state="expanded")
 colT1,colT2, colT3 = st.columns(3)
 with colT2:
      st.title('CRM-TMA')
