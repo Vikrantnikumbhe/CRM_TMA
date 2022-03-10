@@ -108,7 +108,7 @@ new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">CR
 colT1,colT2, colT3 = st.columns(3)
 with colT2:
      st.title('CRM-TMA')
-     st.title(new_title, unsafe_allow_html=True)
+     st.title(new_title)
 # img = Image.open("./WCE-Sangli-Logo.png")
 # st.image(img,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
 import streamlit.components.v1 as components
