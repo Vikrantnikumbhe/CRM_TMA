@@ -13,6 +13,7 @@ scipy  ==1.7.0
 tensorflow-cpu
 squarify 
 mlxtend == 0.14.0
+pandas-profiling   == 1.4.1
 
 keras==2.8.0
 
