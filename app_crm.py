@@ -1206,7 +1206,8 @@ def main():
         st.write(ll.Graddient())
   if choice == 'CLTV':
     st.sidebar.subheader('Here we will Explore Customer Lifetime Value')
-    if st.sidebar.checkbox('CLTV Dataframe', key = '32'):   
+    if st.sidebar.checkbox('CLTV Dataframe', key = '32'):
+      st.download_button(label=" Download CLTV DataFrame as csv",data=cc.C_L_T_V().to_csv().encode('utf-8'),file_name='CLTV_DataFrame.csv',mime='text/csv',)
       st.write(cc.C_L_T_V())
     if st.sidebar.checkbox('Aceess Customer Info'):
       cc.Access_cltv()
