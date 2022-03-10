@@ -113,19 +113,21 @@ col6,col3, col4, col5 = st.columns([0.5,1.5,0.5,3])
 with col3:
   img = Image.open("./WCE-Sangli-Logo.png")
   st.image(img,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
-with col4:
-  j = '''**Businesses like online retails are usually worried of the following 
-  common business concerns like most valuable customers, purchase behaviour,
-  customer visits,responsiveness and sales pattern. In order to address 
-  these business concerns, data mining and analysis techniques have been 
-  started to adopt across such sectors, coupled with a set of well-known 
-  business metrics like RFM, CLTV, etc.Hence, in order to manage the 
-  customer-facilitator relationship, several ideas and approaches of 
-  data science will be used in this project.To be specific, predictive 
-  and perspective analytical methods based model will be developed using 
-  the online retail dataset. With all these ideas at the backend and 
-  a user-friendly interface at frontend, most of the business operators 
-  will be able to use the CRM model.**'''
+with col5:
+  j = '''**Attention decision-makers! Tired of cluttering through oodles
+of spreadsheets?Looking for a comprehensive gizmo to alleviate 
+your prudent judgments? Then, by landing here you have hit the
+bullseye! This ‘NAME’ built up with all-inclusive features aids
+you with prospective-descriptive-predictive analysis. Guide you
+to get a panorama of your data. Assist you to segment and 
+classifying your customers. Help to create association rules for 
+product recommendations. Support you to predict future transactions
+and your company’s net profit contribution to an overall future
+relationship with your customers. Help you get an upper hand on
+forecasting future sales.Be your helping hand to do forensic 
+analysis like churn rate, cohort, and retention analytics. Want
+to get in the nitty-gritty to experience it first hand? 
+Then grab your data and Let's Get Started!!!.**'''
   st.text(j)
 
 
