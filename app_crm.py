@@ -118,7 +118,7 @@ with col3:
   img = Image.open("./WCE-Sangli-Logo.png")
   st.image(img,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
 with col5:
-  j = '''**Attention decision-makers! Tired of cluttering through oodles
+  j = '''Attention decision-makers! Tired of cluttering through oodles
 of spreadsheets?Looking for a comprehensive gizmo to alleviate 
 your prudent judgments? Then, by landing here you have hit the
 bullseye! This ‘NAME’ built up with all-inclusive features aids
@@ -131,7 +131,7 @@ relationship with your customers. Help you get an upper hand on
 forecasting future sales.Be your helping hand to do forensic 
 analysis like churn rate, cohort, and retention analytics. Want
 to get in the nitty-gritty to experience it first hand? 
-Then grab your data and Let's Get Started!!!.**'''
+Then grab your data and Let's Get Started!!!.'''
   st.text(j)
 
 
