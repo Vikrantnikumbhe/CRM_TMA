@@ -1215,6 +1215,7 @@ def main():
     st.sidebar.subheader('Welcome to the world of forecasting!')
     if st.sidebar.checkbox('30 Days Forecast'):
       st.subheader('30 Days Forecast')
+      st.download_button(label="Download 30 Days Forecast as CSV",data=sf.LSTM_Model().to_csv().encode('utf-8'),file_name='30-Days_Forecast.csv',mime='text/csv',)
       st.write(sf.LSTM_Model())
     if st.sidebar.checkbox('Date Filter', key = '31'):
      st.subheader('Access Forecasted information')
