@@ -1232,6 +1232,7 @@ def main():
         chu.coh2()
       if st.sidebar.checkbox('Montly Active Customers'):
         st.subheader('Montly Active Customers')
+        st.download_button(label="Download Monthly Active Customer",data=chu.coh9().to_csv().encode('utf-8'),file_name='Monthly_Active_Customer.csv',mime='text/csv',)
         st.write(chu.coh9())
       if st.sidebar.checkbox('Montly Active Customers Plot'):
         st.subheader('Montly Active Customers Plot')
@@ -1250,6 +1251,7 @@ def main():
         chu.coh7()
       if st.sidebar.checkbox('Montly Customer Retention '):
         st.subheader('Montly Customer Retention')
+        st.download_button(label=" Download Monthly Customer Retention",data=chu.coh8().to_csv().encode('utf-8'),file_name='Monthly_Customer_Retention.csv',mime='text/csv',)
         st.write(chu.coh8())
       if st.sidebar.checkbox('Monthly retention Plot'):
         st.subheader('Monthly retention Plot')
