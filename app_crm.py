@@ -1183,6 +1183,42 @@ class Churn_Analysis():
     tx_user_purchase = tx_uk.groupby(['CustomerID','BillYearMonth'])['TotalAmount'].sum().reset_index()
     tx_retention = pd.crosstab(tx_user_purchase['CustomerID'], tx_user_purchase['BillYearMonth']).reset_index()
     return tx_retention
+  def coh11(self):
+    dff['BillYearMonth'] = dff['BillDate'].map(lambda date: 100*date.year + date.month)
+    tx_uk = dff.query("Country=='United Kingdom'").reset_index(drop=True)
+    tx_user_purchase = tx_uk.groupby(['CustomerID','BillYearMonth'])['TotalAmount'].sum().reset_index()
+    #create our retention table again with crosstab() and add firs purchase year month view
+    tx_uk['UserType'] = 'New'
+    tx_min_purchase = tx_uk.groupby('CustomerID').BillDate.min().reset_index()
+    tx_min_purchase.columns = ['CustomerID','MinPurchaseDate']
+    tx_min_purchase['MinPurchaseYearMonth'] = tx_min_purchase['MinPurchaseDate'].map(lambda date: 100*date.year + date.month)
+    tx_retention = pd.crosstab(tx_user_purchase['CustomerID'], tx_user_purchase['BillYearMonth']).reset_index()
+    months = tx_retention.columns[2:]
+    tx_retention = pd.merge(tx_retention,tx_min_purchase[['CustomerID','MinPurchaseYearMonth']],on='CustomerID')
+    new_column_names = [ 'm_' + str(column) for column in tx_retention.columns[:-1]]
+    new_column_names.append('MinPurchaseYearMonth')
+    tx_retention.columns = new_column_names
+    # create the array of Retained users for each cohort monthly
+    retention_array = []
+    for i in range(len(months)):
+	retention_data = {}
+	selected_month = months[i]
+        prev_months = months[:i]
+        next_months = months[i+1:]
+	for prev_month in prev_months:
+		retention_data[prev_month] = np.nan
+	total_user_count = tx_retention[tx_retention.MinPurchaseYearMonth ==  selected_month].MinPurchaseYearMonth.count()
+        retention_data['TotalUserCount'] = total_user_count
+        retention_data[selected_month] = 1 
+        query = "MinPurchaseYearMonth == {}".format(selected_month)
+	for next_month in next_months:
+		new_query = query + " and {} > 0".format(str('m_' + str(next_month)))
+		retention_data[next_month] = np.round(tx_retention.query(new_query)['m_' + str(next_month)].sum()/total_user_count,2)
+	retention_array.append(retention_data)
+    tx_retention = pd.DataFrame(retention_array)
+    tx_retention.index = months
+    return tx_retention
+	
 	
   
 #------------------------------xox----------------------------------------------
@@ -1405,6 +1441,9 @@ def main():
         st.subheader('Monthly Retention Matrix')
         st.write(chu.coh10())
         st.write('The values in each cell of above matrix represent if the customers were retained in that particular month or not. The value ‘1’ represents that most of the customers in previous month were retained in that particular month. ')
+      if st.sidebar.checkbox('Cohort based retention Matrix'):
+        st.write(chu.coh_11())
+        st.write('The values in each cell of above matrix depict the relative rate of retention of a particular cohort of customers with respect to the previous month. The retnetion rate closer to 0.5 denotes appreciable growth. ')
   if choice == 'About':
     st.sidebar.title('User Guide')
     
