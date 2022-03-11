@@ -954,6 +954,9 @@ class Product_Recommendation():
     my_rules_UK = pd.DataFrame(my_rules_UK)
     # st.write(my_rules_UK)
     st.table(my_rules_UK.applymap(lambda x: tuple(x) if isinstance(x, frozenset) else x ))
+    st.write('''Above table represents to the recommendation scenario and association between your products as per the dataset provided.An empty table represents that the data necessary to deduce recommendation is insufficient or no recommendation can take place as per the dataset provided.
+	For a filled dataset, the value of support indicates the popularity of a single product based on customer purchase behaviour. Accordingly, you must try to set or redefine the prices of the respective products to grab customers as well as profit. Confidence in the above table indicates a measurement of how often customers purchase two products in an item set. A higher confidence value shows that a customer is more likely to buy the second item when they buy the first item.In the above table, the products corresponding to lift value greater than 1 are closely associated and customers are likely to purchase those products together.
+''')
 ########################################################################################################
 
 class Sales_Forecasting():
@@ -1216,6 +1219,7 @@ def main():
       if st.sidebar.checkbox('Scatter Plot', key = '13'):
         st.subheader('Scatter Plot')
         rfm.Scatter()
+        st.write('Here you can Visualize the Distribution of Customer Depending on the Scatter Plot using different Features of Your choice. You can draw inference of the effect of one features on Other Features and see how Customers are distributed')
       if st.sidebar.checkbox('Bar Plot', key = '14'):
         st.subheader('Bar Plot')
         rfm.bar_plot()
@@ -1223,44 +1227,57 @@ def main():
         data = [['Champions','Customers that purchased recently, buy often and spend the most.','Continue enhancing their experience.'], ['Loyal customers','These customers are buy on a regular basis and are responsive to promotions.','Always be in touch and offer something extra'], ['Potential Loyalist','These are recent customers with average frequency.',' Connect with them and promote your business.  '],['Need Attention','The customers have above average recency, frequency and monetary values.','Try to provide attractive offers and special discounts to them.'],['At Risk','These customers purchase more number of times but with large time gaps.','Focus on making the customers more regular.'],['Can’t Lose','Customer that used to purchase frequently but haven’t returned for a long time.','Enquire about them and advertise about your business.'],['About To Sleep','These customers have below average recency and frequency values.','Keep reminding them about the quality you deliver.'],['New customers','They have bought most recently, but not often.','Offer them good service so that they revisit.'],['Promising','They are recent shoppers, but haven’t spent much.','Convince them to purchase to their full capability.'],['Hibernating','Their last purchase was long back and had a low number of orders','Try to contact them and persuade them to visit.']]
         df_rfm = pd.DataFrame(data, columns = ['Customer Segment', 'Details','Remedy to Bring Back'])
         st.table(df_rfm)
+        
       if st.sidebar.checkbox('Treemap Plot', key = '15'):
         st.subheader('Treemap Plot')
         rfm.Tree_map()
+        st.write('The above shown tree map gives a better understanding of the share of each of the customer segment. We hope that the segments of champions and loyal customers get or are maximized in your case')
       if st.sidebar.checkbox('Access Customer Info ', key = '16'):
         st.subheader('Access Customer Information')
         rfm.Access_Cust()
+        st.write('Looks like this customer is closely associated to the growth of your business. Hope this customer fits into the top segments.')
 
     if st.sidebar.checkbox('HYBRID_SEGMENTATION', key = '17'):
       st.sidebar.subheader('Choose Method for Cluster labelling')
+      st.subheader('Under this section, the customer data you had fed previously will be segmented not just on the basis of RFM scores but also the clustering technique.')
       if st.sidebar.checkbox('SHOW DENDOGRAM', key = '18'):
         st.subheader('Dendogram Plot')
         st.write(h_rfm.Pre_hybrid())
+        st.write('The above dendogram, having a tree like structure basically depicts relationship between all the data points of the input dataset. The different levels of dendogram each indicate clusters of data and how every small cluster gradually combines into a single cluster.')
       if st.sidebar.checkbox('SHOW ELBOW CURVE', key = '19'):
         st.subheader('Elbow Curve')
         st.write(h_rfm.elbow())
+        st.write('In the above elbow graph, there are some sharp points that indicate minimum distortion. The total number of these sharp points denote the number of clusters that can segment the provided data efficiently')
       if st.sidebar.checkbox('Check Skewness', key = '20'):
         st.subheader('Skewness Information')
         st.write(h_rfm.skew_data())
+        st.write('Above table contains the skewness and kurtosis values of the attributes required for hybrid segmentation. Both skewness and kurtosis help in analyzing the location and variability of a data set. Negative values for the skewness indicate data that are skewed left and positive values for the skewness indicate data that are skewed right. Positive kurtosis indicates a "heavy-tailed" distribution and negative kurtosis indicates a "light tailed" distribution. Take a look at your dataset before being transformed for hybrid segmentation.')
       if  st.sidebar.checkbox('Visualize Transformed Data', key = '21'):
         st.subheader('Visualizw Transformed Data for Hybrid Segmentation')
         h_rfm.Trans_data()
+        st.write('Take a glimpse of the transformation that your original dataset undergo for a near to ideal skewness and kurtosis. Analyse the above graphs with respect to the origin and see its distribution. If still there is some skewness in the data, the final results can’t be trustworthy.')
       if st.sidebar.checkbox('Transformed data', key = '22'):
         st.subheader(' Transformed Data for Hybrid Segmentation')
         st.write(h_rfm.Transform().astype('object'))
+        st.write('The above table represents the transformed data that will be used for hybrid customer segmentation.')
       if st.sidebar.checkbox('KMEANS SEGMENTATION DataFrame', key = '23'):
         st.subheader('Kmeans Segmentation Dataframe')
         st.download_button(label="Download Kmeans Segmentation as CSV",data=h_rfm.KM().to_csv().encode('utf-8'),file_name='K-Means_Segmentation.csv',mime='text/csv',)
         st.write(h_rfm.KM())
+        st.write('The above data table represents the segmented data using K-means and RFM score methods i.e. hybrid method. The ‘0’ value under cluster indicates customers with higher RFM or high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
      
       if st.sidebar.checkbox('Access Customer Info ', key = '168'):
         st.subheader('Access Customer Information')
         h_rfm.Access_hybrid()
+        st.write('Looks like this customer is closely associated to the growth of your business. Hope this customer fits into the top segments.')
       if st.sidebar.checkbox('BOX PLOTS OF CLUSTERS', key = '24'):
         st.subheader('Box Plot of Clusters')
         h_rfm.BOX()
+        st.write('The above plots indicate if your data is symmetrical, how tightly your data is grouped, and if and how your data is skewed')
       if st.sidebar.checkbox('SCATTER PLOTS OF CLUSTERS' , key = '25'):
         st.subheader('Scatter Plot of Clusters')
         h_rfm.scatter_Cluster()
+        
       if st.sidebar.checkbox('Best Possible Number of Cluster', key = '26'):
         st.subheader('Best Possible number of Clusters ')
         st.write(h_rfm.Best_K())
@@ -1268,6 +1285,7 @@ def main():
     if st.sidebar.checkbox('Display Accuracy of all Classification models', key = '27'):
      st.subheader('Accuracy of all Classification models')
      ll.accuracy_ML()
+     st.write('Since no single form of classification is appropriate for all datasets, we have  made a vast toolkit of off-the-shelf classifiers available as shown above.Refer the above accuracy scores and classify your dataset with the top three accurate models at least for better results.')
 
     if st.sidebar.checkbox('Choose Classifier for Prediction', key = '28'):
      st.sidebar.text('Choose Classifier for Prediction')
@@ -1276,30 +1294,37 @@ def main():
         st.subheader('Prediction using Support Vector Machine')
         st.download_button(label=" Download SVM Predictions as csv",data=ll.support().to_csv().encode('utf-8'),file_name='SVM_Prediction.csv',mime='text/csv',)
         st.write(ll.support())
+        st.write('Above dataframe represents the result for the classifier model selected. The ‘0’ value under cluster indicates customers with high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
      if st.sidebar.button('LogisticRegression', key = '30'):
         st.subheader('Prediction using Logistic Regression')
         st.download_button(label=" Download Logistic Regression as csv",data=ll.Logistic_reg().to_csv().encode('utf-8'),file_name='LogisticRegression_Prediction.csv',mime='text/csv',)
         st.write(ll.Logistic_reg())
+        st.write('Above dataframe represents the result for the classifier model selected. The ‘0’ value under cluster indicates customers with high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
      if st.sidebar.button('k-Nearest Neighbors Algorithm', key = '31'):
         st.subheader('Prediction using k-Nearest Neighbors Algorithm')
         st.download_button(label=" Download  k-Nearest Neighbors prediction as csv",data=ll.KNN().to_csv().encode('utf-8'),file_name='k-Nearest Neighbors_Prediction.csv',mime='text/csv',)
         st.write(ll.KNN())
+        st.write('Above dataframe represents the result for the classifier model selected. The ‘0’ value under cluster indicates customers with high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
      if st.sidebar.button('Decision Tree', key = '69'):
         st.subheader('Prediction using Decision Tree')
         st.download_button(label=" Download Decision Tree prediction as csv",data=ll.Dec_Tree().to_csv().encode('utf-8'),file_name=' Decision Tree_Prediction.csv',mime='text/csv',)
         st.write(ll.Dec_Tree())
+        st.write('Above dataframe represents the result for the classifier model selected. The ‘0’ value under cluster indicates customers with high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
      if st.sidebar.button('Random Forest Model: ', key = '70'):
         st.subheader('Prediction using Random Forest Model')
         st.download_button(label=" Download Random Forest Model prediction as csv",data=ll.Random_F().to_csv().encode('utf-8'),file_name=' Random Forest Model_Prediction.csv',mime='text/csv',)
         st.write(ll.Random_F())
+        st.write('Above dataframe represents the result for the classifier model selected. The ‘0’ value under cluster indicates customers with high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
      if st.sidebar.button('Ababoost Classifier Model: ', key = '71'):
         st.subheader('Prediction using Ababoost Classifier Model')
         st.download_button(label=" Download Ababoost Classifier Model prediction as csv",data=ll.Adaboost().to_csv().encode('utf-8'),file_name=' Ababoost Classifier Model_Prediction.csv',mime='text/csv',)
         st.write(ll.Adaboost())
+        st.write('Above dataframe represents the result for the classifier model selected. The ‘0’ value under cluster indicates customers with high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
      if st.sidebar.button('Gradient Boosting Classifier Model: ', key = '72'):
         st.subheader('Prediction using Gradient Boosting Classifier Model')
         st.download_button(label=" Download Gradient Boosting Classifier Model prediction as csv",data=ll.Graddient().to_csv().encode('utf-8'),file_name=' Gradient Boosting Classifier_Prediction.csv',mime='text/csv',)
         st.write(ll.Graddient())
+        st.write('Above dataframe represents the result for the classifier model selected. The ‘0’ value under cluster indicates customers with high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
   if choice == 'CLTV':
     st.sidebar.subheader('Here we will Explore Customer Lifetime Value')
     if st.sidebar.checkbox('CLTV Dataframe', key = '32'):
@@ -1310,13 +1335,16 @@ def main():
      
   if choice == 'Sales Forecasting':
     st.sidebar.subheader('Welcome to the world of forecasting!')
+    st.subheader('Welcome to the section of sales forecasting!! This section will provide you the insights of your business performance in future by considering your present & past. So, get, set, forecast…')
     if st.sidebar.checkbox('30 Days Forecast'):
       st.subheader('30 Days Forecast')
       st.download_button(label="Download 30 Days Forecast as CSV",data=sf.LSTM_Model().to_csv().encode('utf-8'),file_name='30-Days_Forecast.csv',mime='text/csv',)
       st.write(sf.LSTM_Model())
+      st.write('The above table represents the 30 day forecasted sales for your business. Take a look of how the customers will respond to your business in coming month!!')
     if st.sidebar.checkbox('Date Filter', key = '31'):
      st.subheader('Access Forecasted information')
      sf.Access_Forecast()
+     st.write('Looks like this particular date of the month is special for your business! Hope you are satisfied with the corresponding sales forecasting.')
   if choice == 'Churn Rate Analysis':
     
     if st.sidebar.checkbox('Cohort Analysis'):
