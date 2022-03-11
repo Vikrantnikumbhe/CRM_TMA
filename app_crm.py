@@ -1206,7 +1206,8 @@ class Churn_Analysis():
         prev_months = months[:i]
         next_months = months[i+1:]
         for prev_month in prev_months:
-		retention_data[prev_month] = np.nan
+	        retention_data[prev_month] = np.nan
+		
 	total_user_count = tx_retention[tx_retention.MinPurchaseYearMonth ==  selected_month].MinPurchaseYearMonth.count()
         retention_data['TotalUserCount'] = total_user_count
         retention_data[selected_month] = 1 
