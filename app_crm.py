@@ -1359,21 +1359,20 @@ def main():
       if st.sidebar.checkbox('Montly Growth rate Plot'):
         st.subheader('Montly Growth rate Plot')
         chu.coh2()
-	st.write('The above line plot shows the relative generated revenue of your business over time. If a particular season of months is considered, you can see how well your business had grew over time.')
+        st.write('The above line plot shows the relative generated revenue of your business over time. If a particular season of months is considered, you can see how well your business had grew over time.')
       if st.sidebar.checkbox('Montly Active Customers'):
         st.subheader('Montly Active Customers')
         st.download_button(label="Download Monthly Active Customer",data=chu.coh9().to_csv().encode('utf-8'),file_name='Monthly_Active_Customer.csv',mime='text/csv',)
         st.write(chu.coh9())
-	st.write('The above table represents the number of total active customers for every month. These numbers can help you decide and plan your productions accordingly. A sharp increase in active customers indicates the peak season.')
+        st.write('The above table represents the number of total active customers for every month. These numbers can help you decide and plan your productions accordingly. A sharp increase in active customers indicates the peak season.')
       if st.sidebar.checkbox('Montly Active Customers Plot'):
         st.subheader('Montly Active Customers Plot')
         chu.coh3()
-	st.write('This bar plot gives the better visualisation of how the number of active customers change over time and what exact trend is going on.')
+        st.write('This bar plot gives the better visualisation of how the number of active customers change over time and what exact trend is going on.')
       if st.sidebar.checkbox('Montly Total # of Orders'):
         st.subheader('Montly Total # of Orders')
         chu.coh4()
-	
-	st.write('This bar plot indicates the trend of purchases done by active customers. The trend in this plot can define a relationship between monthly active customers and the number of orders.')
+        st.write('This bar plot indicates the trend of purchases done by active customers. The trend in this plot can define a relationship between monthly active customers and the number of orders.')
       if st.sidebar.checkbox('Monthly Order Average'):
         st.subheader('Monthly Order Average')
         chu.coh5()
