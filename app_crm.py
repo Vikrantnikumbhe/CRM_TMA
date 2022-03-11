@@ -1330,8 +1330,10 @@ def main():
     if st.sidebar.checkbox('CLTV Dataframe', key = '32'):
       st.download_button(label=" Download CLTV DataFrame as csv",data=cc.C_L_T_V().to_csv().encode('utf-8'),file_name='CLTV_DataFrame.csv',mime='text/csv',)
       st.write(cc.C_L_T_V())
+      st.write('Watch out for the ‘Expected Average Profit’, ‘Customer lifetime value (CLV)’ and the segment that a particular customer falls under. Segment A indicates …, segment B indicates … , segment C indicates … and segment D indicates … ')
     if st.sidebar.checkbox('Aceess Customer Info'):
       cc.Access_cltv()
+      st.write('Looks like this customer is closely associated to the growth of your business. Hope this customer fits into the top segments.')
      
   if choice == 'Sales Forecasting':
     st.sidebar.subheader('Welcome to the world of forecasting!')
@@ -1348,39 +1350,50 @@ def main():
   if choice == 'Churn Rate Analysis':
     
     if st.sidebar.checkbox('Cohort Analysis'):
-      st.sidebar.text('**Choose among the below activities:**')
+      st.subheader('Let’s identify some groups within your dataset that share common characteristics and that can help your business generate a revenue in return.')
+      st.sidebar.text('Choose among the below activities:')
       if st.sidebar.checkbox('Monthly Revenue Plot'):
         st.subheader('Monthly Revenue Plot')
         chu.coh()
+	st.write('The above line plot shows the generated revenue of your business over time. As from the plot, it can be referred that the time gap on an average is of a month, which indicates the monthly revenue trend of your business.')
       if st.sidebar.checkbox('Montly Growth rate Plot'):
         st.subheader('Montly Growth rate Plot')
         chu.coh2()
+	st.write('The above line plot shows the relative generated revenue of your business over time. If a particular season of months is considered, you can see how well your business had grew over time.')
       if st.sidebar.checkbox('Montly Active Customers'):
         st.subheader('Montly Active Customers')
         st.download_button(label="Download Monthly Active Customer",data=chu.coh9().to_csv().encode('utf-8'),file_name='Monthly_Active_Customer.csv',mime='text/csv',)
         st.write(chu.coh9())
+	st.write('The above table represents the number of total active customers for every month. These numbers can help you decide and plan your productions accordingly. A sharp increase in active customers indicates the peak season.')
       if st.sidebar.checkbox('Montly Active Customers Plot'):
         st.subheader('Montly Active Customers Plot')
         chu.coh3()
+	st.write('This bar plot gives the better visualisation of how the number of active customers change over time and what exact trend is going on.')
       if st.sidebar.checkbox('Montly Total # of Orders'):
         st.subheader('Montly Total # of Orders')
         chu.coh4()
+	st.write('This bar plot indicates the trend of purchases done by active customers. The trend in this plot can define a relationship between monthly active customers and the number of orders.')
       if st.sidebar.checkbox('Monthly Order Average'):
         st.subheader('Monthly Order Average')
         chu.coh5()
+	st.write('Monthly order average relates to the average revenue generated per order in that particular month of your business. Check out for the trend in the baove plot so that you can define relation between motnhly order average and active customers.')
       if st.sidebar.checkbox('New Usertype Vs Existing Usertype'):
         st.subheader('New Usertype Vs Existing Usertype')
         chu.coh6()
+	st.write('New Customer Ratio is a good indicator, it shows if your business  is losing their existing customers or unable to attract new ones. In the above plot, check out for the nature of trend for new as well as existing customer. For ideal case, a less fluctuating upward trend of existing customers and a positive trend for new customers is appreciable for growth of your business.')
       if st.sidebar.checkbox('New Customer ratio'):
         st.subheader('New Customer ratio')
         chu.coh7()
+	st.write('In the above plot, check out for the series of months or a particular month when new customers got influxed in your business. Watch for this kind of trend for over an year or two and devise your further product launches accordingly.')
       if st.sidebar.checkbox('Montly Customer Retention '):
         st.subheader('Montly Customer Retention')
         st.download_button(label=" Download Monthly Customer Retention",data=chu.coh8().to_csv().encode('utf-8'),file_name='Monthly_Customer_Retention.csv',mime='text/csv',)
         st.write(chu.coh8())
+	st.write('In the above table, the retention rate near to 1 is considered to be ideal while that of 0.5 can be appreciable for business growth. ')
       if st.sidebar.checkbox('Monthly retention Plot'):
         st.subheader('Monthly retention Plot')
         chu.coh_ret()
+	st.write('The above line plot indicates the customer retention trend over the period of time.')
   if choice == 'About':
     st.sidebar.title('User Guide')
     
