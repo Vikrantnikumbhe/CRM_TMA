@@ -157,6 +157,8 @@ with col1:
     if st.sidebar.checkbox('Display Main Data',False, key = '29'):
       st.subheader('Show Main Input dataset')
       st.write(dff)
+      st.write('''Take a look at the Main dataset you have fed to our CRM tool. Check for the attributes
+and data values before moving further!!''')
     count = 1
     if st.sidebar.checkbox('Access Input Main Data ', key = '4254354'):
       CI1= st.number_input('Enter a Customer ID',0, 9000000, 0, 1, key = '1878')
@@ -185,6 +187,8 @@ with col2:
     if st.sidebar.checkbox('Display Data of for prediction',False, key = '200'):
       st.subheader('Show Input dataset for prediction' )
       st.write(dff1)
+      st.write('''Take a look at the dataset for prediction you have fed to our CRM tool. Check for the attributes 
+and data values before moving further!!''')
     count1 = 1
     if st.sidebar.checkbox('Access Input Pred Data ',key = '698955312'):
       CI2= st.number_input('Enter a Customer ID',0, 9000000, 0, 1, key = '1875ss58')
