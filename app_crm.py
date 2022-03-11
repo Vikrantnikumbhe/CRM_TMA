@@ -1189,16 +1189,20 @@ def main():
     st.subheader('Welcome to the section of Exploratory Data Analysis!! Visualize your input dataset at just one click in a detailed report format')
     if st.sidebar.checkbox('SweetViz Analysis', key = '10'):
       st.write(dataframe.SweetV(dff))
+      st.write('Here is the visualisation of your input dataset brought to you by SweetViz.Sweetviz is an open-source Python library that helps generate beautiful, highly detailed visualizations. The above generated report contains statistical data and corresponding visualizations of all the attributes of the dataset. In the above report, specially check for the missing and distinct values.')
       dataframe.Exp1()
     if st.sidebar.checkbox('Pandas Profiling', key = '11'):
       st.write('**Pandas Profiling Data Analysis Report: **')
       profile = ProfileReport(dff)
       st_profile_report(profile)
       profile.to_notebook_iframe()
+      st.write('Here is your exploratory data analysis report brought to you by Pandas Profiling library in python. The above report contains overview information about the dataset given as input here. Don’t miss some important aspects included in this report like cardinality, correlation, variable types, etc.')
 
     if st.sidebar.checkbox('Demographics of Customer'):
       st.subheader('Demographics of Customers')
+       
       dataframe.Map()
+      st.write('Here’s the demographic visualization of your customers globally. This map visualisation is brought to you by ‘Mapbox’, a powerful tool for building interactive customizable maps and integrating location and navigation data into your apps and websites. The regions highlighted in red in the map above denote the concentration of customers in that particular regions. Let’s hope someday that your business captures the whole globe and you may see this map whole in red!!')
   if choice == 'Product_Recommendation':
     rules.Association_rules()
   if choice == 'Customer Segmentation':
