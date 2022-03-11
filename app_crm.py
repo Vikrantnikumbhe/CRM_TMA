@@ -1327,7 +1327,7 @@ def main():
       if st.sidebar.checkbox('Best Possible Number of Cluster', key = '26'):
         st.subheader('Best Possible number of Clusters ')
         st.write(h_rfm.Best_K())
-	st.write('The above Result indicates the Best posible Value of Number of clusters possible for better Results,this is calculates using silhoutte score for each number of cluster and best value from those is choosen,Visualizing can be done using Dendogram plot and Elbow Curve ')
+        st.write('The above Result indicates the Best posible Value of Number of clusters possible for better Results,this is calculates using silhoutte score for each number of cluster and best value from those is choosen,Visualizing can be done using Dendogram plot and Elbow Curve ')
   if choice  == 'Customer Classification':
     if st.sidebar.checkbox('Display Accuracy of all Classification models', key = '27'):
      st.subheader('Accuracy of all Classification models')
