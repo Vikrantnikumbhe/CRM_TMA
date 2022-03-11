@@ -1444,7 +1444,7 @@ def main():
         st.write(chu.coh10())
         st.write('The values in each cell of above matrix represent if the customers were retained in that particular month or not. The value ‘1’ represents that most of the customers in previous month were retained in that particular month. ')
       if st.sidebar.checkbox('Cohort based retention Matrix'):
-        st.write(chu.coh_11())
+        st.write(chu.coh11())
         st.write('The values in each cell of above matrix depict the relative rate of retention of a particular cohort of customers with respect to the previous month. The retnetion rate closer to 0.5 denotes appreciable growth. ')
   if choice == 'About':
     st.sidebar.title('User Guide')
