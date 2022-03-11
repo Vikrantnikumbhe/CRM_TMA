@@ -165,13 +165,14 @@ and data values before moving further!!''')
       for i in range(len(dff)):
           if dff.CustomerID[i] == CI1:
                st.subheader('Transaction No. {}'.format(count))
-               st.write('Bil :', dff.Bill[i])
-               st.write('country :',dff.Country[i])
-               st.write('Merchandise ID', dff.MerchandiseID[i])
-               st.write('Product :', dff.Product[i])
-               st.write('Quota: ', dff.Quota[i])
-               st.write('Amount: ', dff.Amount[i])
-               st.write('Total Amount', dff.TotalAmount[i])
+               st.write('The Bill id of this Customer is {},This Customer Belongs to {}.The Product Purchased is {},its Merchnadise id is {} and the amount of Product Purchased is/are{} and the Price of each is {}.Total Transaction Amount is {}'.format(dff.Bill[i],dff.Country[i],dff.Product[i],dff.MerchandiseID[i],dff.Quota[i], dff.Amount[i],dff.TotalAmount[i]))
+#                st.write('Bil :', dff.Bill[i])
+#                st.write('country :',dff.Country[i])
+#                st.write('Merchandise ID', dff.MerchandiseID[i])
+#                st.write('Product :', dff.Product[i])
+#                st.write('Quota: ', dff.Quota[i])
+#                st.write('Amount: ', dff.Amount[i])
+#                st.write('Total Amount', dff.TotalAmount[i])
                count = 1 + count
 
 with col2:
@@ -195,14 +196,15 @@ and data values before moving further!!''')
       for i in range(len(dff1)):
           if dff1.CustomerID[i] == CI2:
                st.subheader('Transaction No.'.format(count1))
-               st.subheader('Transaction No.', count)
-               st.write('Bil :', dff1.Bill[i])
-               st.write('country :',dff1.Country[i])
-               st.write('Merchandise ID', dff1.MerchandiseID[i])
-               st.write('Product :', dff1.Product[i])
-               st.write('Quota: ', dff1.Quota[i])
-               st.write('Amount: ', dff1.Amount[i])
-               st.write('Total Amount', dff1.TotalAmount[i])
+               st.write('The Bill id of this Customer is {}, This Customer Belongs to {}. The Product Purchased is {}, its Merchnadise id is {} and the amount of Product Purchased is/are {} and the Price of each is {}. Total Transaction Amount is {}'.format(dff1.Bill[i],dff1.Country[i],dff1.Product[i],dff1.MerchandiseID[i],dff1.Quota[i], dff1.Amount[i],dff1.TotalAmount[i]))
+#                st.subheader('Transaction No.', count)
+#                st.write('Bil :', dff1.Bill[i])
+#                st.write('country :',dff1.Country[i])
+#                st.write('Merchandise ID', dff1.MerchandiseID[i])
+#                st.write('Product :', dff1.Product[i])
+#                st.write('Quota: ', dff1.Quota[i])
+#                st.write('Amount: ', dff1.Amount[i])
+#                st.write('Total Amount', dff1.TotalAmount[i])
                count1 = count1 + 1
 class ghar():
      def intro(self):
