@@ -1403,8 +1403,8 @@ def main():
         st.write('The above line plot indicates the customer retention trend over the period of time.')
       if st.sidebar.checkbox('Monthly Retention Matrix'):
         st.subheader('monthly Retention Matrix')
-	st.write(chu.coh10)
-	st.write('The values in each cell of above matrix represent if the customers were retained in that particular month or not. The value ‘1’ represents that most of the customers in previous month were retained in that particular month. ')
+        st.write(chu.coh10)
+        st.write('The values in each cell of above matrix represent if the customers were retained in that particular month or not. The value ‘1’ represents that most of the customers in previous month were retained in that particular month. ')
   if choice == 'About':
     st.sidebar.title('User Guide')
     
