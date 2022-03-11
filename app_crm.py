@@ -1207,16 +1207,22 @@ def main():
     rules.Association_rules()
   if choice == 'Customer Segmentation':
     st.sidebar.subheader('Choose Method for Customer Segmentation')
+    st.write('Try our two best methods of segmenting customers, one via the RFM metrics and a unique hybrid method. Hope you get fascinating results about your customer base here!')
     if st.sidebar.checkbox('RFM_SEGMENTATION', key = '12'):
       st.subheader('RFM Segmentation Dataframe')
       st.download_button(label="Download data as CSV",data=rfm.RFMvalues().to_csv().encode('utf-8'),file_name='RFM_values.csv',mime='text/csv',)
       st.write(rfm.RFMvalues().astype('object'))
+      st.write('Here’s the tabulated information of customers in form of their recency, frequency and monetary value i.e. RFM. Recency denotes the number of days since last activity of customer, while frequency denotes the number of purchases done till date and the monetary denotes the spending capability of the customers. Accordingly, your customers have been rated in range of 0-5 for each parameter under recency score, frequency score and monetary score. Please note that the rating of 5 is highest and denotes excellence of customer in relation to that parameter while 0 denotes lowest rating. The final RFM score is just the string type attachment of recency score and frequency score, and accordingly the customers are segmented into 10 types.')
       if st.sidebar.checkbox('Scatter Plot', key = '13'):
         st.subheader('Scatter Plot')
         rfm.Scatter()
       if st.sidebar.checkbox('Bar Plot', key = '14'):
         st.subheader('Bar Plot')
         rfm.bar_plot()
+        st.write('Above plot denotes the distribution of customers in different segments. Refer the details below about each customer segment and the corresponding remedy to increase your business:-')
+        data = [['Champions','Customers that purchased recently, buy often and spend the most.','Continue enhancing their experience.'], ['Loyal customers','These customers are buy on a regular basis and are responsive to promotions.','Always be in touch and offer something extra'], ['Potential Loyalist','These are recent customers with average frequency.',' Connect with them and promote your business.  '],['Need Attention','The customers have above average recency, frequency and monetary values.','Try to provide attractive offers and special discounts to them.'],['At Risk','These customers purchase more number of times but with large time gaps.','Focus on making the customers more regular.'],['Can’t Lose','Customer that used to purchase frequently but haven’t returned for a long time.','Enquire about them and advertise about your business.'],['About To Sleep','These customers have below average recency and frequency values.','Keep reminding them about the quality you deliver.'],['New customers','They have bought most recently, but not often.','Offer them good service so that they revisit.'],['Promising','They are recent shoppers, but haven’t spent much.','Convince them to purchase to their full capability.'],['Hibernating','Their last purchase was long back and had a low number of orders','Try to contact them and persuade them to visit.']]
+        df_rfm = pd.DataFrame(data, columns = ['Customer Segment', 'Details','Remedy to Bring Back'])
+        st.table(df_rfm)
       if st.sidebar.checkbox('Treemap Plot', key = '15'):
         st.subheader('Treemap Plot')
         rfm.Tree_map()
