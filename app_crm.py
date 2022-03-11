@@ -1373,6 +1373,7 @@ def main():
       if st.sidebar.checkbox('Montly Total # of Orders'):
         st.subheader('Montly Total # of Orders')
         chu.coh4()
+	
 	st.write('This bar plot indicates the trend of purchases done by active customers. The trend in this plot can define a relationship between monthly active customers and the number of orders.')
       if st.sidebar.checkbox('Monthly Order Average'):
         st.subheader('Monthly Order Average')
