@@ -1201,8 +1201,8 @@ class Churn_Analysis():
     # create the array of Retained users for each cohort monthly
     retention_array = []
     for i in range(len(months)):
-	retention_data = {}
-	selected_month = months[i]
+        retention_data = {}
+        selected_month = months[i]
         prev_months = months[:i]
         next_months = months[i+1:]
 	for prev_month in prev_months:
