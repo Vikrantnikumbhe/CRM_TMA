@@ -552,9 +552,9 @@ class Hybrid_Analysis():
     b = st.sidebar.radio(label='SELECT FEATURE For  Clustering', options=('Recency','Frequency','Monetary','Monetary_T','Frequency_T','Recency_T'), key = '2f6gd5d4555gd5')
     plt.scatter(x = h_rfm.KM()[a], y= h_rfm.KM()[b],c =h_rfm.KM()['Clusters'] , s = 200, cmap = 'viridis', edgecolor = 'black')
     plt.grid(color  = 'black', linewidth = 0.5)
-    plt.title('Clustering', Fontsize = 15)
-    plt.xlabel('Frequency', Fontsize = 15)
-    plt.ylabel('Recency', Fontsize = 15)
+#     plt.title('Clustering', Fontsize = 15)
+#     plt.xlabel('Frequency', Fontsize = 15)
+#     plt.ylabel('Recency', Fontsize = 15)
     st.pyplot(c)
   def Access_hybrid(self):
     CI= st.number_input('Enter a Customer ID',0, 9000000, 0, 1, key = '100')
