@@ -1355,6 +1355,7 @@ def main():
       if st.sidebar.checkbox('Monthly Revenue Plot'):
         st.subheader('Monthly Revenue Plot')
         chu.coh()
+	
 	st.write('The above line plot shows the generated revenue of your business over time. As from the plot, it can be referred that the time gap on an average is of a month, which indicates the monthly revenue trend of your business.')
       if st.sidebar.checkbox('Montly Growth rate Plot'):
         st.subheader('Montly Growth rate Plot')
