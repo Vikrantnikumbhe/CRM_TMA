@@ -174,7 +174,7 @@ and data values before moving further!!''')
 #                st.write('Amount: ', dff.Amount[i])
 #                st.write('Total Amount', dff.TotalAmount[i])
                count = 1 + count
-
+      st.write('Looks like this customer has a greater place in your revenue stream. Please find the details of this customer as per the dataset you provided.')
 with col2:
   mm = st.file_uploader("Upload CSV for Prediction",type=["csv"], key = '8998')
   if mm is not None:
@@ -206,6 +206,7 @@ and data values before moving further!!''')
 #                st.write('Amount: ', dff1.Amount[i])
 #                st.write('Total Amount', dff1.TotalAmount[i])
                count1 = count1 + 1
+      st.write('Looks like this customer has a greater place in your revenue stream. Please find the details of this customer as per the dataset you provided.')
 class ghar():
      def intro(self):
           col7, col8 ,col9 = st.columns(3)
