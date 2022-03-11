@@ -1186,6 +1186,7 @@ def main():
     g.intro()
   if choice == 'EDA_Analysis':
     st.sidebar.subheader('Exploratory Data Analysis')
+    st.subheader('Welcome to the section of Exploratory Data Analysis!! Visualize your input dataset at just one click in a detailed report format')
     if st.sidebar.checkbox('SweetViz Analysis', key = '10'):
       st.write(dataframe.SweetV(dff))
       dataframe.Exp1()
