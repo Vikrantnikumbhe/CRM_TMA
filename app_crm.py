@@ -1208,14 +1208,15 @@ class Churn_Analysis():
         for prev_month in prev_months:
 	        retention_data[prev_month] = np.nan
 		
-	total_user_count = tx_retention[tx_retention.MinPurchaseYearMonth ==  selected_month].MinPurchaseYearMonth.count()
+        total_user_count = tx_retention[tx_retention.MinPurchaseYearMonth ==  selected_month].MinPurchaseYearMonth.count()
         retention_data['TotalUserCount'] = total_user_count
         retention_data[selected_month] = 1 
         query = "MinPurchaseYearMonth == {}".format(selected_month)
-	for next_month in next_months:
-		new_query = query + " and {} > 0".format(str('m_' + str(next_month)))
-		retention_data[next_month] = np.round(tx_retention.query(new_query)['m_' + str(next_month)].sum()/total_user_count,2)
-	retention_array.append(retention_data)
+        for next_month in next_months:
+	        new_query = query + " and {} > 0".format(str('m_' + str(next_month)))
+	        retention_data[next_month] = np.round(tx_retention.query(new_query)['m_' + str(next_month)].sum()/total_user_count,2)
+        retention_array.append(retention_data)
+	
     tx_retention = pd.DataFrame(retention_array)
     tx_retention.index = months
     return tx_retention
