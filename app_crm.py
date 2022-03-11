@@ -1177,6 +1177,13 @@ class Churn_Analysis():
     plot_layout = go.Layout(xaxis={"type": "category"},title='Monthly Retention Rate')
     fig = go.Figure(data=plot_data, layout=plot_layout)
     st.plotly_chart(fig)
+  def coh10(self):
+    dff['BillYearMonth'] = dff['BillDate'].map(lambda date: 100*date.year + date.month)
+    tx_uk = dff.query("Country=='United Kingdom'").reset_index(drop=True)
+    tx_user_purchase = tx_uk.groupby(['CustomerID','BillYearMonth'])['TotalAmount'].sum().reset_index()
+    tx_retention = pd.crosstab(tx_user_purchase['CustomerID'], tx_user_purchase['BillYearMonth']).reset_index()
+    return tx_retention
+	
   
 #------------------------------xox----------------------------------------------
 
@@ -1394,6 +1401,10 @@ def main():
         st.subheader('Monthly retention Plot')
         chu.coh_ret()
         st.write('The above line plot indicates the customer retention trend over the period of time.')
+      if st.sidebar.checkbox('Monthly Retention Matrix'):
+	st.subheader('monthly Retention Matrix')
+	st.write(chu.coh10)
+	st.write('The values in each cell of above matrix represent if the customers were retained in that particular month or not. The value ‘1’ represents that most of the customers in previous month were retained in that particular month. ')
   if choice == 'About':
     st.sidebar.title('User Guide')
     
