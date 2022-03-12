@@ -1254,7 +1254,11 @@ The Team Mettle Amigos, consisting of tech enthusiasts and innovative minds, wit
 		with coln:
 			imgse = Image.open("./images/tma_images/7.png")
 			st.image(imgse,use_column_width= None )
-			
+		st.subheader('Contact Team Mettle Amigos')
+		st.write('''For any queries, get in touch with us at teammettleamigos5@gmail.com .
+To contact any individual from the team, you can directly message the particular individual over linkedin by searching his name.
+''')
+		
 			
 			
 			
