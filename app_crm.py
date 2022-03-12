@@ -325,7 +325,7 @@ class EDA_Analysis():
       with st.expander('See About SweetViz'):
           st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
           Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
-
+      add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
    
   def Map(self):
     dict = {'lat':[], 'lon':[]}
@@ -409,6 +409,7 @@ class EDA_Analysis():
         
 
     st.map(latlong)
+    add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 #########################################################################
 class RFM_Analysis():
   def RFMvalues(self):
