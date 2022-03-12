@@ -114,8 +114,8 @@ colT1,colT2, colT3 = st.columns(3)
 with colT2:
 #      st.title('CRM-TMA')
 #      st.markdown(new_title, unsafe_allow_html=True)
-imgq = Image.open("./images/title.PNG")
-st.image(imgq,use_column_width='auto')
+       imgq = Image.open("./images/title.PNG")
+       st.image(imgq,use_column_width='auto')
 import streamlit.components.v1 as components
 
 col6,col3, col4, col5 = st.columns([0.5,1.5,0.5,3])
