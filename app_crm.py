@@ -325,7 +325,7 @@ class EDA_Analysis():
       with st.expander('See About SweetViz'):
           st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
           Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
-      add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+      
    
   def Map(self):
     dict = {'lat':[], 'lon':[]}
@@ -1286,6 +1286,8 @@ def main():
     if st.sidebar.checkbox('SweetViz Analysis', key = '10'):
       st.write(dataframe.SweetV(dff))
       st.write('Here is the visualisation of your input dataset brought to you by SweetViz.Sweetviz is an open-source Python library that helps generate beautiful, highly detailed visualizations. The above generated report contains statistical data and corresponding visualizations of all the attributes of the dataset. In the above report, specially check for the missing and distinct values.')
+      add_line1= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+      st.markdown(add_line1, unsafe_allow_html=True)
       dataframe.Exp1()
     if st.sidebar.checkbox('Pandas Profiling', key = '11'):
       st.subheader('Pandas Profiling Data Analysis Report')
@@ -1293,12 +1295,16 @@ def main():
       st_profile_report(profile)
       profile.to_notebook_iframe()
       st.write('Here is your exploratory data analysis report brought to you by Pandas Profiling library in python. The above report contains overview information about the dataset given as input here. Don’t miss some important aspects included in this report like cardinality, correlation, variable types, etc.')
+      add_line1= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+      st.markdown(add_line1, unsafe_allow_html=True)
 
     if st.sidebar.checkbox('Demographics of Customer'):
       st.subheader('Demographics of Customers')
        
       dataframe.Map()
       st.write('Here’s the demographic visualization of your customers globally. This map visualisation is brought to you by ‘Mapbox’, a powerful tool for building interactive customizable maps and integrating location and navigation data into your apps and websites. The regions highlighted in red in the map above denote the concentration of customers in that particular regions. Let’s hope someday that your business captures the whole globe and you may see this map whole in red!!')
+      add_line1= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+      st.markdown(add_line1, unsafe_allow_html=True)
   if choice == 'Product_Recommendation':
     rules.Association_rules()
   if choice == 'Customer Segmentation':
