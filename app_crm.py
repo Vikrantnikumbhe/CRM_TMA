@@ -141,8 +141,6 @@ Then grab your data and Let's Get Started!!!.'''
 add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 st.markdown(add_line, unsafe_allow_html=True)
 
-
-
 st.sidebar.title('USE SIDEBAR TO PERFORM OBJECTIVES')
 st.sidebar.markdown('Let’s start with Customer Relationship Management!!')
 #Taking File input
