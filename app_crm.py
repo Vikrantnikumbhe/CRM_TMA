@@ -213,6 +213,8 @@ and data values before moving further!!''')
 #                st.write('Total Amount', dff1.TotalAmount[i])
                count1 = count1 + 1
       st.write('Looks like this customer has a greater place in your revenue stream. Please find the details of this customer as per the dataset you provided.')
+add_line1= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">---------------------------------------------------</p>'
+st.markdown(add_line1, unsafe_allow_html=True)
 class ghar():
      def intro(self):
           col7, col8 ,col9 = st.columns(3)
