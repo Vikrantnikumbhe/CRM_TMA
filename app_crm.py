@@ -102,8 +102,9 @@ st.set_page_config(
      page_icon="🧊",
      layout="wide", 
      initial_sidebar_state="expanded")
-new_title = '<p style="font-family:serif; font-weight:bold;color:Green;font-size: 60px;">CRM-TMA</p>'
+# new_title = '<p style="font-family:serif; font-weight:bold;color:Green;font-size: 60px;">CRM-TMA</p>'
 # st.markdown(new_title, unsafe_allow_html=True)
+new_title = '<p style="font-family:serif; font-weight:bold;color:Green;font-size: 60px;">ग्राहक-360</p>'
 
 imgz = Image.open("./WCE-Sangli-Logo.png")
 st.sidebar.image(imgz,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
