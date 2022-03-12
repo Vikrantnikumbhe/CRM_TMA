@@ -1224,7 +1224,17 @@ class Churn_Analysis():
     tx_retention = pd.DataFrame(retention_array)
     tx_retention.index = months
     return tx_retention
-	
+class About():
+	def Dev(self):
+		st.subheader('About Organization')
+		colf, colg = st.columns([2.5,1])
+		with colf:
+			st.write('''Hey user, meet the team behind the creation of this Customer Relationship Management Tool. Every individual of TMA keeps the vision to apply his learnings and engineering skills towards innovation, updation and revolution.
+This interface is the first step of TMA in the field of ‘Predictive Analytics’, which is a promising domain and is expected to drive the world in near future.
+The Team Mettle Amigos, consisting of tech enthusiasts and innovative minds, with the happy faces in the frame below, have many future prospects and this interface is just a start of it.''')
+		with colg:
+			imgs = Image.open("./images/TMA-01.png")
+			st.image(imgs,caption = 'TEAM METTLE AMIGOS',use_column_width= None )
 	
   
 #------------------------------xox----------------------------------------------
@@ -1453,7 +1463,12 @@ def main():
         st.write(chu.coh11())
         st.write('The values in each cell of above matrix depict the relative rate of retention of a particular cohort of customers with respect to the previous month. The retnetion rate closer to 0.5 denotes appreciable growth. ')
   if choice == 'About':
-    st.sidebar.title('User Guide')
+    st.sidebar.title('About:')
+    if st.sidebar.checkbox("See User guide"):
+      st.text('Here we br User Guide')
+      
+    if st.sidebar.checkbox('See Organization and Developers'):
+      aa.Dev()
     
 if __name__=='__main__':
   dataframe = EDA_Analysis()
@@ -1465,4 +1480,5 @@ if __name__=='__main__':
   sf = Sales_Forecasting()
   chu = Churn_Analysis()
   g = ghar()
+  aa  = About()
   main()   
