@@ -119,8 +119,8 @@ import streamlit.components.v1 as components
 
 col6,col3, col4, col5 = st.columns([0.5,1.5,0.5,3])
 with col3:
-  img = Image.open("./images/grahak-360.png")
-  st.image(img,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
+  imgt = Image.open("./images/grahak-360.PNG")
+  st.image(imgt,,use_column_width='auto')
 with col5:
   j = '''Attention decision-makers! Tired of cluttering through oodles
 of spreadsheets?Looking for a comprehensive gizmo to alleviate 
