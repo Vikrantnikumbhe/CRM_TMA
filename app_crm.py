@@ -137,6 +137,8 @@ analysis like churn rate, cohort, and retention analytics. Want
 to get in the nitty-gritty to experience it first hand? 
 Then grab your data and Let's Get Started!!!.'''
   st.write(j)
+add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">---------------------------------------------------</p>'
+st.markdown(add_line, unsafe_allow_html=True)
 
 
 
