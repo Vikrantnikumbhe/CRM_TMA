@@ -1247,11 +1247,11 @@ The Team Mettle Amigos, consisting of tech enthusiasts and innovative minds, wit
 		with colj:
 			imgsc = Image.open("./images/tma_images/5.png")
 			st.image(imgsc,use_column_width= None )
-		colk, coll = st.columns(2)
-		with colk:
+		colk, coll,colm,coln,colo = st.columns([0.111,0.3,0.111,0.3,0.111])
+		with coll:
 			imgsd = Image.open("./images/tma_images/6.png")
 			st.image(imgsd,use_column_width= None )
-		with coll:
+		with coln:
 			imgse = Image.open("./images/tma_images/7.png")
 			st.image(imgse,use_column_width= None )
 			
