@@ -136,7 +136,7 @@ forecasting future sales.Be your helping hand to do forensic
 analysis like churn rate, cohort, and retention analytics. Want
 to get in the nitty-gritty to experience it first hand? 
 Then grab your data and Let's Get Started!!!.'''
-  st.text(j)
+  st.write(j)
 
 
 
