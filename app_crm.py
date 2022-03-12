@@ -309,7 +309,7 @@ class EDA_Analysis():
     components.html(source_code)
 
   def SweetV(self,x):
-    st.write('**SweetVIZ Data Analysis Report: **')
+    st.subheader('SweetVIZ Data Analysis Report')
     analysis = sv.analyze([x,'EDA'])
     #analysis.show_html()
     analysis.show_html(filepath='./SWEETVIZ_REPORT.html', open_browser=False, layout='vertical',scale=1.0)
@@ -1286,7 +1286,7 @@ def main():
       st.write('Here is the visualisation of your input dataset brought to you by SweetViz.Sweetviz is an open-source Python library that helps generate beautiful, highly detailed visualizations. The above generated report contains statistical data and corresponding visualizations of all the attributes of the dataset. In the above report, specially check for the missing and distinct values.')
       dataframe.Exp1()
     if st.sidebar.checkbox('Pandas Profiling', key = '11'):
-      st.write('**Pandas Profiling Data Analysis Report: **')
+      st.subheader('Pandas Profiling Data Analysis Report')
       profile = ProfileReport(dff)
       st_profile_report(profile)
       profile.to_notebook_iframe()
