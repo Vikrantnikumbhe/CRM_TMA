@@ -1235,8 +1235,9 @@ The Team Mettle Amigos, consisting of tech enthusiasts and innovative minds, wit
 		with colg:
 			imgs = Image.open("./images/TMA-01.png")
 			st.image(imgs,caption = 'TEAM METTLE AMIGOS',use_column_width= None )
-		colh, coli, colj = st.columns(3)
 		st.subheader('About Team members')
+		colh, coli, colj = st.columns(3)
+		
 		with colh:
 			imgsa = Image.open("./images/tma_images/3.png")
 			st.image(imgsa,use_column_width= None )
