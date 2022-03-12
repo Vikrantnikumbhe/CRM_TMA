@@ -102,7 +102,7 @@ st.set_page_config(
      page_icon="🧊",
      layout="wide", 
      initial_sidebar_state="expanded")
-new_title = '<p style="font-family:monospace; font-weight:bold;color:Green;font-size: 60px;">CRM-TMA</p>'
+new_title = '<p style="font-family:serif; font-weight:bold;color:Green;font-size: 60px;">CRM-TMA</p>'
 # st.markdown(new_title, unsafe_allow_html=True)
 
 imgz = Image.open("./WCE-Sangli-Logo.png")
