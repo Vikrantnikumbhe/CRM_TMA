@@ -137,7 +137,8 @@ analysis like churn rate, cohort, and retention analytics. Want
 to get in the nitty-gritty to experience it first hand? 
 Then grab your data and Let's Get Started!!!.'''
   st.write(j)
-add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">---------------------------------------------------</p>'
+
+add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 st.markdown(add_line, unsafe_allow_html=True)
 
 
@@ -213,7 +214,7 @@ and data values before moving further!!''')
 #                st.write('Total Amount', dff1.TotalAmount[i])
                count1 = count1 + 1
       st.write('Looks like this customer has a greater place in your revenue stream. Please find the details of this customer as per the dataset you provided.')
-# add_line1= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">---------------------------------------------------</p>'
+
 add_line1= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 st.markdown(add_line1, unsafe_allow_html=True)
 class ghar():
