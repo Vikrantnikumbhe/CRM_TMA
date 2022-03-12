@@ -1237,20 +1237,20 @@ The Team Mettle Amigos, consisting of tech enthusiasts and innovative minds, wit
 			st.image(imgs,caption = 'TEAM METTLE AMIGOS',use_column_width= None )
 		colh, coli, colj = st.columns(3)
 		with colh:
-			imgsa = Image.open("/content/3.png")
+			imgsa = Image.open("./images/tma_images/3.png")
 			st.image(imgsa,use_column_width= None )
 		with coli:
-			imgsb = Image.open("/content/4.png")
+			imgsb = Image.open("./images/tma_images/4.png")
 			st.image(imgsb,use_column_width= None )
 		with colj:
-			imgsc = Image.open("/content/5.png")
+			imgsc = Image.open("./images/tma_images/5.png")
 			st.image(imgsc,use_column_width= None )
 		colk, coll = st.columns(2)
 		with colk:
-			imgsd = Image.open("/content/6.png")
+			imgsd = Image.open("./images/tma_images/6.png")
 			st.image(imgsd,use_column_width= None )
 		with coll:
-			imgse = Image.open("/content/7.png")
+			imgse = Image.open("./images/tma_images/7.png")
 			st.image(imgse,use_column_width= None )
 			
 			
