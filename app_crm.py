@@ -1268,8 +1268,8 @@ To contact any individual from the team, you can directly message the particular
 		with st.expander('EDA ANALYSIS'):     
 		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')		
-                with st.expander('CUSTOMER SEGMENTATION'):
-                        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+		with st.expander('CUSTOMER SEGMENTATION'):
+			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
 			
                 with st.expander('CUSTOMER CLASSIFICATION'):
