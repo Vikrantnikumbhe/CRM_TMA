@@ -1354,38 +1354,38 @@ def main():
         st.subheader('Dendogram Plot')
         st.write(h_rfm.Pre_hybrid())
         st.write('The above dendogram, having a tree like structure basically depicts relationship between all the data points of the input dataset. The different levels of dendogram each indicate clusters of data and how every small cluster gradually combines into a single cluster.')
-	add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
         st.markdown(add_line, unsafe_allow_html=True)
       if st.sidebar.checkbox('SHOW ELBOW CURVE', key = '19'):
         st.subheader('Elbow Curve')
         st.write(h_rfm.elbow())
         st.write('In the above elbow graph, there are some sharp points that indicate minimum distortion. The total number of these sharp points denote the number of clusters that can segment the provided data efficiently')
-	add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 	st.markdown(add_line, unsafe_allow_html=True)
       if st.sidebar.checkbox('Check Skewness', key = '20'):
         st.subheader('Skewness Information')
         st.write(h_rfm.skew_data())
         st.write('Above table contains the skewness and kurtosis values of the attributes required for hybrid segmentation. Both skewness and kurtosis help in analyzing the location and variability of a data set. Negative values for the skewness indicate data that are skewed left and positive values for the skewness indicate data that are skewed right. Positive kurtosis indicates a "heavy-tailed" distribution and negative kurtosis indicates a "light tailed" distribution. Take a look at your dataset before being transformed for hybrid segmentation.')
-	add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
         st.markdown(add_line, unsafe_allow_html=True)
       if  st.sidebar.checkbox('Visualize Transformed Data', key = '21'):
         st.subheader('Visualizw Transformed Data for Hybrid Segmentation')
         h_rfm.Trans_data()
         st.write('Take a glimpse of the transformation that your original dataset undergo for a near to ideal skewness and kurtosis. Analyse the above graphs with respect to the origin and see its distribution. If still there is some skewness in the data, the final results can’t be trustworthy.')
-	add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 	st.markdown(add_line, unsafe_allow_html=True)
       if st.sidebar.checkbox('Transformed data', key = '22'):
         st.subheader(' Transformed Data for Hybrid Segmentation')
         st.write(h_rfm.Transform().astype('object'))
         st.write('The above table represents the transformed data that will be used for hybrid customer segmentation.')
-	add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 	st.markdown(add_line, unsafe_allow_html=True)
       if st.sidebar.checkbox('KMEANS SEGMENTATION DataFrame', key = '23'):
         st.subheader('Kmeans Segmentation Dataframe')
         st.download_button(label="Download Kmeans Segmentation as CSV",data=h_rfm.KM().to_csv().encode('utf-8'),file_name='K-Means_Segmentation.csv',mime='text/csv',)
         st.write(h_rfm.KM())
         st.write('The above data table represents the segmented data using K-means and RFM score methods i.e. hybrid method. The ‘0’ value under cluster indicates customers with higher RFM or high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
-	add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 	st.markdown(add_line, unsafe_allow_html=True)
 	
    
@@ -1393,26 +1393,26 @@ def main():
         st.subheader('Access Customer Information')
         h_rfm.Access_hybrid()
         st.write('Looks like this customer is closely associated to the growth of your business. Hope this customer fits into the top segments.')
-	add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 	st.markdown(add_line, unsafe_allow_html=True)
       if st.sidebar.checkbox('BOX PLOTS OF CLUSTERS', key = '24'):
         st.subheader('Box Plot of Clusters')
         h_rfm.BOX()
         st.write('The above plots indicate if your data is symmetrical, how tightly your data is grouped, and if and how your data is skewed')
-	add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 	st.markdown(add_line, unsafe_allow_html=True)
       if st.sidebar.checkbox('SCATTER PLOTS OF CLUSTERS' , key = '25'):
         st.subheader('Scatter Plot of Clusters')
         h_rfm.scatter_Cluster()
         st.write('The above plot indicates the clusters between Recency and Frequency or can compare monetary values with Recency and Frequency with the help of these scatter plots.')
-	add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 	st.markdown(add_line, unsafe_allow_html=True)
         
       if st.sidebar.checkbox('Best Possible Number of Cluster', key = '26'):
         st.subheader('Best Possible number of Clusters ')
         st.write(h_rfm.Best_K())
         st.write('The above Result indicates the Best posible Value of Number of clusters possible for better Results,this is calculates using silhoutte score for each number of cluster and best value from those is choosen,Visualizing can be done using Dendogram plot and Elbow Curve ')
-	add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 	st.markdown(add_line, unsafe_allow_html=True)
   if choice  == 'Customer Classification':
     if st.sidebar.checkbox('Display Accuracy of all Classification models', key = '27'):
