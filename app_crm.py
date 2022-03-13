@@ -1264,6 +1264,37 @@ The Team Mettle Amigos, consisting of tech enthusiasts and innovative minds, wit
 		st.write('''For any queries, get in touch with us at teammettleamigos5@gmail.com .
 To contact any individual from the team, you can directly message the particular individual over linkedin by searching his name.
 ''')
+	def User(self):
+		with st.expander('EDA ANALYSIS'):
+		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+			
+	        with st.expander('CUSTOMER SEGMENTATION'):
+		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+			
+	        with st.expander('CUSTOMER CLASSIFICATION'):
+		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+	        with st.expander('SALES FORECASTING'):
+		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+	        with st.expander('PRODUCT RECOMMENDATION'):
+		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+	        with st.expander('CHURN RATE ANALYSIS'):
+		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+	        with st.expander('CLTV'):
+		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+# 		with st.expander('EDA ANALYSIS'):
+# 			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+# Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+			
+			
+			
+			
 		
 			
 			
@@ -1592,7 +1623,7 @@ def main():
   if choice == 'About':
     st.sidebar.title('About:')
     if st.sidebar.checkbox("See User guide"):
-      st.text('Here we br User Guide')
+      st.subheader('User Guide: ')
       add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
       st.markdown(add_line, unsafe_allow_html=True)
     if st.sidebar.checkbox('See Organization and Developers'):
