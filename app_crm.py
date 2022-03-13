@@ -1361,7 +1361,7 @@ def main():
         st.write(h_rfm.elbow())
         st.write('In the above elbow graph, there are some sharp points that indicate minimum distortion. The total number of these sharp points denote the number of clusters that can segment the provided data efficiently')
         add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
-	st.markdown(add_line, unsafe_allow_html=True)
+        st.markdown(add_line, unsafe_allow_html=True)
       if st.sidebar.checkbox('Check Skewness', key = '20'):
         st.subheader('Skewness Information')
         st.write(h_rfm.skew_data())
