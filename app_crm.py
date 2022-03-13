@@ -1300,13 +1300,14 @@ def main():
 
     if st.sidebar.checkbox('Demographics of Customer'):
       st.subheader('Demographics of Customers')
-       
       dataframe.Map()
       st.write('Here’s the demographic visualization of your customers globally. This map visualisation is brought to you by ‘Mapbox’, a powerful tool for building interactive customizable maps and integrating location and navigation data into your apps and websites. The regions highlighted in red in the map above denote the concentration of customers in that particular regions. Let’s hope someday that your business captures the whole globe and you may see this map whole in red!!')
       add_line1= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
       st.markdown(add_line1, unsafe_allow_html=True)
   if choice == 'Product_Recommendation':
     rules.Association_rules()
+    add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+    st.markdown(add_line, unsafe_allow_html=True)
   if choice == 'Customer Segmentation':
     st.sidebar.subheader('Choose Method for Customer Segmentation')
     st.write('Try our two best methods of segmenting customers, one via the RFM metrics and a unique hybrid method. Hope you get fascinating results about your customer base here!')
@@ -1315,10 +1316,14 @@ def main():
       st.download_button(label="Download data as CSV",data=rfm.RFMvalues().to_csv().encode('utf-8'),file_name='RFM_values.csv',mime='text/csv',)
       st.write(rfm.RFMvalues().astype('object'))
       st.write('Here’s the tabulated information of customers in form of their recency, frequency and monetary value i.e. RFM. Recency denotes the number of days since last activity of customer, while frequency denotes the number of purchases done till date and the monetary denotes the spending capability of the customers. Accordingly, your customers have been rated in range of 0-5 for each parameter under recency score, frequency score and monetary score. Please note that the rating of 5 is highest and denotes excellence of customer in relation to that parameter while 0 denotes lowest rating. The final RFM score is just the string type attachment of recency score and frequency score, and accordingly the customers are segmented into 10 types.')
+      add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+      st.markdown(add_line, unsafe_allow_html=True)
       if st.sidebar.checkbox('Scatter Plot', key = '13'):
         st.subheader('Scatter Plot')
         rfm.Scatter()
         st.write('Here you can Visualize the Distribution of Customer Depending on the Scatter Plot using different Features of Your choice. You can draw inference of the effect of one features on Other Features and see how Customers are distributed')
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        st.markdown(add_line, unsafe_allow_html=True)
       if st.sidebar.checkbox('Bar Plot', key = '14'):
         st.subheader('Bar Plot')
         rfm.bar_plot()
@@ -1326,6 +1331,8 @@ def main():
         data = [['Champions','Customers that purchased recently, buy often and spend the most.','Continue enhancing their experience.'], ['Loyal customers','These customers are buy on a regular basis and are responsive to promotions.','Always be in touch and offer something extra'], ['Potential Loyalist','These are recent customers with average frequency.',' Connect with them and promote your business.  '],['Need Attention','The customers have above average recency, frequency and monetary values.','Try to provide attractive offers and special discounts to them.'],['At Risk','These customers purchase more number of times but with large time gaps.','Focus on making the customers more regular.'],['Can’t Lose','Customer that used to purchase frequently but haven’t returned for a long time.','Enquire about them and advertise about your business.'],['About To Sleep','These customers have below average recency and frequency values.','Keep reminding them about the quality you deliver.'],['New customers','They have bought most recently, but not often.','Offer them good service so that they revisit.'],['Promising','They are recent shoppers, but haven’t spent much.','Convince them to purchase to their full capability.'],['Hibernating','Their last purchase was long back and had a low number of orders','Try to contact them and persuade them to visit.']]
         df_rfm = pd.DataFrame(data, columns = ['Customer Segment', 'Details','Remedy to Bring Back'])
         st.table(df_rfm)
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        st.markdown(add_line, unsafe_allow_html=True)
         
       if st.sidebar.checkbox('Treemap Plot', key = '15'):
         st.subheader('Treemap Plot')
@@ -1335,6 +1342,8 @@ def main():
         st.subheader('Access Customer Information')
         rfm.Access_Cust()
         st.write('Looks like this customer is closely associated to the growth of your business. Hope this customer fits into the top segments.')
+        add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
+        st.markdown(add_line, unsafe_allow_html=True)
 
     if st.sidebar.checkbox('HYBRID_SEGMENTATION', key = '17'):
       st.sidebar.subheader('Choose Method for Cluster labelling')
