@@ -1462,21 +1462,21 @@ def main():
         st.write(ll.Random_F())
         st.write('Above dataframe represents the result for the classifier model selected. The ‘0’ value under cluster indicates customers with high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
         add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
-	st.markdown(add_line, unsafe_allow_html=True)
+        st.markdown(add_line, unsafe_allow_html=True)
      if st.sidebar.button('Ababoost Classifier Model: ', key = '71'):
         st.subheader('Prediction using Ababoost Classifier Model')
         st.download_button(label=" Download Ababoost Classifier Model prediction as csv",data=ll.Adaboost().to_csv().encode('utf-8'),file_name=' Ababoost Classifier Model_Prediction.csv',mime='text/csv',)
         st.write(ll.Adaboost())
         st.write('Above dataframe represents the result for the classifier model selected. The ‘0’ value under cluster indicates customers with high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
         add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
-	st.markdown(add_line, unsafe_allow_html=True)
+        st.markdown(add_line, unsafe_allow_html=True)
      if st.sidebar.button('Gradient Boosting Classifier Model: ', key = '72'):
         st.subheader('Prediction using Gradient Boosting Classifier Model')
         st.download_button(label=" Download Gradient Boosting Classifier Model prediction as csv",data=ll.Graddient().to_csv().encode('utf-8'),file_name=' Gradient Boosting Classifier_Prediction.csv',mime='text/csv',)
         st.write(ll.Graddient())
         st.write('Above dataframe represents the result for the classifier model selected. The ‘0’ value under cluster indicates customers with high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
         add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
-	st.markdown(add_line, unsafe_allow_html=True)
+        st.markdown(add_line, unsafe_allow_html=True)
   if choice == 'CLTV':
     st.sidebar.subheader('Here we will Explore Customer Lifetime Value')
     if st.sidebar.checkbox('CLTV Dataframe', key = '32'):
