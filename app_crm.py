@@ -216,11 +216,16 @@ and data values before moving further!!''')
 
 add_line1= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 st.markdown(add_line1, unsafe_allow_html=True)
+
+
+
+
+
 class ghar():
      def intro(self):
           col7, col8 ,col9 = st.columns(3)
           with col7:
-               img3 = Image.open("./images/Descriptive Analysis.jpg")
+               img3 = Image.open("./images/Descriptive Analysis.png")
                st.subheader('1. Descriptive Analysis')
                st.image(img3,caption = 'Descriptive Analysis',use_column_width= None )
                st.text('''Get a perspective of your data. Help 
@@ -230,7 +235,7 @@ and get a picture on the demographics
 of your customers''')
           
           with col8:
-               img4 = Image.open("./images/Customer Segmentation.jpg")
+               img4 = Image.open("./images/customer Segmentation.png")
                st.subheader('2. Customer Segmentation')
                st.image(img4,caption = 'Customer Segmentation',use_column_width= None )
                st.text('''Do smart segmentation to understand
@@ -239,7 +244,7 @@ Hybrid segmentation techniques. Get
 real-time plots and access your 
 customer with a click.''')
           with col9:
-               img5 = Image.open("./images/Customer Classification.jpg")
+               img5 = Image.open("./images/customer Classification.png")
                st.subheader('3. Customer Classification')
                st.image(img5,caption = 'Customer Classification',use_column_width= None )
                st.text('''Helps you in making judicious decisions
@@ -248,7 +253,7 @@ for the prediction of your
 customers.''')
           col10, col11 ,col12 = st.columns(3)
           with col10:
-               img6 = Image.open("./images/Sales Forecasting.jpg")
+               img6 = Image.open("./images/Sale Forecasting.png")
                st.subheader('4. Sales Forecasting')
                st.image(img6,caption = 'Sales Forecasting',use_column_width= None )
                st.text('''Forecast your company’s future sales to 
@@ -262,7 +267,7 @@ plans of action.''')
 product recommendation using 
 market-basket analysis''')                
           with col12:
-               img8 =Image.open("./images/Forensic Analysis.jpg")
+               img8 =Image.open("./images/Customer Retention.png")
                st.subheader('6. Forensic Analysis')
                st.image(img8,caption = 'Forensic Analysis',use_column_width= None )
                st.text('''Perform churn rate, cohort, and 
@@ -272,8 +277,8 @@ customers, total order, customer ratio
 and customer retention.''')                        
           col13, col14 ,col15 = st.columns(3)
           with col14:
-               img9 =Image.open("./images/Customer Lifetime Value.jpg")
-               st.subheader('9. Customer Lifetime Value')
+               img9 =Image.open("./images/CLTV.png")
+               st.subheader('7. Customer Lifetime Value')
                st.image(img9,caption = 'Customer Lifetime Value',use_column_width= None )
                st.text('''Predict the expected future transactions
 of your customer. Gauge your company's net
