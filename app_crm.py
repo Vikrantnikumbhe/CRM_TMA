@@ -1352,17 +1352,36 @@ Hybrid (K-means with RFM) modeling techniques.''')
 			st.write('5.Access the segmented regions of customers')
 			colc1, colc2, colc3 = st.columns([0.1,2,0.1])
 			with colc2:
-				HtmlFile_3 = open("images/UserGuide./EDA-Analysis_Compressed.html", 'r', encoding='utf-8')
+				st.subheader('RFM SEGMENTATION')
+				HtmlFile_3 = open("images/UserGuide./Customer Segmentation_01_RFM_Compressed.html", 'r', encoding='utf-8')
 				source_code3 = HtmlFile_3.read()
 				print(source_code3)
 				components.html(source_code3, height = 700)
+				
+				st.subheader('HYBRID SEGMENTATION')
+				HtmlFile_3a = open("images/UserGuide./Customer Segmentation_02_Hybrid_Compressed.html", 'r', encoding='utf-8')
+				source_code3a = HtmlFile_3a.read()
+				print(source_code3a)
+				components.html(source_code3a, height = 700)
+				
+				
+				
+				
 				
 				
 				
 				
 		with st.expander('CUSTOMER CLASSIFICATION'):
-			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
-Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+			st.write(''' A classifier in general is any algorithm that sorts data into labelled classes, or categories of
+information. A simple practical example are spam filters that scan incoming “raw” emails and
+classify them as either “spam” or “not-spam.” Classifiers are a concrete implementation of
+pattern recognition in many forms of machine learning.
+Here, classifier for the model will help you classify the customers into various categories. For this,
+analysis and validation of different classifiers like Support Vector Classifier (SVC), Logistic
+Regression, K Nearest neighbors Classifier, Decision Tree, Random Forest, AdaBoost Classifier and
+Gradient Boosting Classifier is done to let you select the right classifier based on its predicting
+ability, quality of fit and your requirements.
+In this section, you will be exploring on how to perform customer classification.''')
 		with st.expander('SALES FORECASTING'):
 			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
