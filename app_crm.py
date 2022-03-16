@@ -1305,47 +1305,47 @@ Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divid
 		c = conn.cursor()
 		def create_table():
 			c.execute('CREATE TABLE IF NOT EXISTS feedback(date_submitted DATE, Q1 TEXT, Q2 INTEGER, Q3 INTEGER, Q4 TEXT, Q5 TEXT, Q6 TEXT, Q7 TEXT, Q8 TEXT)')
-		def add_feedback(date_submitted, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8):
-			c.execute('INSERT INTO feedback (date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8) VALUES (?,?,?,?,?,?,?,?,?)',(date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8))
+		def add_feedback(date_submitted, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9,Q10):
+			c.execute('INSERT INTO feedback (date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9,Q10) VALUES (?,?,?,?,?,?,?,?,?,?,?)',(date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9,Q10))
 			conn.commit()
 		st.title("User Feedback")
 		d = st.date_input("Today's date",None, None, None, None)
 		question_1 = st.selectbox('Where did you got to know about these app?',('Youtube','Github', 'Linkedin', 'Twitter','Instagram','Recommended by friend'))
 		st.write('You selected:', question_1)
 		
-		question_1a = st.text_input('What is your Name?')
-		st.write('You selected:', question_1a)
+		question_1 = st.text_input('What is your Name?')
+		st.write('You selected:', question_1)
 		
-		question_1b = st.slider('What is your current age?', 18,105)
-		st.write('You selected:', question_1b)
+		question_2 = st.slider('What is your current age?', 18,100)
+		st.write('You selected:', question_2)
 		
-		question_1c = st.selectbox('Gender?',('','Male', 'Women','Others'))
-		st.write('You selected:', question_1c)
-		
-		question_1d = st.text_input('Name of the Organization/Company/Brand')
-		st.write('You selected:', question_1d)
-		
-		question_3 = st.slider('Overall, how satisfied are you with the Application? (5 being very happy and 1 being very dissapointed)', 1,5,1)
+		question_3 = st.selectbox('Gender?',('','Male', 'Women','Others'))
 		st.write('You selected:', question_3)
 		
-		question_4 = st.selectbox('Was the application fun and interactive?',('','Yes', 'No'))
+		question_4 = st.text_input('Name of the Organization/Company/Brand')
 		st.write('You selected:', question_4)
 		
-		question_5 = st.selectbox('Was the hjjhgjhgjhgj?',('','Yes', 'No'))
+		question_5 = st.slider('Overall, how satisfied are you with the Application? (5 being very happy and 1 being very dissapointed)', 1,5,1)
 		st.write('You selected:', question_5)
 		
-		
-		question_6 = st.selectbox('Were you content with the Activities?',('','Yes', 'No'))
+		question_6 = st.selectbox('Was the application fun and interactive?',('','Yes', 'No'))
 		st.write('You selected:', question_6)
 		
-		question_7 = st.selectbox('Would you recommend it to others?',('','Yes', 'No'))
+		question_7 = st.selectbox('Was the hjjhgjhgjhgj?',('','Yes', 'No'))
 		st.write('You selected:', question_7)
 		
-		question_8 = st.text_input('What could have been better?', max_chars=50)
+		
+		question_8 = st.selectbox('Were you content with the Activities?',('','Yes', 'No'))
+		st.write('You selected:', question_8)
+		
+		question_9 = st.selectbox('Would you recommend it to others?',('','Yes', 'No'))
+		st.write('You selected:', question_9)
+		
+		question_10 = st.text_input('What could have been better?', max_chars=100)
 		
 		if st.button("Submit feedback"):
 			create_table()
-			add_feedback(question_1, question_1a, question_1b,question_1c,question_1d,  question_3, question_4, question_5, question_6, question_7, question_8)
+			add_feedback(d,question_1, question_2, question_3,question_4,question_5,  question_6, question_7, question_8, question_9, question_10)
 			st.success("Feedback submitted")
 			if st.button('See User Feedback: '):
 				query = pd.read_sql_query('''select * from feedback''', conn)
