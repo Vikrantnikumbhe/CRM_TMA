@@ -108,7 +108,7 @@ new_title = '<p style="font-family:serif; font-weight:bold;color:Green;font-size
 
 # imgze = Image.open("./images/title.PNG")
 # st.sidebar.image(imgze,use_column_width='auto')
-file_8 = open("./images/video.gif", "rb")
+file_8 = open("./images/video (1).gif", "rb")
 contents88 = file_8.read()
 data_url88 = base64.b64encode(contents88).decode("utf-8")
 file_8.close()
