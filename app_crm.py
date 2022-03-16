@@ -1306,19 +1306,62 @@ the other options directing you to access all the feature-activities.''')
 				HtmlFile_1 = open("images/UserGuide./Home-Page_Compressed.html", 'r', encoding='utf-8')
 				source_code1 = HtmlFile_1.read()
 				print(source_code1)
-				components.html(source_code1, height = 700)
-# 				
+				components.html(source_code1, height = 700) 				
 
 
 			
 			
 			
 		with st.expander('EDA ANALYSIS'):     
-		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
-Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')		
+		        st.write('''Visualization of your input dataset will help you with your analysis. To understand the statistical
+data, visualization and correlations of the attributes, and hidden patterns we provide you the
+feature-activity tool of EDA Analysis in CRM Interface which will exclusively help you analyse and
+visualize your data set.
+In this section, you will be exploring on how to use three options provided under EDA Analysis
+which are analysis through SweetViz, Pandas Profiling and understanding the demographics of
+your customers. These three options will help you with analysis and visualization of your datasets
+so as to get a comprehensive understanding.''')
+			st.subheader('In this section, you will learn how to')
+			st.write('1.Access the analysis and visualization reports through Sweetviz')
+			st.write('2.Access the analysis and visualization reports through Pandas Profiling')
+			st.write('3.Access the visualization of demographics of your customers')
+			colb1, colb2, colb3 = st.columns([0.1,2,0.1])
+			with colb2:
+				HtmlFile_2 = open("images/UserGuide./EDA-Analysis_Compressed.html", 'r', encoding='utf-8')
+				source_code2 = HtmlFile_2.read()
+				print(source_code2)
+				components.html(source_code2, height = 700)
+				
+				
+				
 		with st.expander('CUSTOMER SEGMENTATION'):
-			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
-Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+			st.write(''' Segmenting customers is the process of dividing up mass consumers into groups with similar
+needs and wants. It also helps in attaining customer satisfaction and overall profit at higher rates.
+Also helps organizations to focus on efficient resource allocation. But there exists a very common
+axiom "One Size Fits All", i.e. treating every customer in the same manner. From a customer point
+of view it is courteous, but from a business point of view it is not profitable at all. That's why
+segmentation exists to mitigate this problem. There exists 6 types of customer segmentation so
+far which are Geographic, Demographic, Behavioral, Firmographic, Psychographic and smart
+customer segmentation. Here, in the CRM Interface segmentation of customers is done on the
+basis of RFM and Hybrid (K-means with RFM) modeling techniques. These feature-activities will
+help you with segmenting the customers and then further with the help of it one can decide the
+strategies.
+In this section, you will be exploring on how to perform customer segmentation using RFM and
+Hybrid (K-means with RFM) modeling techniques.''')
+			st.subheader('In this section, you will learn how to')
+			st.write('1.Upload the dataset in the interface')
+			st.write('2.Use the different features related to both modelling techniques')
+			st.write('3.Acquire customer segmentation results')
+			st.write('4.Download the relevant processed table as a CSV file')
+			st.write('5.Access the segmented regions of customers')
+			colc1, colc2,colc3 = st.columns([0.1,2,0.1])
+			with colc2:
+				HtmlFile_3 = open("images/UserGuide./Customer-Segmentation_Compressed.html", 'r', encoding='utf-8')
+				source_code3 = HtmlFile_3.read()
+				print(source_code3)
+				components.html(source_code3, height = 700)
+				
+				
 		with st.expander('CUSTOMER CLASSIFICATION'):
 			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
