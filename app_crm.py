@@ -1332,8 +1332,6 @@ so as to get a comprehensive understanding.''')
 				print(source_code2)
 				components.html(source_code2, height = 700)
 				
-				
-				
 		with st.expander('CUSTOMER SEGMENTATION'):
 			st.write(''' Segmenting customers is the process of dividing up mass consumers into groups with similar
 needs and wants. It also helps in attaining customer satisfaction and overall profit at higher rates.
