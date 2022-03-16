@@ -1322,9 +1322,9 @@ which are analysis through SweetViz, Pandas Profiling and understanding the demo
 your customers. These three options will help you with analysis and visualization of your datasets
 so as to get a comprehensive understanding.''')
 #                         st.subheader('In this section,you will learn how to')
-                        st.write('1.Access the analysis and visualization reports through Sweetviz')
-                        st.write('2.Access the analysis and visualization reports through Pandas Profiling')
-                        st.write('3.Access the visualization of demographics of your customers')
+#                         st.write('1.Access the analysis and visualization reports through Sweetviz')
+#                         st.write('2.Access the analysis and visualization reports through Pandas Profiling')
+#                         st.write('3.Access the visualization of demographics of your customers')
                         colb1, colb2, colb3 = st.columns([0.1,2,0.1])
                         with colb2:
 				HtmlFile_2 = open("images/UserGuide./EDA-Analysis_Compressed.html", 'r', encoding='utf-8')
