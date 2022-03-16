@@ -322,7 +322,8 @@ class EDA_Analysis():
     source_code = HtmlFile.read() 
     print(source_code)
     components.html(source_code)
-
+  
+  @st.cache
   def SweetV(self,x):
     st.subheader('SweetVIZ Data Analysis Report')
     analysis = sv.analyze([x,'EDA'])
