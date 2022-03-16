@@ -1303,6 +1303,14 @@ the other options directing you to access all the feature-activities.''')
 						
 			imgaa1 = Image.open("images/UserGuide./USER GUIDE_CRM_TMA - UI-04.png")
 			st.image(imgaa1,width=150,use_column_width= True )
+			imgaa2 = Image.open('images/UserGuide./USER GUIDE_CRM_TMA - UI-05.png')
+			st.image(imgaa2,width=150,use_column_width= True )
+			imgaa3 = Image.open('images/UserGuide./USER GUIDE_CRM_TMA - UI-06.png')
+			st.image(imgaa3,width=150,use_column_width= True )
+			imgaa4 = Image.open('images/UserGuide./USER GUIDE_CRM_TMA - UI-07.png')
+			st.image(imgaa4,width=150,use_column_width= True )
+			
+			
 		with st.expander('EDA ANALYSIS'):     
 		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')		
