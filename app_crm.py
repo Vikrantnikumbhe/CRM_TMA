@@ -1300,15 +1300,16 @@ the other options directing you to access all the feature-activities.''')
 			st.write('3.Upload Main and Prediction datasets in the CRM Interface')
 			st.write('4.Display and get access to the Input of Main data')
 			st.write('5.Display and get access to the Input of Prediction data')
-						
-			imgaa1 = Image.open("images/UserGuide./USER GUIDE_CRM_TMA - UI-04.png")
-			st.image(imgaa1,width=150,use_column_width= True )
-			imgaa2 = Image.open('images/UserGuide./USER GUIDE_CRM_TMA - UI-05.png')
-			st.image(imgaa2,width=150,use_column_width= True )
-			imgaa3 = Image.open('images/UserGuide./USER GUIDE_CRM_TMA - UI-06.png')
-			st.image(imgaa3,width=150,use_column_width= True )
-			imgaa4 = Image.open('images/UserGuide./USER GUIDE_CRM_TMA - UI-07.png')
-			st.image(imgaa4,width=150,use_column_width= True )
+			
+			cola1,cola2,cola3 = st.columns(3)
+			with cola2:
+				aa = open("images/UserGuide./Home Page_Compressed.pdf", "rb")
+				contents99 = aa.read()
+				data_url99 = base64.b64encode(contents99).decode("utf-8")
+				aa.close()
+				st.markdown(F'<iframe src="data:application/pdf;base64,{data_url99}" width="500" height="700" type="application/pdf"></iframe>',unsafe_allow_html=True,)
+
+			
 			
 			
 		with st.expander('EDA ANALYSIS'):     
@@ -1335,6 +1336,10 @@ Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divid
 		with st.expander('ABOUT'):
 			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+	
+	
+	
+	
 	def Feed(self):
 		import sqlite3
 		conn = sqlite3.connect('student_feedback.db')
