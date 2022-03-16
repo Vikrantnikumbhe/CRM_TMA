@@ -1279,11 +1279,23 @@ The Team Mettle Amigos, consisting of tech enthusiasts and innovative minds, wit
 		st.write('''For any queries, get in touch with us at teammettleamigos5@gmail.com .
 To contact any individual from the team, you can directly message the particular individual over linkedin by searching his name.
 ''')
+		st.subheader('In this section, you will learn how to')
+		st.write('1.Get a brief overview of the CRM Interface')
+		st.write('2.Created structured format of Main and Prediction datasets')
+		st.write('3.Upload Main and Prediction datasets in the CRM Interface')
+		st.write('4.Display and get access to the Input of Main data')
+		st.write('5.Display and get access to the Input of Prediction data')
+		
 	def User(self):
 		
 		with st.expander('HOME'):
-			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
-Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+			st.write(''' Welcome to the CRM Interface! To help guide you through all the nitty gritty of the Interface this
+Home Page makes it easy to make you and our Interface more compatible.
+In this section, you will be exploring on how to be adaptive to the CRM Interface by understanding
+a brief overview of all the features, quick-go through video, options for uploading data sets and
+the other options directing you to access all the feature-activities.''')
+			img = Image.open("/content/WCE-Sangli-Logo.png")
+			st.image(img,width=150,use_column_width= True )
 		with st.expander('EDA ANALYSIS'):     
 		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')		
