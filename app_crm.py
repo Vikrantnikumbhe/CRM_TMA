@@ -274,7 +274,8 @@ market-basket analysis''')
 retention analysis. Get deeper insights
 on monthly revenue, growth rate, active 
 customers, total order, customer ratio 
-and customer retention.''')                        
+and customer retention.''')  
+		
           col13, col14 ,col15 = st.columns(3)
           with col14:
                img9 =Image.open("./images/CLTV.png")
