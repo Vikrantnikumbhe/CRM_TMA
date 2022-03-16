@@ -1271,6 +1271,10 @@ The Team Mettle Amigos, consisting of tech enthusiasts and innovative minds, wit
 To contact any individual from the team, you can directly message the particular individual over linkedin by searching his name.
 ''')
 	def User(self):
+		
+		with st.expander('HOME'):
+			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
 		with st.expander('EDA ANALYSIS'):     
 		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')		
@@ -1290,6 +1294,9 @@ Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divid
 			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
 		with st.expander('CLTV'):
+			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
+Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+		with st.expander('ABOUT'):
 			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
 	def Feed(self):
