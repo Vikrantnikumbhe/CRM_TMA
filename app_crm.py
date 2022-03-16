@@ -1308,7 +1308,7 @@ Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divid
 		conn = sqlite3.connect('student_feedback.db')
 		c = conn.cursor()
 		def create_table():
-			c.execute('CREATE TABLE IF NOT EXISTS feedback(date_submitted DATE, Q1 TEXT, Q2 INTEGER, Q3 INTEGER, Q4 TEXT, Q5 TEXT, Q6 TEXT, Q7 TEXT, Q8 TEXT)')
+			c.execute('CREATE TABLE IF NOT EXISTS feedback(date_submitted DATE, Q1 TEXT, Q2 INTEGER, Q3 INTEGER, Q4 TEXT, Q5 TEXT, Q6 TEXT, Q7 TEXT, Q8 TEXT, Q9 TEXT, Q10 TEXT)')
 		def add_feedback(date_submitted, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9,Q10):
 			c.execute('INSERT INTO feedback (date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9,Q10) VALUES (?,?,?,?,?,?,?,?,?,?,?)',(date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9,Q10))
 			conn.commit()
