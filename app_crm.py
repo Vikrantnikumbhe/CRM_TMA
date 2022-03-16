@@ -1236,6 +1236,10 @@ class Churn_Analysis():
     tx_retention = pd.DataFrame(retention_array)
     tx_retention.index = months
     return tx_retention
+
+
+
+###################################################################################
 class About():
 	def Dev(self):
 		st.subheader('About Organization')
@@ -1347,10 +1351,10 @@ Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divid
 			create_table()
 			add_feedback(d,question_1, question_2, question_3,question_4,question_5,  question_6, question_7, question_8, question_9, question_10)
 			st.success("Feedback submitted")
-			if st.button('See User Feedback: '):
-				query = pd.read_sql_query('''select * from feedback''', conn)
-				data = pd.DataFrame(query)
-				st.write(data)
+			query = pd.read_sql_query('''select * from feedback''', conn)
+			data = pd.DataFrame(query)
+			st.write(data)
+			
 			
 		
 
