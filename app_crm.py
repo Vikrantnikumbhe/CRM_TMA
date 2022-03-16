@@ -1326,10 +1326,7 @@ so as to get a comprehensive understanding.''')
 				HtmlFile_2 = open("images/UserGuide./EDA-Analysis_Compressed.html", 'r', encoding='utf-8')
 				source_code2 = HtmlFile_2.read()
 				print(source_code2)
-				components.html(source_code2, height = 700)
-				
-				
-				
+				components.html(source_code2, height = 700)				
 				
 		with st.expander('CUSTOMER SEGMENTATION'):
 			st.write(''' Segmenting customers is the process of dividing up mass consumers into groups with similar
@@ -1345,6 +1342,12 @@ help you with segmenting the customers and then further with the help of it one 
 strategies.
 In this section, you will be exploring on how to perform customer segmentation using RFM and
 Hybrid (K-means with RFM) modeling techniques.''')
+			st.subheader('In this section, you will learn how to')
+			st.write('1.Upload the dataset in the interface')
+			st.write('2.Use the different features related to both modelling techniques')
+			st.write('3.Acquire customer segmentation results')
+			st.write('4.Download the relevant processed table as a CSV file')
+			st.write('5.Access the segmented regions of customers')
 				
 				
 		with st.expander('CUSTOMER CLASSIFICATION'):
