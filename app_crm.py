@@ -1382,6 +1382,19 @@ Regression, K Nearest neighbors Classifier, Decision Tree, Random Forest, AdaBoo
 Gradient Boosting Classifier is done to let you select the right classifier based on its predicting
 ability, quality of fit and your requirements.
 In this section, you will be exploring on how to perform customer classification.''')
+			st.subheader('In this section, you will learn how to')
+			st.write('Display accuracy of all classification models')
+			st.write('Choose the right classifier amongst different classification models for prediction')			
+			cold1, cold2, cold3 = st.columns([0.1,2,0.1])
+			with cold2:
+				HtmlFile_4 = open("images/UserGuide./Customer Classification_Compressed.html", 'r', encoding='utf-8')
+				source_code4 = HtmlFile_4.read()
+				print(source_code4)
+				components.html(source_code4, height = 700)
+				
+				
+				
+				
 		with st.expander('SALES FORECASTING'):
 			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
