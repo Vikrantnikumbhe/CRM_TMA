@@ -261,7 +261,7 @@ get deeper insights for your next
 plans of action.''')
           with col11:
                img17 =Image.open("./images/Product recommendation.png")
-               st.subheader('5. Product Recommendation')
+               st.subheader('5.Product Recommendation')
                st.image(img17,caption = 'Product Recommendation',use_column_width= None )
                st.write('''Create real-time association rules for 
 product recommendation using 
