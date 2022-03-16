@@ -1417,17 +1417,34 @@ different ways on this interface.''')
 			st.write('Access the forecasting of a certain time period')
 			cole1, cole2, cole3 = st.columns([0.1,2,0.1])
 			with cole2:
-				aa = open("images/UserGuide./Sales Forecasting_Compressed.pdf", "rb")
-				contents99 = aa.read()
-				data_url99 = base64.b64encode(contents99).decode("utf-8")
-				aa.write(pdf_file.getbuffer())
-				aa.close()
-				st.markdown(F'<iframe src="data:application/pdf;base64,{data_url99}" width="500" height="700" type="application/pdf"></iframe>',unsafe_allow_html=True,)
-				
+				HtmlFile_5 = open("images/UserGuide./Sales Forecasting_Compressed.html", 'r', encoding='utf-8')
+				source_code5 = HtmlFile_5.read()
+				print(source_code5)
+				components.html(source_code5, height = 700)
+							
 				
 		with st.expander('PRODUCT RECOMMENDATION'):
-			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
-Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+			st.write(''' Product Recommendation, also known as market basket analysis, is a method for predicting
+which product combinations will sell the best based on inventory and sales data. In our interface,
+using association rules, the grouping of different products is done and the results are displayed.
+Using this feature of our interface, businesses can then determine which products are frequently
+purchased in conjunction with the solution.
+In this section, you will be exploring on how to generate the data for product recommendation
+and analyse it further for decision making.''')
+			
+			st.subheader('n this section, you will learn how to')
+			st.write('1.Upload the dataset in the interface')
+			st.write('2.Generate the association rules for recommending products')
+			st.write('3.Analyse the product recommendation data')
+			colf1, colf2, colf3 = st.columns([0.1,2,0.1])
+			with colf2:
+				HtmlFile_6 = open("images/UserGuide./Product Recommendation.html", 'r', encoding='utf-8')
+				source_code6 = HtmlFile_6.read()
+				print(source_code6)
+				components.html(source_code6, height = 700)
+				
+				
+				
 		with st.expander('CHURN RATE ANALYSIS'):
 			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
