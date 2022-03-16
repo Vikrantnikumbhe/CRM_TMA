@@ -323,7 +323,7 @@ class EDA_Analysis():
     print(source_code)
     components.html(source_code)
   
-  @st.experimental_memo
+  
   def SweetV(self,x):
     st.subheader('SweetVIZ Data Analysis Report')
     analysis = sv.analyze([x,'EDA'])
