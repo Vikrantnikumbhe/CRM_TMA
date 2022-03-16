@@ -1294,8 +1294,8 @@ Home Page makes it easy to make you and our Interface more compatible.
 In this section, you will be exploring on how to be adaptive to the CRM Interface by understanding
 a brief overview of all the features, quick-go through video, options for uploading data sets and
 the other options directing you to access all the feature-activities.''')
-			img = Image.open("/content/WCE-Sangli-Logo.png")
-			st.image(img,width=150,use_column_width= True )
+# 			img = Image.open("/content/WCE-Sangli-Logo.png")
+# 			st.image(img,width=150,use_column_width= True )
 		with st.expander('EDA ANALYSIS'):     
 		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')		
