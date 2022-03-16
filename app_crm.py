@@ -267,7 +267,7 @@ plans of action.''')
 product recommendation using 
 market-basket analysis''')                
           with col12:
-               img8 =Image.open("./images/Customer Retention.png")
+               img8 =Image.open("./images/Customer Retension.png")
                st.subheader('6. Forensic Analysis')
                st.image(img8,caption = 'Forensic Analysis',use_column_width= None )
                st.text('''Perform churn rate, cohort, and 
