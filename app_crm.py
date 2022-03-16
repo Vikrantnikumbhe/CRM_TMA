@@ -1289,7 +1289,7 @@ To contact any individual from the team, you can directly message the particular
 		
 		
 		
-	@st.cache	
+		
 	def User(self):
 		
 		with st.expander('HOME'):
