@@ -1317,29 +1317,29 @@ Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divid
 		question_1 = st.selectbox('Where did you got to know about these app?',('Youtube','Github', 'Linkedin', 'Twitter','Instagram','Recommended by friend'))
 		st.write('You selected:', question_1)
 		
-		question_1 = st.text_input('What is your Name?')
-		st.write('You selected:', question_1)
+		question_1 = st.text_input('Please Enter your Name?')
+		st.write('Your Name is :', question_1)
 		
-		question_2 = st.slider('What is your current age?', 18,100)
-		st.write('You selected:', question_2)
+		question_2 = st.slider('Please Enter your current age?', 18,100)
+		st.write('You age:', question_2)
 		
-		question_3 = st.selectbox('Gender?',('','Male', 'Women','Others'))
-		st.write('You selected:', question_3)
+		question_3 = st.selectbox('Please Enter your age',('','Male', 'Women','Others'))
+		st.write('Your Gender is:', question_3)
 		
-		question_4 = st.text_input('Name of the Organization/Company/Brand')
-		st.write('You selected:', question_4)
+		question_4 = st.text_input('Please Enter Name of the Organization/Company/Brand')
+		st.write('You work in:', question_4)
 		
-		question_5 = st.slider('Overall, how satisfied are you with the Application? (5 being very happy and 1 being very dissapointed)', 1,5,1)
+		question_5 = st.slider('Overall, how satisfied are you with the Application? (10 being very happy and 1 being very dissapointed)', 1,10,1)
 		st.write('You selected:', question_5)
 		
 		question_6 = st.selectbox('Was the application fun and interactive?',('','Yes', 'No'))
 		st.write('You selected:', question_6)
 		
-		question_7 = st.selectbox('Was the hjjhgjhgjhgj?',('','Yes', 'No'))
+		question_7 = st.text_input('Please Enter your Email id/Contact number')
 		st.write('You selected:', question_7)
 		
 		
-		question_8 = st.selectbox('Were you content with the Activities?',('','Yes', 'No'))
+		question_8 = st.text_input('Please Enter any Query/Suggestion/Complain/doubt if you have one.')
 		st.write('You selected:', question_8)
 		
 		
