@@ -229,7 +229,7 @@ st.markdown(add_line1, unsafe_allow_html=True)
 
 
 class ghar():
-     @st.cache(suppress_st_warning=True)
+     
      def intro(self):
           col7, col8 ,col9 = st.columns(3)
           with col7:
