@@ -1300,12 +1300,9 @@ the other options directing you to access all the feature-activities.''')
 			st.write('3.Upload Main and Prediction datasets in the CRM Interface')
 			st.write('4.Display and get access to the Input of Main data')
 			st.write('5.Display and get access to the Input of Prediction data')
-			
-			
-			
-			
-# 			img = Image.open("/content/WCE-Sangli-Logo.png")
-# 			st.image(img,width=150,use_column_width= True )
+						
+			imgaa1 = Image.open("images/UserGuide./USER GUIDE_CRM_TMA - UI-04.png")
+			st.image(imgaa1,width=150,use_column_width= True )
 		with st.expander('EDA ANALYSIS'):     
 		        st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')		
