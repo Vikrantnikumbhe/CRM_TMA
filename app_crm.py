@@ -229,6 +229,7 @@ st.markdown(add_line1, unsafe_allow_html=True)
 
 
 class ghar():
+     @st.cache
      def intro(self):
           col7, col8 ,col9 = st.columns(3)
           with col7:
@@ -1248,6 +1249,7 @@ class Churn_Analysis():
 
 ###################################################################################
 class About():
+	
 	def Dev(self):
 		st.subheader('About Organization')
 		colf, colg = st.columns([2.5,1])
@@ -1287,7 +1289,7 @@ To contact any individual from the team, you can directly message the particular
 		
 		
 		
-		
+	@st.cache	
 	def User(self):
 		
 		with st.expander('HOME'):
