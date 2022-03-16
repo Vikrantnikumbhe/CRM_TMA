@@ -1692,7 +1692,7 @@ def main():
       aa.User()
       add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
       st.markdown(add_line, unsafe_allow_html=True)
-    if st.sidebar.checkbox('See Organization and Developers'):
+    if st.sidebar.checkbox('MEET THE TEAM'):
       aa.Dev()
       add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
       st.markdown(add_line, unsafe_allow_html=True)
