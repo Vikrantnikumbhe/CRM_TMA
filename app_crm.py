@@ -1308,9 +1308,9 @@ Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divid
 		conn = sqlite3.connect('student_feedback.db')
 		c = conn.cursor()
 		def create_table():
-			c.execute('CREATE TABLE IF NOT EXISTS feedback(date_submitted DATE, Q1 TEXT, Q2 INTEGER, Q3 INTEGER, Q4 TEXT, Q5 TEXT, Q6 TEXT, Q7 TEXT, Q8 TEXT, Q9 TEXT, Q10 TEXT)')
-		def add_feedback(date_submitted, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9,Q10):
-			c.execute('INSERT INTO feedback (date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9,Q10) VALUES (?,?,?,?,?,?,?,?,?,?,?)',(date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9,Q10))
+			c.execute('CREATE TABLE IF NOT EXISTS feedback(date_submitted DATE, Q1 TEXT, Q2 INTEGER, Q3 INTEGER, Q4 TEXT, Q5 TEXT, Q6 TEXT, Q7 TEXT, Q8 TEXT)')
+		def add_feedback(date_submitted, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8):
+			c.execute('INSERT INTO feedback (date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8) VALUES (?,?,?,?,?,?,?,?,?)',(date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8))
 			conn.commit()
 		st.title("User Feedback")
 		d = st.date_input("Today's date",None, None, None, None)
@@ -1342,14 +1342,11 @@ Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divid
 		question_8 = st.selectbox('Were you content with the Activities?',('','Yes', 'No'))
 		st.write('You selected:', question_8)
 		
-		question_9 = st.selectbox('Would you recommend it to others?',('','Yes', 'No'))
-		st.write('You selected:', question_9)
 		
-		question_10 = st.text_input('What could have been better?', max_chars=100)
 		
 		if st.button("Submit feedback"):
 			create_table()
-			add_feedback(d,question_1, question_2, question_3,question_4,question_5,  question_6, question_7, question_8, question_9, question_10)
+			add_feedback(d,question_1, question_2, question_3,question_4,question_5,  question_6, question_7, question_8)
 			st.success("Feedback submitted")
 			query = pd.read_sql_query('''select * from feedback''', conn)
 			data = pd.DataFrame(query)
