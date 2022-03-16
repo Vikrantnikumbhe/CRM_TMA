@@ -1432,7 +1432,7 @@ purchased in conjunction with the solution.
 In this section, you will be exploring on how to generate the data for product recommendation
 and analyse it further for decision making.''')
 			
-			st.subheader('n this section, you will learn how to')
+			st.subheader('In this section, you will learn how to')
 			st.write('1.Upload the dataset in the interface')
 			st.write('2.Generate the association rules for recommending products')
 			st.write('3.Analyse the product recommendation data')
@@ -1446,14 +1446,76 @@ and analyse it further for decision making.''')
 				
 				
 		with st.expander('CHURN RATE ANALYSIS'):
-			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
-Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+			st.write(''' In this section, analysis of forensic aspects of a dataset like churn rate using different visual plots
+and key metrics can be done. Analyzing forensic aspects is a step to offer customized solutions
+and motivate actions. Forensic analysis helps businesses to identify deviations from the normal.
+In our interface, by considering the input data, various visualisations can be displayed in this
+section, using which the you can know the market trends and decide the customized solutions.
+In this section, you will come across several such bar, line, scatter plots, etc. in the form of results
+which can help you make sound business decisions.''')
+			st.subheader('In this section, you will learn how to')
+			st.write('1.Upload the dataset in the interface')
+			st.write('2.Generate different visualisations related to forensic aspects')
+			st.write('3.Analyse the visualisations for decision making')
+			colg1,colg2, colg3  = st.columns([0.1,2,0.1])
+			with colg2:
+				HtmlFile_7 = open("images/UserGuide./Churn Rate Analysis_Compressed.html", 'r', encoding='utf-8')
+				source_code7 = HtmlFile_7.read()
+				print(source_code7)
+				components.html(source_code7, height = 700)
+				
+				
+				
+				
 		with st.expander('CLTV'):
-			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
-Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+			st.write(''' In this section, the focus is made on generating customers’ lifetime value for a business of the
+provided dataset. CLTV simply is a predicted value of company's net profit contributed to its
+overall future relationship with a customer. Knowing the customer base’s lifetime value can
+enable businesses to strategize and better the customer experience accordingly, thus increasing
+the profits of future. In our interface, by providing the input data, a tabulated information related
+to various aspects of customers’ lifetime value can be generated.
+In this section, you will come across the steps on how to predict customer’s lifetime value using
+this interface.''')
+			st.subheader('In this section, you will learn how to')
+			st.write('1.Upload the dataset in the interface')
+			st.write('2.Generate the information measuring customer’s value')
+			st.write('3.Download the Sales forecasting table as a CSV file')
+			st.write('4.Access the lifetime value and other aspects of a certain customer')
+			
+			colh1, colh2, colh3 = st.columns([0.1,2,0.1])
+			with colh2:
+				HtmlFile_8 = open("images/UserGuide./CLTV_Compressed.html", 'r', encoding='utf-8')
+				source_code8 = HtmlFile_8.read()
+				print(source_code8)
+				components.html(source_code8, height = 700)
+				
+				
+				
+			
 		with st.expander('ABOUT'):
-			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
-Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+			st.write(''' In this section, some easy steps to use and access the about page of this interface will be
+discussed. The primary purpose of an about us page is to inform the reader, especially a beginner
+user, about the company, its vision and more about website. In our interface, besides the general
+information, we also provide the user steps for different features which can guide user for
+smooth operations.
+In this section, you will get a quick view on what exactly is the about page, its use for the
+beginners and how your queries can be resolved.''')
+			st.subheader('In this section, you will learn how to')
+			st.write('1.Use the About Page in the interface')
+			st.write('2.Know more about the inception of this interface')
+			st.write('3.Get in touch with the team behind this interface')
+			
+			coli1, coli2, coli3 = st.columns([0.1,2,0.1])
+			with coli2:
+				HtmlFile_9 = open("images/UserGuide./About Page.html", 'r', encoding='utf-8')
+				source_code9 = HtmlFile_9.read()
+				print(source_code9)
+				components.html(source_code9, height = 700)
+				
+				
+				
+				
+				
 	
 	
 	
