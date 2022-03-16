@@ -106,8 +106,8 @@ st.set_page_config(
 # st.markdown(new_title, unsafe_allow_html=True)
 new_title = '<p style="font-family:serif; font-weight:bold;color:Green;font-size: 60px;">ग्राहक-360</p>'
 
-imgz = Image.open("./WCE-Sangli-Logo.png")
-st.sidebar.image(imgz,caption = 'WALCHAND COLLEGE OF ENGINEERING,SANGLI',use_column_width='auto')
+imgz = Image.open("./title.PNG")
+st.sidebar.image(imgz,use_column_width='auto')
 
 
 colT1,colT2, colT3 = st.columns(3)
