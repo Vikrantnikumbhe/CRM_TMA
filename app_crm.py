@@ -1316,6 +1316,7 @@ visualize your data set.In this section, you will be exploring on how to use thr
 which are analysis through SweetViz, Pandas Profiling and understanding the demographics of
 your customers. These three options will help you with analysis and visualization of your datasets
 so as to get a comprehensive understanding.''')
+			st.subheader('in this section, you will learn how to')
 				
 		with st.expander('CUSTOMER SEGMENTATION'):
 			st.write(''' Segmenting customers is the process of dividing up mass consumers into groups with similar
