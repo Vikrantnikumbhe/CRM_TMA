@@ -1308,20 +1308,19 @@ the other options directing you to access all the feature-activities.''')
 				print(source_code1)
 				components.html(source_code1, height = 700) 							
 			
-		with st.expander('EDA ANALYSIS'):     
-		        st.write('''Visualization of your input dataset will help you with your analysis. To understand the statistical
+		with st.expander('EDA ANALYSIS'):
+			st.write('''Visualization of your input dataset will help you with your analysis. To understand the statistical
 data, visualization and correlations of the attributes, and hidden patterns we provide you the
 feature-activity tool of EDA Analysis in CRM Interface which will exclusively help you analyse and
 visualize your data set.In this section, you will be exploring on how to use three options provided under EDA Analysis
 which are analysis through SweetViz, Pandas Profiling and understanding the demographics of
 your customers. These three options will help you with analysis and visualization of your datasets
 so as to get a comprehensive understanding.''')
-                        st.subheader('In this section,you will learn how to')
-			
-                        st.write('1.Access the analysis and visualization reports through Sweetviz')
-                        st.write('2.Access the analysis and visualization reports through Pandas Profiling')
-                        st.write('3.Access the visualization of demographics of your customers')
-                        colb1, colb2, colb3 = st.columns([0.1,2,0.1])
+			st.subheader('In this section,you will learn how to')
+			st.write('1.Access the analysis and visualization reports through Sweetviz')
+			st.write('2.Access the analysis and visualization reports through Pandas Profiling')
+			st.write('3.Access the visualization of demographics of your customers')
+			colb1, colb2, colb3 = st.columns([0.1,2,0.1])
                         with colb2:
                                 HtmlFile_2 = open("images/UserGuide./EDA-Analysis_Compressed.html", 'r', encoding='utf-8')
 				7
