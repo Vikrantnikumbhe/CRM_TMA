@@ -106,7 +106,7 @@ st.set_page_config(
 # st.markdown(new_title, unsafe_allow_html=True)
 new_title = '<p style="font-family:serif; font-weight:bold;color:Green;font-size: 60px;">ग्राहक-360</p>'
 
-imgze = Image.open("./title.PNG")
+imgze = Image.open("./images/title.PNG")
 st.sidebar.image(imgze,use_column_width='auto')
 
 
