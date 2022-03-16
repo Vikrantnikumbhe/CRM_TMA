@@ -1348,6 +1348,14 @@ Hybrid (K-means with RFM) modeling techniques.''')
 			st.write('3.Acquire customer segmentation results')
 			st.write('4.Download the relevant processed table as a CSV file')
 			st.write('5.Access the segmented regions of customers')
+			colc1, colc2, colc3 = st.columns([0.1,2,0.1])
+			with colc2:
+				HtmlFile_3 = open("images/UserGuide./Customer-Segmentation_Compressed.html", 'r', encoding='utf-8')
+				source_code3 = HtmlFile_3.read()
+				print(source_code3)
+				components.html(source_code3, height = 700)
+				
+				
 				
 				
 		with st.expander('CUSTOMER CLASSIFICATION'):
