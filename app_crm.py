@@ -1399,8 +1399,32 @@ In this section, you will be exploring on how to perform customer classification
 				
 				
 		with st.expander('SALES FORECASTING'):
-			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
-Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
+			st.write(''' Sales forecasting is the business methodology of predicting future sales of a company for a
+certain time period (daily, weekly, monthly, quarterly, etc.). Though it’s hard to forecast the
+accurate sales, there are certain AI-ML methodologies using which the sales can be predicted for
+business analysis. Forecasts are helpful to most of the departments in any company like sales,
+operations, productions departments, etc.
+To forecast the future sales based on historic sales patterns in the dataset, the time series analysis
+of data is done. This analysis comprises of extracting meaningful statistics and other
+characteristics of the data. In this interface, forecasting of future sales using the historical sales
+patterns in the dataset is done by using time series forecasting models.
+In this section, you will be exploring on how to perform sales forecasting and access results in
+different ways on this interface.''')
+			st.subheader('In this section, you will learn how to')
+			st.write('1.Upload the dataset in the interface')
+			st.write('2.Use the different features and acquire the forecasts')
+			st.write('3.Download the Sales forecasting table as a CSV file')
+			st.write('Access the forecasting of a certain time period')
+			cole1, cole2, cole3 = st.columns([0.1,2,0.1])
+			with cole2:
+				aa = open("images/UserGuide./Sales Forecasting_Compressed.pdf", "rb")
+				contents99 = aa.read()
+				data_url99 = base64.b64encode(contents99).decode("utf-8")
+				aa.write(pdf_file.getbuffer())
+				aa.close()
+				st.markdown(F'<iframe src="data:application/pdf;base64,{data_url99}" width="500" height="700" type="application/pdf"></iframe>',unsafe_allow_html=True,)
+				
+				
 		with st.expander('PRODUCT RECOMMENDATION'):
 			st.write(''' Sweetviz is a wonderful and very useful Python library that provides us with the EDA of a given dataset. Sweetviz let us perform a list of different analyses
 Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divide Dataset using boolean variable and Compare them.''')
