@@ -1316,17 +1316,18 @@ visualize your data set.In this section, you will be exploring on how to use thr
 which are analysis through SweetViz, Pandas Profiling and understanding the demographics of
 your customers. These three options will help you with analysis and visualization of your datasets
 so as to get a comprehensive understanding.''')
-			
                         st.subheader('In this section,you will learn how to')
-#                         st.write('1.Access the analysis and visualization reports through Sweetviz')
-#                         st.write('2.Access the analysis and visualization reports through Pandas Profiling')
-#                         st.write('3.Access the visualization of demographics of your customers')
-#                         colb1, colb2, colb3 = st.columns([0.1,2,0.1])
-#                         with colb2:
-# 				HtmlFile_2 = open("images/UserGuide./EDA-Analysis_Compressed.html", 'r', encoding='utf-8')
-# 				source_code2 = HtmlFile_2.read()
-# 				print(source_code2)
-# 				components.html(source_code2, height = 700)
+			
+                        st.write('1.Access the analysis and visualization reports through Sweetviz')
+                        st.write('2.Access the analysis and visualization reports through Pandas Profiling')
+                        st.write('3.Access the visualization of demographics of your customers')
+                        colb1, colb2, colb3 = st.columns([0.1,2,0.1])
+                        with colb2:
+                                HtmlFile_2 = open("images/UserGuide./EDA-Analysis_Compressed.html", 'r', encoding='utf-8')
+				7
+                                source_code2 = HtmlFile_2.read()
+                                print(source_code2)
+                                components.html(source_code2, height = 700)
 				
 		with st.expander('CUSTOMER SEGMENTATION'):
 			st.write(''' Segmenting customers is the process of dividing up mass consumers into groups with similar
