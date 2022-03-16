@@ -1303,11 +1303,16 @@ the other options directing you to access all the feature-activities.''')
 			
 			cola1,cola2,cola3 = st.columns(3)
 			with cola2:
-				aa = open("images/UserGuide./Home Page_Compressed.pdf", "rb")
-				contents99 = aa.read()
-				data_url99 = base64.b64encode(contents99).decode("utf-8")
-				aa.close()
-				st.markdown(F'<iframe src="data:application/pdf;base64,{data_url99}" width="500" height="700" type="application/pdf"></iframe>',unsafe_allow_html=True,)
+				HtmlFile_1 = open("images/UserGuide./Home-Page_Compressed.html", 'r', encoding='utf-8')
+				source_code1 = HtmlFile_1.read()
+				print(source_code1)
+				components.html(source_code1, height = 1500)
+# 				aa = open("images/UserGuide./Home Page_Compressed.pdf", "rb")
+# 				contents99 = aa.read()
+# 				data_url99 = base64.b64encode(contents99).decode("utf-8")
+# 				aa.close()
+# 				st.markdown(F'<iframe src="data:application/pdf;base64,{data_url99}" width="500" height="700" type="application/pdf"></iframe>',unsafe_allow_html=True,)
+
 
 			
 			
