@@ -1323,7 +1323,7 @@ Single Dataset Analysis , Target Variable Analysis , Compare two datasets, Divid
 		question_2 = st.slider('Please Enter your current age?', 18,100)
 		st.write('You age:', question_2)
 		
-		question_3 = st.selectbox('Please Enter your age',('','Male', 'Women','Others'))
+		question_3 = st.selectbox('Please Enter your Gender',('','Male', 'Women','Others'))
 		st.write('Your Gender is:', question_3)
 		
 		question_4 = st.text_input('Please Enter Name of the Organization/Company/Brand')
