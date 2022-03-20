@@ -106,15 +106,15 @@ st.set_page_config(
 # st.markdown(new_title, unsafe_allow_html=True)
 new_title = '<p style="font-family:serif; font-weight:bold;color:Green;font-size: 60px;">ग्राहक-360</p>'
 
-imgze = Image.open("./images/title.PNG")
-st.sidebar.image(imgze,use_column_width='auto')
+# imgze = Image.open("./images/title.PNG")
+# st.sidebar.image(imgze,use_column_width='auto')
 
 
-# file_8 = open("./images/video (1).gif", "rb")
-# contents88 = file_8.read()
-# data_url88 = base64.b64encode(contents88).decode("utf-8")
-# file_8.close()
-# st.sidebar.markdown(f'<img src="data:image/gif;base64,{data_url88}" alt="cat gif" width="300" height="220">',unsafe_allow_html=True,)
+file_8 = open("./images/video (2).gif", "rb")
+contents88 = file_8.read()
+data_url88 = base64.b64encode(contents88).decode("utf-8")
+file_8.close()
+st.sidebar.markdown(f'<img src="data:image/gif;base64,{data_url88}" alt="cat gif" width="300" height="220">',unsafe_allow_html=True,)
 
 
 colT1,colT2, colT3 = st.columns(3)
