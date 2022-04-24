@@ -130,20 +130,20 @@ with col3:
   imgt = Image.open("./images/grahak-360.PNG")
   st.image(imgt,use_column_width='auto')
 with col5:
-  j = '''Attention decision-makers! Tired of cluttering through oodles
-of spreadsheets?Looking for a comprehensive gizmo to alleviate 
-your prudent judgments? Then, by landing here you have hit the
-bullseye! This ‘NAME’ built up with all-inclusive features aids
-you with prospective-descriptive-predictive analysis. Guide you
-to get a panorama of your data. Assist you to segment and 
-classifying your customers. Help to create association rules for 
-product recommendations. Support you to predict future transactions
-and your company’s net profit contribution to an overall future
-relationship with your customers. Help you get an upper hand on
-forecasting future sales.Be your helping hand to do forensic 
-analysis like churn rate, cohort, and retention analytics. Want
-to get in the nitty-gritty to experience it first hand? 
-Then grab your data and Let's Get Started!!!.'''
+  j = '''Attention decision-makers!! Are you tired of skimming through oodles
+  of spreadsheets? Looking for a comprehensive contrived CRM tool to alleviate
+  your prudent judgments? Then, by landing here, you have hit the bullseye!
+  This Grahak360 built up, with all-inclusive features, will aid you with
+  predictive analytics. It will guide you to get a panorama of your data.
+  The tool will assist you to segment and classify your customers.
+  It will help you create association rules for product recommendations
+  and support you to predict future transactions and your company’s net profit
+  contribution to an overall future relationship with your customers.
+  Also, it will benefit you to get an upper hand on forecasting future sales.
+  In short, it will be your helping hand to do forensic analyses by analyzing
+  the retention analytics of your customers. Do you want to get down to the 
+  nitty-gritty and see it for yourself? Then grab your data and
+  let's get started!!!'''
   st.write(j)
 
 add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
