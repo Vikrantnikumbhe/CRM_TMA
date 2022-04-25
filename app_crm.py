@@ -1588,7 +1588,7 @@ beginners and how your queries can be resolved.''')
 #------------------------------xox----------------------------------------------
 
 def main():
-  activities = [ 'HOME', 'Data Visualization and Analysis', 'Customer Segmentation','Customer Classification','Sales Forecasting','Product_Recommendation','Forensic Analysis','Customer Linked Predictions', 'About']
+  activities = [ 'HOME', 'Data Visualization and Analysis', 'Customer Segmentation','Customer Classification','Sales Forecasting','Product Recommendation','Forensic Analysis','Customer Linked Predictions', 'About']
   choice = st.sidebar.selectbox("Select Activities",activities, key = '6')
 
   if choice == 'HOME':
@@ -1618,7 +1618,7 @@ def main():
       st.write('Here’s the demographic visualization of your customers globally. This map visualisation is brought to you by ‘Mapbox’, a powerful tool for building interactive customizable maps and integrating location and navigation data into your apps and websites. The regions highlighted in red in the map above denote the concentration of customers in that particular regions. Let’s hope someday that your business captures the whole globe and you may see this map whole in red!!')
       add_line1= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
       st.markdown(add_line1, unsafe_allow_html=True)
-  if choice == 'Product_Recommendation':
+  if choice == 'Product Recommendation':
     rules.Association_rules()
     add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
     st.markdown(add_line, unsafe_allow_html=True)
