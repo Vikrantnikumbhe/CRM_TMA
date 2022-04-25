@@ -275,7 +275,7 @@ plans of action.''')
 product recommendation using 
 market-basket analysis''')                
           with col12:
-               img8 =Image.open("./images/Customer Retension.png")
+               img8 =Image.open("./images/Customer Retention.png")
                st.subheader('6. Forensic Analysis')
                st.image(img8,caption = 'Forensic Analysis',use_column_width= None )
                st.write('''Perform churn rate, cohort, and 
@@ -1588,13 +1588,13 @@ beginners and how your queries can be resolved.''')
 #------------------------------xox----------------------------------------------
 
 def main():
-  activities = [ 'HOME', 'EDA_Analysis', 'Customer Segmentation','Customer Classification','Sales Forecasting','Product_Recommendation','Churn Rate Analysis','CLTV', 'About']
+  activities = [ 'HOME', 'Data Visualization and Analysis', 'Customer Segmentation','Customer Classification','Sales Forecasting','Product_Recommendation','Forensic Analysis','Customer Linked Predictions', 'About']
   choice = st.sidebar.selectbox("Select Activities",activities, key = '6')
 
   if choice == 'HOME':
     st.subheader('**Welcome to the application!!! Visualize CRM tasks in one click.**')
     g.intro()
-  if choice == 'EDA_Analysis':
+  if choice == 'Data Visualization and Analysis':
     st.sidebar.subheader('Exploratory Data Analysis')
     st.subheader('Welcome to the section of Exploratory Data Analysis!! Visualize your input dataset at just one click in a detailed report format')
     if st.sidebar.checkbox('SweetViz Analysis', key = '10'):
@@ -1791,7 +1791,7 @@ def main():
         st.write('Above dataframe represents the result for the classifier model selected. The ‘0’ value under cluster indicates customers with high valued customers while customers with ‘1’ value indicate comparatively less valued customers.')
         add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
         st.markdown(add_line, unsafe_allow_html=True)
-  if choice == 'CLTV':
+  if choice == 'Customer Linked Predictions':
     st.sidebar.subheader('Here we will Explore Customer Lifetime Value')
     if st.sidebar.checkbox('CLTV Dataframe', key = '32'):
       st.download_button(label=" Download CLTV DataFrame as csv",data=cc.C_L_T_V().to_csv().encode('utf-8'),file_name='CLTV_DataFrame.csv',mime='text/csv',)
@@ -1823,7 +1823,7 @@ def main():
      st.write('Looks like this particular date of the month is special for your business! Hope you are satisfied with the corresponding sales forecasting.')
      add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
      st.markdown(add_line, unsafe_allow_html=True)
-  if choice == 'Churn Rate Analysis':
+  if choice == 'Forensic Analysis':
     
     if st.sidebar.checkbox('Cohort Analysis'):
       st.subheader('Let’s identify some groups within your dataset that share common characteristics and that can help your business generate a revenue in return.')
