@@ -1521,7 +1521,12 @@ beginners and how your queries can be resolved.''')
 	
 	
 	
-# 	def Feed(self):
+	def Feed(self):
+		HtmlFile_10 = open("Feedback./New_Customer_Registration_Form.html", 'r', encoding='utf-8')
+		source_code10 = HtmlFile_10.read()
+		print(source_code10)
+		components.html(source_code10, height = 700)
+		
 # 		import sqlite3
 # 		conn = sqlite3.connect('student_feedback.db')
 # 		c = conn.cursor()
@@ -1916,7 +1921,7 @@ def main():
       add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
       st.markdown(add_line, unsafe_allow_html=True)
     if st.sidebar.checkbox('User Feedback'):
-      aa.jot()
+      aa.Feed()
 
 if __name__=='__main__':
   dataframe = EDA_Analysis()
