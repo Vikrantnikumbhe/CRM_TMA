@@ -1511,8 +1511,7 @@ beginners and how your queries can be resolved.''')
 				source_code9 = HtmlFile_9.read()
 				print(source_code9)
 				components.html(source_code9, height = 700)
-	def jot(self):
-		components.html(<script type="text/javascript" src="https://form.jotform.com/jsform/221170497557461"></script>)
+	
 
 				
 				
@@ -1522,54 +1521,54 @@ beginners and how your queries can be resolved.''')
 	
 	
 	
-	def Feed(self):
-		import sqlite3
-		conn = sqlite3.connect('student_feedback.db')
-		c = conn.cursor()
-		def create_table():
-			c.execute('CREATE TABLE IF NOT EXISTS feedback(date_submitted DATE, Q1 TEXT, Q2 INTEGER, Q3 INTEGER, Q4 TEXT, Q5 TEXT, Q6 TEXT, Q7 TEXT, Q8 TEXT)')
-		def add_feedback(date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8):
-			c.execute('INSERT INTO feedback (date_submitted, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8) VALUES (?,?,?,?,?,?,?,?,?)',(date_submitted, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8))
-			conn.commit()
-		st.title("User Feedback")
-		d = st.date_input("Today's date",None, None, None, None)
-		question_1 = st.selectbox('Where did you got to know about these app?',('Youtube','Github', 'Linkedin', 'Twitter','Instagram','Recommended by friend'))
-		st.write('You selected:', question_1)
+# 	def Feed(self):
+# 		import sqlite3
+# 		conn = sqlite3.connect('student_feedback.db')
+# 		c = conn.cursor()
+# 		def create_table():
+# 			c.execute('CREATE TABLE IF NOT EXISTS feedback(date_submitted DATE, Q1 TEXT, Q2 INTEGER, Q3 INTEGER, Q4 TEXT, Q5 TEXT, Q6 TEXT, Q7 TEXT, Q8 TEXT)')
+# 		def add_feedback(date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8):
+# 			c.execute('INSERT INTO feedback (date_submitted, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8) VALUES (?,?,?,?,?,?,?,?,?)',(date_submitted, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8))
+# 			conn.commit()
+# 		st.title("User Feedback")
+# 		d = st.date_input("Today's date",None, None, None, None)
+# 		question_1 = st.selectbox('Where did you got to know about these app?',('Youtube','Github', 'Linkedin', 'Twitter','Instagram','Recommended by friend'))
+# 		st.write('You selected:', question_1)
 		
-		question_1 = st.text_input('Please Enter your Name?')
-		st.write('Your Name is :', question_1)
+# 		question_1 = st.text_input('Please Enter your Name?')
+# 		st.write('Your Name is :', question_1)
 		
-		question_2 = st.slider('Please Enter your current age?', 18,100)
-		st.write('You age:', question_2)
+# 		question_2 = st.slider('Please Enter your current age?', 18,100)
+# 		st.write('You age:', question_2)
 		
-		question_3 = st.selectbox('Please Enter your Gender',('','Male', 'Women','Others'))
-		st.write('Your Gender is:', question_3)
+# 		question_3 = st.selectbox('Please Enter your Gender',('','Male', 'Women','Others'))
+# 		st.write('Your Gender is:', question_3)
 		
-		question_4 = st.text_input('Please Enter Name of the Organization/Company/Brand')
-		st.write('You work in:', question_4)
+# 		question_4 = st.text_input('Please Enter Name of the Organization/Company/Brand')
+# 		st.write('You work in:', question_4)
 		
-		question_5 = st.slider('Overall, how satisfied are you with the Application? (10 being very happy and 1 being very dissapointed)', 1,10,1)
-		st.write('You selected:', question_5)
+# 		question_5 = st.slider('Overall, how satisfied are you with the Application? (10 being very happy and 1 being very dissapointed)', 1,10,1)
+# 		st.write('You selected:', question_5)
 		
-		question_6 = st.selectbox('Was the application fun and interactive?',('','Yes', 'No'))
-		st.write('You selected:', question_6)
+# 		question_6 = st.selectbox('Was the application fun and interactive?',('','Yes', 'No'))
+# 		st.write('You selected:', question_6)
 		
-		question_7 = st.text_input('Please Enter your Email id/Contact number')
-		st.write('You selected:', question_7)
-		
-		
-		question_8 = st.text_input('Please Enter any Query/Suggestion/Complain/doubt if you have one.')
-		st.write('You selected:', question_8)
+# 		question_7 = st.text_input('Please Enter your Email id/Contact number')
+# 		st.write('You selected:', question_7)
 		
 		
+# 		question_8 = st.text_input('Please Enter any Query/Suggestion/Complain/doubt if you have one.')
+# 		st.write('You selected:', question_8)
 		
-		if st.button("Submit feedback"):
-			create_table()
-			add_feedback(d,question_1, question_2, question_3,question_4,question_5,  question_6, question_7, question_8)
-			st.success("Feedback submitted")
-			query = pd.read_sql_query('''select * from feedback''', conn)
-			data = pd.DataFrame(query)
-			st.write(data)
+		
+		
+# 		if st.button("Submit feedback"):
+# 			create_table()
+# 			add_feedback(d,question_1, question_2, question_3,question_4,question_5,  question_6, question_7, question_8)
+# 			st.success("Feedback submitted")
+# 			query = pd.read_sql_query('''select * from feedback''', conn)
+# 			data = pd.DataFrame(query)
+# 			st.write(data)
 			
 			
 		
@@ -1917,7 +1916,7 @@ def main():
       add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
       st.markdown(add_line, unsafe_allow_html=True)
     if st.sidebar.checkbox('User Feedback'):
-      aa.jot()
+#       aa.jot()
 
 if __name__=='__main__':
   dataframe = EDA_Analysis()
