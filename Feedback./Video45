@@ -6,8 +6,7 @@ Embed a Youtube video
 </Title>  
 </Head>  
 <Body>  
-Hello JavaTpoint! <br>  
-Hello User! <br>   
+  
 <iframe height="400" width="500"    
 src="https://youtu.be/fOVTyZxDuOQ">   
 </iframe>   
