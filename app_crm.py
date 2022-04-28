@@ -1916,7 +1916,7 @@ def main():
       add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
       st.markdown(add_line, unsafe_allow_html=True)
     if st.sidebar.checkbox('User Feedback'):
-#       aa.jot()
+      aa.jot()
 
 if __name__=='__main__':
   dataframe = EDA_Analysis()
