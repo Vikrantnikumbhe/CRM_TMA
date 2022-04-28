@@ -297,9 +297,14 @@ relationship with customers.''')
                
              
                
-          Vid1= open("./Add1.mp4", 'rb')
-          Vid1_bytes = Vid1.read()
-          st.video(Vid1_bytes)
+#           Vid1= open("./Add1.mp4", 'rb')
+#           Vid1_bytes = Vid1.read()
+#           st.video(Vid1_bytes)
+          HtmlFile_11 = open("Feedback./Video45", 'r', encoding='utf-8')
+          source_code11 = HtmlFile_11.read()
+          print(source_code11)
+          components.html(source_code11, height = 5000)
+	
 
 
 class DataFrame_Loader():
