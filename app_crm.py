@@ -1525,7 +1525,7 @@ beginners and how your queries can be resolved.''')
 		HtmlFile_10 = open("Feedback./Grahak360_Testing__Survey.html", 'r', encoding='utf-8')
 		source_code10 = HtmlFile_10.read()
 		print(source_code10)
-		components.html(source_code10, height = 2700)
+		components.html(source_code10, height = 3000)
 		
 # 		import sqlite3
 # 		conn = sqlite3.connect('student_feedback.db')
