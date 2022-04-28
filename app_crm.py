@@ -1511,6 +1511,8 @@ beginners and how your queries can be resolved.''')
 				source_code9 = HtmlFile_9.read()
 				print(source_code9)
 				components.html(source_code9, height = 700)
+	def jot(self):
+		<script type="text/javascript" src="https://form.jotform.com/jsform/221170497557461"></script>
 				
 				
 				
@@ -1915,8 +1917,8 @@ def main():
       add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
       st.markdown(add_line, unsafe_allow_html=True)
     if st.sidebar.checkbox('User Feedback'):
-      aa.Feed()
-    
+      aa.jot()
+
 if __name__=='__main__':
   dataframe = EDA_Analysis()
   rules = Product_Recommendation()
