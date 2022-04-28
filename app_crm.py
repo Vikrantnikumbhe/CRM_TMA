@@ -1522,7 +1522,7 @@ beginners and how your queries can be resolved.''')
 	
 	
 	def Feed(self):
-		HtmlFile_10 = open("Feedback./New_Customer_Registration_Form.html", 'r', encoding='utf-8')
+		HtmlFile_10 = open("Feedback./Grahak360_Testing__Survey.html", 'r', encoding='utf-8')
 		source_code10 = HtmlFile_10.read()
 		print(source_code10)
 		components.html(source_code10, height = 2000)
