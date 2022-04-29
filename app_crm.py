@@ -179,9 +179,9 @@ and data values before moving further!!''')
     dff['BillDate'] = pd.to_datetime(dff['BillDate'])
     dff.dropna(axis = 0, subset = ['Product', 'CustomerID'], inplace = True)
     if st.sidebar.checkbox('Display Main Data',False, key = '29'):
-		st.subheader('Show Main Input dataset')
-		st.write(dff)
-		st.write('''Take a look at the Main dataset you have fed to our CRM tool. Check for the attributes
+      st.subheader('Show Main Input dataset')
+      st.write(dff)
+      st.write('''Take a look at the Main dataset you have fed to our CRM tool. Check for the attributes
 and data values before moving further!!''')
 		
 		
