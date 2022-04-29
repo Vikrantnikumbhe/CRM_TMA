@@ -319,7 +319,7 @@ profit contribution to an overall future
 relationship with customers.''')                       
                        
                
-          col25,col26,col27 = st.columns([1,9,1])
+          col25,col26,col27 = st.columns([1,6,1])
           with col26:
                HtmlFile_11 = open("Feedback./Video45", 'r', encoding='utf-8')
                source_code11 = HtmlFile_11.read()
