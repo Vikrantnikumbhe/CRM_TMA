@@ -173,6 +173,20 @@ with col1:
       st.write('''Take a look at the Main dataset you have fed to our CRM tool. Check for the attributes
 and data values before moving further!!''')
     count = 1
+  if data_file is None:
+	dff = pd.read_csv("data/Main_Demo.csv")
+	dff['TotalAmount'] = dff.apply(lambda row: (row['Quota']*row['Amount']),axis=1)
+	dff['BillDate'] = pd.to_datetime(dff['BillDate'])
+	dff.dropna(axis = 0, subset = ['Product', 'CustomerID'], inplace = True)
+	if st.sidebar.checkbox('Display Main Data',False, key = '29'):
+		st.subheader('Show Main Input dataset')
+		st.write(dff)
+		st.write('''Take a look at the Main dataset you have fed to our CRM tool. Check for the attributes
+and data values before moving further!!''')
+		
+		
+		
+
     if st.sidebar.checkbox('Access Input Main Data ', key = '4254354'):
       CI1= st.number_input('Enter a Customer ID',0, 9000000, 0, 1, key = '1878')
       for i in range(len(dff)):
@@ -297,9 +311,6 @@ relationship with customers.''')
                
              
                
-#           Vid1= open("./Add1.mp4", 'rb')
-#           Vid1_bytes = Vid1.read()
-#           st.video(Vid1_bytes)
           HtmlFile_11 = open("Feedback./Video45", 'r', encoding='utf-8')
           source_code11 = HtmlFile_11.read()
           print(source_code11)
