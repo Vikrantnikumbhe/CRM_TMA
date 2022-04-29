@@ -244,7 +244,7 @@ and data values before moving further!!''')
 #                st.write('Total Amount', dff1.TotalAmount[i])
                count1 = count1 + 1
       st.write('Looks like this customer has a greater place in your revenue stream. Please find the details of this customer as per the dataset you provided.')
-st.write("This Dataset should have utmost eight attributes to enrich your analysis viz., any Identification number of order (Bill/Invoice Number/Order ID), Identification number of product (Merchandise ID/Stock Code/Product ID), short description or label of the product (Product name/Description), time indicator (Bill date/Invoice date in form of MM/DD/YY), product quantity (Quota/Quantity/Order) pricing details (Amount/Price per product), Total amount of products, Identification number of Customer (Customer ID/User ID) and region details (country/state/city).")
+st.write("Note : This Datasets should have utmost eight attributes to enrich your analysis viz., any Identification number of order (Bill/Invoice Number/Order ID), Identification number of product (Merchandise ID/Stock Code/Product ID), short description or label of the product (Product name/Description), time indicator (Bill date/Invoice date in form of MM/DD/YY), product quantity (Quota/Quantity/Order) pricing details (Amount/Price per product), Total amount of products, Identification number of Customer (Customer ID/User ID) and region details (country/state/city).")
 add_line1= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
 st.markdown(add_line1, unsafe_allow_html=True)
 
