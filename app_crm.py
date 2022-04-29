@@ -234,8 +234,8 @@ class ghar():
           col7, col8 ,col9 = st.columns(3)
           with col7:
                img3 = Image.open("./images/Descriptive Analysis.png")
-               st.subheader('1. Descriptive Analysis')
-               st.image(img3,caption = 'Descriptive Analysis',use_column_width= None )
+               st.subheader('1. Data Visualization and Analysis')
+               st.image(img3,caption = 'Data Visualization and Analysis',use_column_width= None )
                st.write('''Get a perspective of your data. Help 
 understand hidden patterns with the
 sweetviz analysis, pandasprofiling 
@@ -287,8 +287,8 @@ and customer retention.''')
           col13, col14 ,col15 = st.columns(3)
           with col14:
                img9 =Image.open("./images/CLTV.png")
-               st.subheader('7. Customer Lifetime Value')
-               st.image(img9,caption = 'Customer Lifetime Value',use_column_width= None )
+               st.subheader('7. Customer Linked Predictions')
+               st.image(img9,caption = 'Customer Linked predictions',use_column_width= None )
                st.write('''Predict the expected future transactions
 of your customer. Gauge your company's net
 profit contribution to an overall future 
