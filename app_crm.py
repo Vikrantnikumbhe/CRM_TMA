@@ -1790,14 +1790,14 @@ def main():
         add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
         st.markdown(add_line, unsafe_allow_html=True)
   if choice == 'Customer Linked Predictions':
-    st.sidebar.subheader('Here we will Explore Customer Lifetime Value')
+    st.sidebar.subheader('Here we will Explore Customer Linked Predictions')
     if st.sidebar.checkbox('CLTV Dataframe', key = '32'):
       st.download_button(label=" Download CLTV DataFrame as csv",data=cc.C_L_T_V().to_csv().encode('utf-8'),file_name='CLTV_DataFrame.csv',mime='text/csv',)
       st.write(cc.C_L_T_V())
       st.write('Watch out for the ‘Expected Average Profit’, ‘Customer lifetime value (CLV)’ and the segment that a particular customer falls under. Segment A indicates …, segment B indicates … , segment C indicates … and segment D indicates … ')
       add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
       st.markdown(add_line, unsafe_allow_html=True)  
-    if st.sidebar.checkbox('Aceess Customer Info'):
+    if st.sidebar.checkbox('Access Customer Info'):
       cc.Access_cltv()
       st.write('Looks like this customer is closely associated to the growth of your business. Hope this customer fits into the top segments.')
       add_line= '<p style="font-family:sans-serif; font-weight:bold;color:blue;font-size: 60px;">___________________________________________________</p>'
