@@ -226,9 +226,8 @@ and data values before moving further!!''')
       st.write(dff1)
       st.write('''Take a look at the dataset for prediction you have fed to our CRM tool. Check for the attributes 
 and data values before moving further!!''')
-	
-	
-	
+
+st.write("This dataset should have utmost eight attributes to enrich your analysis viz., any Identification number of order (Bill/Invoice Number/Order ID), Identification number of product (Merchandise ID/Stock Code/Product ID), short description or label of the product (Product name/Description), time indicator (Bill date/Invoice date in form of MM/DD/YY), product quantity (Quota/Quantity/Order) pricing details (Amount/Price per product), Total amount of products, Identification number of Customer (Customer ID/User ID) and region details (country/state/city).")
     if st.sidebar.checkbox('Access Input Pred Data ',key = '698955312'):
       CI2= st.number_input('Enter a Customer ID',0, 9000000, 0, 1, key = '1875ss58')
       for i in range(len(dff1)):
