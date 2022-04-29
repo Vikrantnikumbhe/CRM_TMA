@@ -184,9 +184,6 @@ and data values before moving further!!''')
       st.write('''Take a look at the Main dataset you have fed to our CRM tool. Check for the attributes
 and data values before moving further!!''')
 		
-		
-		
-
     if st.sidebar.checkbox('Access Input Main Data ', key = '4254354'):
       CI1= st.number_input('Enter a Customer ID',0, 9000000, 0, 1, key = '1878')
       for i in range(len(dff)):
@@ -218,6 +215,20 @@ with col2:
       st.write('''Take a look at the dataset for prediction you have fed to our CRM tool. Check for the attributes 
 and data values before moving further!!''')
     count1 = 1
+  if mm is None:
+    dff1 = pd.read_csv("data/pred_trash.csv")
+    dff1['TotalAmount'] = dff1.apply(lambda row: (row['Quota']*row['Amount']),axis=1)
+    dff1['BillDate'] = pd.to_datetime(dff1['BillDate'])
+    # dff['CustomerID'] = dff['CustomerID'].astype(np.int64)
+    dff1.dropna(axis = 0, subset = ['Product', 'CustomerID'], inplace = True)
+    if st.sidebar.checkbox('Display Data of for prediction',False, key = '200'):
+      st.subheader('Show Input dataset for prediction' )
+      st.write(dff1)
+      st.write('''Take a look at the dataset for prediction you have fed to our CRM tool. Check for the attributes 
+and data values before moving further!!''')
+	
+	
+	
     if st.sidebar.checkbox('Access Input Pred Data ',key = '698955312'):
       CI2= st.number_input('Enter a Customer ID',0, 9000000, 0, 1, key = '1875ss58')
       for i in range(len(dff1)):
