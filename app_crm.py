@@ -260,7 +260,7 @@ class ghar():
           HtmlFile_11 = open("Feedback./Video45", 'r', encoding='utf-8')
           source_code11 = HtmlFile_11.read()
           print(source_code11)
-          components.html(source_code11,height = 1000)
+          components.html(source_code11,height = 800)
           col7, col8 ,col9 = st.columns(3)
           with col7:
                img3 = Image.open("./images/Descriptive Analysis.png")
@@ -325,21 +325,12 @@ profit contribution to an overall future
 relationship with customers.''')                       
                        
                
-#           col25,col26,col27 = st.columns([1,3,1])
-#           with col26:
-#                HtmlFile_11 = open("Feedback./Video45", 'r', encoding='utf-8')
-#                source_code11 = HtmlFile_11.read()
-#                print(source_code11)
-#                components.html(source_code11,width = 9000 ,height = 9000)
+
                		
 		
 		
 		
-               
-          HtmlFile_11 = open("Feedback./Video45", 'r', encoding='utf-8')
-          source_code11 = HtmlFile_11.read()
-          print(source_code11)
-          components.html(source_code11,height = 1000)
+     
 
 
 
