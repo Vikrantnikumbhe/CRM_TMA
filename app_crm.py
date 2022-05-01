@@ -1298,20 +1298,20 @@ The Team Mettle Amigos, consisting of tech enthusiasts and innovative minds, wit
 		colh, coli, colj = st.columns(3)
 		
 		with colh:
-			imgsa = Image.open("./images/tma_images/3.png")
+			imgsa = Image.open("images/tma_images/Shreyas.png")
 			st.image(imgsa,use_column_width= None )
 		with coli:
-			imgsb = Image.open("./images/tma_images/4.png")
+			imgsb = Image.open("images/tma_images/Vikrant.png")
 			st.image(imgsb,use_column_width= None )
 		with colj:
-			imgsc = Image.open("./images/tma_images/5.png")
+			imgsc = Image.open("images/tma_images/Prathamesh.png")
 			st.image(imgsc,use_column_width= None )
 		colk, coll,colm,coln,colo = st.columns([0.111,0.3,0.111,0.3,0.111])
 		with coll:
-			imgsd = Image.open("./images/tma_images/6.png")
+			imgsd = Image.open("images/tma_images/Himanshu.png")
 			st.image(imgsd,use_column_width= None )
 		with coln:
-			imgse = Image.open("./images/tma_images/7.png")
+			imgse = Image.open("images/tma_images/Anand.png")
 			st.image(imgse,use_column_width= None )
 		st.subheader('Contact Team Mettle Amigos')
 		st.write('''For any queries, get in touch with us at teammettleamigos5@gmail.com .
