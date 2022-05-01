@@ -255,6 +255,12 @@ st.markdown(add_line1, unsafe_allow_html=True)
 class ghar():
      
      def intro(self):
+		
+		
+          HtmlFile_11 = open("Feedback./Video45", 'r', encoding='utf-8')
+          source_code11 = HtmlFile_11.read()
+          print(source_code11)
+          components.html(source_code11,height = 1000)
           col7, col8 ,col9 = st.columns(3)
           with col7:
                img3 = Image.open("./images/Descriptive Analysis.png")
