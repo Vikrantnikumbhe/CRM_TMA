@@ -35,6 +35,7 @@ In the Era of digital disruption, AI-ML methodologies can be combined with custo
 ## Implementation
 [<img src="https://github.com/froala/design-blocks/blob/dev/assets/logo-html.png?raw=true" height="60" />](https://github.com/froala/design-blocks)    [<img src="https://github.com/froala/angular-froala-design-blocks/blob/master/src/assets/logo-angluar.png?raw=true" height="60" />](https://github.com/froala/angular-froala-design-blocks)    [<img src="https://github.com/froala/react-froala-design-blocks/blob/master/public/logo-react.png?raw=true" height="60" />](https://github.com/froala/react-froala-design-blocks)        [<img src="https://github.com/froala/vue-froala-design-blocks/blob/master/src/assets/logo-vue.png?raw=true" height="60" />](https://github.com/froala/vue-froala-design-blocks)    [<img src="https://github.com/froala/design-blocks/blob/dev/assets/logo-psd.png?raw=true" height="60" />](https://github.com/froala/design-blocks/blob/dev/assets/psds/psd-pages.zip?raw=true)    [<img src="https://github.com/froala/design-blocks/blob/dev/assets/logo-sketch.png?raw=true" height="60" />](https://github.com/froala/design-blocks/blob/dev/assets/sketch/froala-design-blocks.sketch?raw=true)  ![](https://forthebadge.com/images/badges/made-with-python.svg)    [<img target="_blank" src="https://i.imgur.com/jAyHARm.png" width=170>](https://www.streamlit.io/)
 
+
 ## Browser Support
 
 At the moment, we aim to support all major web browsers. Any issue in the browsers listed below should be reported as a bug:
