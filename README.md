@@ -1,5 +1,6 @@
 # GRAHAK360
 Development and deployment of next generation customer relationship management tool in product based supply chain.
+[I'm an inline-style link](https://www.grahak360.com)
 <p align="center">
   <img src="https://user-images.githubusercontent.com/94373839/168225020-742ab624-40e8-49ee-b871-efe4427f7623.png">
  </p>
