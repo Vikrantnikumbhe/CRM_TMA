@@ -1,6 +1,5 @@
 # GRAHAK360
 Development and deployment of next generation customer relationship management tool in product based supply chain.
-
 Link to the Website: [www.grahak360.com](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)
 <p align="center">
   <img src="https://user-images.githubusercontent.com/94373839/168225020-742ab624-40e8-49ee-b871-efe4427f7623.png">
