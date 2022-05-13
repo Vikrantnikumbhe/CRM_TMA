@@ -1,4 +1,4 @@
-# [GRAHAK360](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)<img src="https://user-images.githubusercontent.com/94373839/168340125-b6325433-277d-4ab3-8987-57fe6d4a3790.gif" alt="Aplus Framework Pagination Library" align="right" width="200"></a>
+# [GRAHAK360](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)<img src="https://user-images.githubusercontent.com/94373839/168340125-b6325433-277d-4ab3-8987-57fe6d4a3790.gif" alt="Aplus Framework Pagination Library" align="right" width="150"></a>
 
 [![Python](https://img.shields.io/badge/Python-3.8-3776AB.svg?style=flat&logo=python&logoColor=FFDB4D)](https://www.python.org)
 [![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)](https://github.com/froala/design-blocks/blob/master/LICENSE)
