@@ -11,25 +11,25 @@ Most of the enterprises, these days, are devising their products and services in
 
 ## Activities that can be Performed:
 
--[To predict expected future transactions to be performed by a customer in a given time period.](#quick start)
+-[To predict expected future transactions to be performed by a customer in a given time period.](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)
 
--[To predict a company's net profit contribution to its overall future relationship with a customer.]
+-[To predict a company's net profit contribution to its overall future relationship with a customer](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)
 
--[To segment customers based on RFM modeling technique.]
+-[To segment customers based on RFM modeling technique.](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)
 
--[To segment customers based on Hybrid (K-means with RFM) modeling technique.]
+-[To segment customers based on Hybrid (K-means with RFM) modeling technique.](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)
 
--[To create association rules for product recommendations using Market-Basket Analysis.]
+-[To create association rules for product recommendations using Market-Basket Analysis.](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)
 
--[To create a classifier that will classify the customers into various categories.]
+-[To create a classifier that will classify the customers into various categories.](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)
 
--[To analyze and validate different classifiers and to select the right classifier based on their predicting ability and quality of fit.]
+-[To analyze and validate different classifiers and to select the right classifier based on their predicting ability and quality of fit.](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)
 
--[To forecast the future sales using the historic sales patterns in the dataset.]
+-[To forecast the future sales using the historic sales patterns in the dataset.](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)
 
--[To analyze the forensic aspects of a dataset like churn rate using different visual plots and key metrics.]
+-[To analyze the forensic aspects of a dataset like churn rate using different visual plots and key metrics.](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)
 
--[To analyze the retention analytics over time by computing monthly and cohort based retention rates.]
+-[To analyze the retention analytics over time by computing monthly and cohort based retention rates.](https://share.streamlit.io/vikrantnikumbhe/crm_tma/main/app_crm.py)
 
 ## Browser Support
 
