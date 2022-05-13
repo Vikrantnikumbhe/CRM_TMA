@@ -9,10 +9,6 @@ Link to the Website: [www.grahak360.com](https://share.streamlit.io/vikrantnikum
  </p>
 In the Era of digital disruption, AI-ML methodologies can be combined with customer databases to build a robust Customer relationship management (CRM) system.This Work summarizes the development of such a next generation customer relationship management tool using machine learning methodologies and deploying the tool as a web interface for real time usage. A CRM system is applicable in almost all the domains, but for this project, the context of Online Retail Industry is considered. The tool developed is based on the data and context of a UK-based and registered non-store business. Data science techniques and machine learning algorithms are used to develop the model. Various key performance indicators like RFM, CLTV, etc., predictive techniques for customer segmentation, sales forecasting, etc. and customer relation parameters are inhibited in the tool. As a result, a web interface tool called GRAHAK360 is deployed for real time analysis and usage by any third party industry person using a suitable deployment platform. The tool created as a part of this project surely has a large scope of extension.
 
-HtmlFile_11 = open("Feedback./Video45", 'r', encoding='utf-8')
-  source_code11 = HtmlFile_11.read()
-  print(source_code11)
-  components.html(source_code11,height = 600)
 
 ## Activities that can be Performed:
 
