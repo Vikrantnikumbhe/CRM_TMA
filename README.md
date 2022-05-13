@@ -12,7 +12,9 @@ Most of the enterprises, these days, are devising their products and services in
 ## Activities that can be Performed:
 -[To predict expected future transactions to be performed by a customer in a given time period.]
 -[To predict a company's net profit contribution to its overall future relationship with a customer.]
+
 -[To segment customers based on RFM modeling technique.]
+
 -[To segment customers based on Hybrid (K-means with RFM) modeling technique.]
 -[To create association rules for product recommendations using Market-Basket Analysis.]
 -[To create a classifier that will classify the customers into various categories.]
