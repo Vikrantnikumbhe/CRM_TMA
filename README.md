@@ -51,5 +51,6 @@ At the moment, we aim to support all major web browsers. Any issue in the browse
 - Safari iOS 7.0+
 - Android 6.0+
 
-## Feedback
-https://form.jotform.com/221075032353444					
+## Feedback:
+All comments, bug reports and enhancement requests are welcome. To do so, please submit a new issue and I will investigate it.
+Please fill this form as a part of survry on user experience : https://form.jotform.com/221075032353444					
