@@ -11,7 +11,7 @@ Most of the enterprises, these days, are devising their products and services in
 
 ## Activities that can be Performed:
 
--[To predict expected future transactions to be performed by a customer in a given time period.]
+-[To predict expected future transactions to be performed by a customer in a given time period.](#quick start)
 
 -[To predict a company's net profit contribution to its overall future relationship with a customer.]
 
