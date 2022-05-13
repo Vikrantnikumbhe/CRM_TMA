@@ -30,3 +30,16 @@ Most of the enterprises, these days, are devising their products and services in
 -[To analyze the forensic aspects of a dataset like churn rate using different visual plots and key metrics.]
 
 -[To analyze the retention analytics over time by computing monthly and cohort based retention rates.]
+
+## Browser Support
+
+At the moment, we aim to support all major web browsers. Any issue in the browsers listed below should be reported as a bug:
+
+- Internet Explorer 10+
+- Microsoft Edge 14+
+- Safari 6+
+- Firefox (Current - 1) and Current versions
+- Chrome (Current - 1) and Current versions
+- Opera (Current - 1) and Current versions
+- Safari iOS 7.0+
+- Android 6.0+
