@@ -48,3 +48,6 @@ At the moment, we aim to support all major web browsers. Any issue in the browse
 - Opera (Current - 1) and Current versions
 - Safari iOS 7.0+
 - Android 6.0+
+
+## Feedback
+https://form.jotform.com/221075032353444					
