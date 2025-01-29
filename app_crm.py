@@ -1,3 +1,4 @@
+pip install --upgrade pip
 from scipy.sparse import data
 import streamlit as st
 import pandas as pd
