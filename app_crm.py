@@ -51,7 +51,8 @@ import plotly.graph_objs as go
 
 from pandas_profiling import ProfileReport 
 import streamlit.components.v1 as components
-st_profile_report(profile)
+profile = ProfileReport(df, explorative=True)
+components.html(profile.to_html(), height=900, scrolling=True)
 matplotlib.use("Agg")
 
 import sklearn.metrics as metrics
