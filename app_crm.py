@@ -1294,26 +1294,26 @@ This interface is the first step of TMA in the field of â€˜Predictive Analyticsâ
 The Team Mettle Amigos, consisting of tech enthusiasts and innovative minds, with the happy faces in the frame below, have many future prospects and this interface is just a start of it.''')
 		with colg:
 			imgs = Image.open("./images/TMA-01.png")
-			st.image(imgs,caption = 'TEAM METTLE AMIGOS',use_column_width= None )
+			st.image(imgs,caption = 'TEAM METTLE AMIGOS', use_container_width=True )
 		st.subheader('About Team members')
 		colh, coli, colj = st.columns(3)
 		
 		with colh:
 			imgsa = Image.open("images/tma_images/Shreyas.png")
-			st.image(imgsa,use_column_width= None )
+			st.image(imgsa, use_container_width=True )
 		with coli:
 			imgsb = Image.open("images/tma_images/Vikrant.png")
-			st.image(imgsb,use_column_width= None )
+			st.image(imgsb, use_container_width=True)
 		with colj:
 			imgsc = Image.open("images/tma_images/Prathamesh.png")
-			st.image(imgsc,use_column_width= None )
+			st.image(imgsc, use_container_width=True)
 		colk, coll,colm,coln,colo = st.columns([0.111,0.3,0.111,0.3,0.111])
 		with coll:
 			imgsd = Image.open("images/tma_images/Himanshu.png")
-			st.image(imgsd,use_column_width= None )
+			st.image(imgsd, use_container_width=True )
 		with coln:
 			imgse = Image.open("images/tma_images/Anand.png")
-			st.image(imgse,use_column_width= None )
+			st.image(imgse, use_container_width=True )
 		st.subheader('Contact Team Mettle Amigos')
 		st.write('''For any queries, get in touch with us at teammettleamigos5@gmail.com .
 To contact any individual from the team, you can directly message the particular individual over linkedin by searching his name.
