@@ -89,7 +89,7 @@ from sklearn.neighbors import KNeighborsClassifier
 #############
 import keras
 # import tensorflow as tf
-from keras.preprocessing.sequence import TimeseriesGenerator
+from tensorflow.keras.preprocessing.sequence import TimeseriesGenerator
 from sklearn.metrics import mean_absolute_error as mae
 from sklearn.metrics import mean_squared_error as mse
 from sklearn.metrics import r2_score as r2s
