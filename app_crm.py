@@ -1,4 +1,4 @@
-
+from ydata_profiling import ProfileReport
 from scipy.sparse import data
 import streamlit as st
 import pandas as pd
