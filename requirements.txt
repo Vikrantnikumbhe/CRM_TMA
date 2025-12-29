@@ -1,21 +1,22 @@
-matplotlib 
-numpy 
-pandas
-streamlit 
-scikit-learn 
+streamlit
+
 numpy<1.24
+pandas
+scipy
 
-sweetviz 
-Lifetimes  
-mlxtend  
-plotly   
-seaborn  
-scipy  
+matplotlib
+seaborn
+plotly
+squarify
+
+scikit-learn
+mlxtend
+lifetimes
+
 tensorflow-cpu>=2.10
-tensorflow-cpu
-squarify 
-mlxtend 
 
-streamlit-pandas-profiling 
-keras
+sweetviz
+
+ydata-profiling
+pillow
 
