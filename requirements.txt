@@ -3,6 +3,8 @@ numpy
 pandas
 streamlit 
 scikit-learn 
+numpy<1.24
+
 sweetviz 
 Lifetimes  
 mlxtend  
