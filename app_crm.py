@@ -266,7 +266,7 @@ class ghar():
           with col7:
                img3 = Image.open("./images/Descriptive Analysis.png")
                st.subheader('1. Data Visualization and Analysis')
-               st.image(img3,caption = 'Data Visualization and Analysis',use_column_width= None )
+               st.image(img3,caption = 'Data Visualization and Analysis', use_container_width=True)
                st.write('''Get a perspective of your data. Help 
 understand hidden patterns with the
 sweetviz analysis, pandasprofiling 
@@ -285,7 +285,7 @@ customer with a click.''')
           with col9:
                img5 = Image.open("./images/customer Classification.png")
                st.subheader('3. Customer Classification')
-               st.image(img5,caption = 'Customer Classification',use_column_width= None )
+               st.image(img5,caption = 'Customer Classification', use_container_width=True )
                st.write('''Helps you in making judicious decisions
 by choosing the right classifier 
 for the prediction of your 
@@ -294,21 +294,21 @@ customers.''')
           with col10:
                img6 = Image.open("./images/Sale Forecasting.png")
                st.subheader('4. Sales Forecasting')
-               st.image(img6,caption = 'Sales Forecasting',use_column_width= None )
+               st.image(img6,caption = 'Sales Forecasting', use_container_width=True)
                st.write('''Forecast your company’s future sales to 
 get deeper insights for your next
 plans of action.''')
           with col11:
                img17 =Image.open("./images/Product recommendation.png")
                st.subheader('5.Product Recommendation')
-               st.image(img17,caption = 'Product Recommendation',use_column_width= None )
+               st.image(img17,caption = 'Product Recommendation', use_container_width=True)
                st.write('''Create real-time association rules for 
 product recommendation using 
 market-basket analysis''')                
           with col12:
                img8 =Image.open("./images/Customer Retension.png")
                st.subheader('6. Forensic Analysis')
-               st.image(img8,caption = 'Forensic Analysis',use_column_width= None )
+               st.image(img8,caption = 'Forensic Analysis', use_container_width=True )
                st.write('''Perform churn rate, cohort, and 
 retention analysis. Get deeper insights
 on monthly revenue, growth rate, active 
@@ -319,7 +319,7 @@ and customer retention.''')
           with col14:
                img9 =Image.open("./images/CLTV.png")
                st.subheader('7. Customer Linked Predictions')
-               st.image(img9,caption = 'Customer Linked predictions',use_column_width= None )
+               st.image(img9,caption = 'Customer Linked predictions', use_container_width=True )
                st.write('''Predict the expected future transactions
 of your customer. Gauge your company's net
 profit contribution to an overall future 
