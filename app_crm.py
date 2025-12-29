@@ -123,13 +123,13 @@ with colT2:
 #      st.title('CRM-TMA')
 #      st.markdown(new_title, unsafe_allow_html=True)
        imgq = Image.open("./images/title.PNG")
-       st.image(imgq,use_column_width='auto')
+       st.image(imgq, use_container_width=True)
 import streamlit.components.v1 as components
 
 col6,col3, col4, col5 = st.columns([0.5,1.5,0.5,3])
 with col3:
   imgt = Image.open("./images/grahak-360.PNG")
-  st.image(imgt,use_column_width='auto')
+  st.image(imgt, use_container_width=True)
 with col5:
   j = '''Attention decision-makers!! Are you tired of skimming through oodles
   of spreadsheets? Looking for a comprehensive contrived CRM tool to alleviate
@@ -276,7 +276,7 @@ of your customers''')
           with col8:
                img4 = Image.open("./images/customer Segmentation.png")
                st.subheader('2. Customer Segmentation')
-               st.image(img4,caption = 'Customer Segmentation',use_column_width= None )
+               st.image(img4,caption = 'Customer Segmentation', use_container_width=True )
                st.write('''Do smart segmentation to understand
 your customers with our RFM and 
 Hybrid segmentation techniques. Get 
